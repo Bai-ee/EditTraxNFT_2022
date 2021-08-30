@@ -9,14 +9,14 @@
 }
 
 html, body {
-	width: 100vw;
-	height: 100vh;
   margin: 0px;
   padding: 0px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  align-items: flex-start
+  align-items: flex-start;
+  height:100%;
+  width:100%
 }
 
 html {	
@@ -30,10 +30,32 @@ html {
 }
 body {
 	flex-direction: row;
-	overflow: hidden;
   touch-action: none;
-  background-color:black;
+  /* background-color:black; */
+  /* background: linear-gradient(120deg, #1f005c, #8c00a0, #e30084, #ff2830, #ffb56b);
+  background-color: #f8f8f8; */
+  /*background-size: cover;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  z-index: -1;
+  /* height:200vh */
+}
+
+#bg_img {
+  position:fixed;
+  width:100vw;
+  height:100%;
   background: linear-gradient(120deg, #1f005c, #8c00a0, #e30084, #ff2830, #ffb56b);
+  background-color: #f8f8f8;
+  /*background-size: cover;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  z-index: -1;
+
 }
 
 #stageBlock {
@@ -51,7 +73,8 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width:90vw
+  width:90vw;
+  /* height:200vh */
 }
 
 #status {
