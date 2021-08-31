@@ -34,38 +34,44 @@
 <!-- Publisher's Facebook Page  -->
 <meta property="article:publisher" content="Edit Trax" />
 
+<link rel="shortcut icon" href="./assets/img/favicon_et.png" />
+<link
+  rel="apple-touch-icon"
+  sizes="76x76"
+  href="./assets/img/ico_JiB_icon.ico"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+/>
 
+<title>Edit Trax</title>
 
-    <link rel="shortcut icon" href="./assets/img/favicon_et.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./assets/img/ico_JiB_icon.ico"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
-    />
-    <title>Edit Trax</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script src="https://assets.codepen.io/910391/DrawSVGPlugin.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<!-- <script src="./MorphSVGPlugin.min.js"crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5ee853d04398bdc9145d39487/cf967bfd75b619bee5ff89c17.js");</script>
+<script src="https://assets.codepen.io/910391/gsap.min.js"></script>
+<script src="https://assets.codepen.io/910391/Draggable.min.js"></script>
+<script src="https://assets.codepen.io/910391/InertiaPlugin.min.js">
+</script>
+<script src="https://assets.codepen.io/910391/DrawSVGPlugin.min.js"></script>
+<script src="https://assets.codepen.io/910391/CustomEase.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="https://assets.codepen.io/910391/DrawSVGPlugin.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <!-- <script src="./MorphSVGPlugin.min.js"crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<style>
 
-
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5ee853d04398bdc9145d39487/cf967bfd75b619bee5ff89c17.js");</script>
-    <style>
-
+* {
+margin: 0;
+/*   background-color: white; */
+}   
 
 
 html body {
   background-color:black;
-  /* height: 100vh;
-  overflow: hidden; */
   scroll-behavior: smooth;
 }
 
@@ -75,52 +81,6 @@ html body {
   height:200vh;
   width:100vw;
   z-index: 99999;
-
-}
-
-#stageBlock2 {
-  background-color:#75FA4C;
-  position:absolute;
-  height:100vh;
-  width:100vw;
-  z-index: 99998;
-
-}
-
-#stageBlock3 {
-  background-color:#EA3CF7;
-  position:absolute;
-  height:100vh;
-  width:100vw;
-  z-index: 99997;
-
-}
-
-#stageBlock4 {
-  background-color: #F09135;
-  position:absolute;
-  height:100vh;
-  width:100vw;
-  z-index: 99996;
-
-}
-
-#stageBlock5 {
-  background-color: #3482F7;
-  position:absolute;
-  height:100vh;
-  width:100vw;
-  z-index: 99995;
-
-}
-
-#stageBlock6 {
-  background-color:#F8D247;
-  position:absolute;
-  height:100vh;
-  width:100vw;
-  z-index: 99994;
-
 }
 
 #adHit {
@@ -138,15 +98,6 @@ pointer-events:none;
 
 }
 
-
-
-
-
-* {
-margin: 0;
-/*   background-color: white; */
-}   
-
 #draggable-cont {
     position:fixed;
     width:100vw;
@@ -159,107 +110,6 @@ margin: 0;
     z-index: 5000;
 }
 
-.drag-item-1 {
-    /* img 2 */
-    position: absolute;
-    width: 103px;
-    height: 103px;
-    border-radius: 35px;
-/*     background-color: red; */
-    align-self: center;
-      z-index: 5100;
-}
-
-.drag-item-2 {
-    /* img 2 */
-    position: absolute;
-    width: 103px;
-    height: 103px;
-    border-radius: 35px;
-      z-index: 5200;
-    background-color:red;
-}
-
-.drag-item-3 {
-    /* img 2 */
-    position: absolute;
-    width: 103px;
-    height: 103px;
-    border-radius: 35px;
-      z-index: 5300;
-    background-color:red;
-}
-
-.drag-item-4 {
-    /* img 2 */
-    position: absolute;
-    width: 103px;
-    height: 103px;
-    border-radius: 35px;
-      z-index: 5400;
-    background-color:red;
-}
-
-.drag-item-5 {
-    /* img 2 */
-    position: absolute;
-    width: 103px;
-    height: 103px;
-    border-radius: 35px;
-      z-index: 5500;
-    background-color:red;
-}
-
-.drag-item-6 {
-    /* img 2 */
-    position: absolute;
-    width: 103px;
-    height: 103px;
-    border-radius: 35px;
-      z-index: 5600;
-/*     background-color:red; */
-}
-
-.drag-item-7 {
-    /* img 2 */
-    position: absolute;
-    width: 103px;
-    height: 103px;
-    border-radius: 35px;
-      z-index: 5700;
-/*     background-color:red; */
-}
-
-.drag-item-8 {
-    /* img 2 */
-    position: absolute;
-    width: 103px;
-    height: 103px;
-    border-radius: 35px;
-      z-index: 5800;
-/*     background-color:red; */
-}
-
-.drag-item-9 {
-    /* img 2 */
-/*     position: absolute;
-    width: 103px;
-    height: 103px;
-    border-radius: 35px;
-      z-index: 5800; */
-/*     background-color:red; */
-  position: absolute;
-width: 103px;
-height: 103px;
-
-background: #FFFFFF;
-border: 0.5px solid rgba(0, 0, 0, 0.09);
-box-sizing: border-box;
-box-shadow: inset 2px 3px 9px rgba(0, 0, 0, 0.17);
-border-radius: 35px;
-        z-index: 5900;
-}
-
 #frame1 {
   display: flex;
     justify-content: flex-start;
@@ -268,122 +118,42 @@ border-radius: 35px;
     align-content: center;
 }
 
-
-
-
-
 @media only screen and (orientation:portrait){
   #turn{ display:none; }
-  /* #container{ display:block; } */
 }
 
 
-  @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-    
-    /* html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      display: none;
-    } */
-
-    /* #main {
-
-    } */
-
-    #mc_embed_signup { display: none; }
-    #main_img { display: none; }
-    #nav{ display:none; }
-    #turn{ display:block; }
-
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {    
+  #mc_embed_signup { display: none; }
+  #main_img { display: none; }
+  #nav{ display:none; }
+  #turn{ display:block; }
   }
 
-  @media only screen and (orientation:portrait){
+@media only screen and (orientation:portrait){
   #turn{ display:block; }
-  /* #container{ display:block; } */
 }
-    </style>
-  </head>
-  <body class="text-gray-800 antialiased">
 
+</style>
+
+</head>
+
+<body class="text-gray-800 antialiased">
+
+<a href="https://www.twitter.com/edittrax/" target="_blank">
+  <div id="adHit"></div>
+</a>
 
 <div id="stageBlock"></div>
 
-<div id="stageBlock2"></div>
+<nav id="nav" class="top-0 absolute z-50 w-full flex flex-col px-8 py-6" style="background-color:rgba(0, 0, 0, 0);">
+    <!-- <div class="h-auto w-auto bg-cover bg-center" style="height: 20vh; width:20vh; background-image: url(./assets/img/stack-logo2.png);"> -->
+</nav>
 
-<div id="stageBlock3"></div>
-
-<div id="stageBlock4"></div>
-
-<div id="stageBlock5"></div>
-
-<div id="stageBlock6"></div>
-
-<a href="https://www.twitter.com/edittrax/" target="_blank">
-
-<div id="adHit"></div>
-
-</a>
-
-
-<!-- <div id="comp"> -->
-
-  <!-- <img id="comp_img"≈
-  src="./assets/img/comp.png"
-  alt="..."
-  style="position: absolute; bottom: -450px;
-  left: 1350px; object-fit:contain; z-index:500; width:100%; height:150vh;"
-/> -->
-
-
-<!-- </div> -->
-
-
-
-
-    <div id="blobDiv" style="position:absolute; z-index: 100; margin-left:50vw; margin-top:20vh; width:40vw; height:40vh" >
-
-      <!-- <svg class="bloba" width="100%" height="100%" viewBox="0 0 399 444" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g style="mix-blend-mode:multiply">
-        <path class="blobAPath" d="M99.5261 183.435C27.0042 191.379 -25.6985 261.233 13.1541 322.983C14.0737 324.444 15.0043 325.897 15.9459 327.341C40.9528 365.692 72.8742 396.543 108.595 416.885C144.315 437.226 182.615 446.362 219.755 443.402C256.895 440.442 291.608 425.486 320.504 399.994C349.401 374.502 371.495 339.346 384.629 297.955C397.764 256.564 401.491 210.354 395.446 163.834C389.401 117.313 373.791 72.0724 350.14 32.5263C315.791 -24.9057 239.69 -0.87502 218.061 62.4531L205.823 98.2846C189.908 144.884 148.476 178.074 99.5261 183.435Z" fill="#F09135"/>
-        </g>
-      </svg> -->
-
-    </div>
-      
-      <!-- <svg class="blobb" width="491" height="489" viewBox="0 0 491 489" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g style="mix-blend-mode:multiply">
-        <path class="blobBPath" d="M116.181 58.7086C59.4726 109.412 1.52168 196.476 0.257093 272.536C-0.307025 306.465 8.10922 342.174 23.9999 367.429V367.429C44.4477 399.927 126.947 445.081 157.461 468.387C160.779 470.92 164.141 473.359 167.545 475.699C178.167 483.001 191.685 484.834 204.043 481.169C213.266 478.435 221.059 475.658 227.624 472.865C274.942 452.735 267.773 453.471 312.066 479.591C343.981 498.413 378.121 485.632 396.444 469.468C425.34 443.977 412.944 350.391 426.079 309C439.214 267.609 496.545 220.02 490.5 173.5V173.5C482.06 108.544 442.625 47.9471 385.108 16.6052C364.91 5.59914 335.99 0.000223556 295.694 0.000366214V0.000366214C249.825 0.000371917 196.319 18.1618 153.907 35.6311C141.408 40.7794 128.427 47.759 116.181 58.7086Z" fill="#F09135"/>
-        </g>
-      </svg> -->
-
-
-
-    <!-- <div class="bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 h-full" style="background-image: url(/assets/img/.lines_bg.svg);"> -->
-
-    <!-- </div> -->
-
-  <nav id="nav" class="top-0 absolute z-50 w-full flex flex-col px-8 py-6" style="background-color:rgba(0, 0, 0, 0);">
-  
-      <!-- <div class="h-auto w-auto bg-cover bg-center" style="height: 20vh; width:20vh; background-image: url(./assets/img/stack-logo2.png);"> -->
-
-
-        <!-- background-image: url(./assets/img/viva_acid_logo.png); -->
-
-  </nav>
-
-
-  
-
-
-  <main id="main" class="absolute w-full bg-cover bg-center flex justify-center" style="
-    background: linear-gradient(120deg, #1f005c, #8c00a0, #e30084, #ff2830, #ffb56b);
-  background-color: #f8f8f8;">
-    <!-- background-image: url(./assets/img/IMG_2731.jpg);   -->
+<main id="main" class="absolute w-full bg-cover bg-center flex justify-center" style="
+  background: linear-gradient(120deg, #1f005c, #8c00a0, #e30084, #ff2830, #ffb56b);
+background-color: #f8f8f8;">
+  <!-- background-image: url(./assets/img/IMG_2731.jpg);   -->
 
     <div  class="" style="z-index: 500;">
   <!-- <div  class="inline-flex flex-row space-y-3 items-center justify-end gap-y-0.5 content-between" style="z-index: 500;"> -->
@@ -392,12 +162,13 @@ border-radius: 35px;
     <!-- <div id="frame1" class="flex-row justify-center p-3" style=""> -->
       <div id="frame1" class="" style="">
 
-      <div id="logo" class="absolute flex-row justify-center p-3" style="">
+      <div id="logo" class="absolute flex-row justify-center p-3" style="top:100px">
 
         <!-- <a href=" https://www.smartbarchicago.com/events/" target="_blank"> -->
           <img id="main_img"
           src="./assets/img/logo_no_dropshadow.png"
           alt="..."
+          
         />
     
       </div>
@@ -407,7 +178,7 @@ border-radius: 35px;
         </div> -->
 
         <a href="https://twitter.com/edittrax/" target="_blank">
-        <img id="main_img"
+        <img id="copy_img"
         src="./assets/img/copy.png"
         alt="..."
         style="z-index:500; max-width:80vw; max-height:80vh; margin-left:auto; margin-right:auto"
@@ -422,19 +193,12 @@ border-radius: 35px;
               #mc_embed_signup{background:rgba(0, 0, 0, 0); clear:left; font:14px Helvetica,Arial,sans-serif; border-radius:5px}
               /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
                 We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-
-
             </style>
+
+            <!-- MAIL CHIMP SIGN UP -->
             <div id="mc_embed_signup" style="margin-top: -0px;">
-            <form action="https://nft.us5.list-manage.com/subscribe/post?u=fc4f6490d102a2f385e8b3c64&amp;id=ed21c6a8cb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              
-
-              <!-- <div id="mc_embed_signup_scroll"> -->
-
-              <!-- <label for="mce-EMAIL">Subscribe</label> -->
-
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5ee853d04398bdc9145d39487_9c3c38cf55" tabindex="-1" value=""></div> -->
+            
+              <form action="https://nft.us5.list-manage.com/subscribe/post?u=fc4f6490d102a2f385e8b3c64&amp;id=ed21c6a8cb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div class="clear" style="display: flex; z-index:99999">
                   
                   <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="ENTER EMAIL" required style="margin-right: 10px; font-color:red">
@@ -442,158 +206,36 @@ border-radius: 35px;
                 
                   <a href="https://www.twitter.com/edittrax/" target="_blank">
                     <div class="h-auto w-auto bg-cover bg-center mt-1 ml-0" style="margin-left:10px; height: 55px; width:55px;background-image: url(./assets/img/twitch_whtpng.png);">
+                    </div>
+                  </a>  
 
-                  </div>
-                </a>  
-            </form>
+              </form>
 
             </div>
 
             <div id="frame2" class="flex-row justify-center p-3" style="">
 
-              <!-- <div id="turn" style="color:#00FF00; font-size:40px; display:none">
-                Please rotate your device!
-              </div> -->
-      
               <a href=" https://www.twitter.com/edittrax" target="_blank">
               <img id="main_img"
               src="./assets/img/frame2.png"
               alt="..."
-              style="z-index:500; max-width:80vw; max-height:80vh; margin-left:auto; margin-right:auto"
+              style="z-index:500; top:50px; max-width:80vw; max-height:80vh; margin-left:auto; margin-right:auto"
             />
               </a>
+              
+              
 
-
-                                
-                <script src="https://assets.codepen.io/910391/gsap.min.js"></script>
-                <script src="https://assets.codepen.io/910391/Draggable.min.js"></script>
-                <script src="https://assets.codepen.io/910391/InertiaPlugin.min.js">
-                </script>
-                <script src="https://assets.codepen.io/910391/DrawSVGPlugin.min.js"></script>
-                <script src="https://assets.codepen.io/910391/CustomEase.min.js"></script>
-                
-
-
-  </body>
-  <script>
-    // function toggleNavbar(collapseID) {
-    //   document.getElementById(collapseID).classList.toggle("hidden");
-    //   document.getElementById(collapseID).classList.toggle("block");
-    // }
-// console.log(gsap);
-    // gsap.registerPlugin(MorphSVG)
-
-    // let blobapath = document.querySelector(".blobAPath");
-    // let blobBPath = document.querySelector(".blobBPath");
-    // let blobB= document.querySelector(".blobb");
-    // let bloba = document.querySelector(".bloba");
-    // let blobb = document.querySelector(".blobb");
-
-    // gsap.set(blobb, {autoAlpha:0});
-
-    // MorphSVGPlugin.convertToPath(bloba);
-    // MorphSVGPlugin.convertToPath(blobBPath);
-    // console.log("test")
-    // console.log(MorphSVG)
-
-    gsap.set("#bg_circle", {x:-500})
-gsap.set("#bg_circle2", {x:"110vw", y:"110vh"})
-gsap.set("#comp_img", {x:"+100vw", y:"-20vh", scale:1.5})
-
-    gsap.set("#stageBlock2", {autoAlpha:0})
-    gsap.set("#stageBlock3", {autoAlpha:0})
-    gsap.set("#stageBlock4", {autoAlpha:0})
-    gsap.set("#stageBlock5", {autoAlpha:0})
-    gsap.set("#stageBlock6", {autoAlpha:0})
-
-
-    // let blob1 = document.querySelector("#blob");
-    // console.log(morphSVG)
-    // gsap.to(".blob1",  {duration: 1, x:500, ease:Power1.easeInOut, yoyo:false, repeat:0},0);
-    // gsap.to(".blob1",  {duration: 1, morphSVG:".blob1c", transformOrigin:tOriginBlob, ease: Power1.easeInOut, yoyo:false, repeat:0},0);
-    gsap.to("#stageBlock", {duration:0.45, height:"0vw", autoAlpha:1, delay:0.5, ease: "Power1.easeOut"})
-    // gsap.to("#stageBlock2", {duration:0.45, height:"0vw", autoAlpha:1, delay:0.55, ease: "Power1.easeOut"})
-    // gsap.to("#stageBlock3", {duration:0.45, height:"0vw", autoAlpha:1, delay:0.6, ease: "Power1.easeOut"})
-    // gsap.to("#stageBlock4", {duration:0.45, height:"0vw", autoAlpha:1, delay:0.65, ease: "Power1.easeOut"})
-    // gsap.to("#stageBlock5", {duration:0.45, height:"0vw", autoAlpha:1, delay:0.7, ease: "Power1.easeOut"})
-    // gsap.to("#stageBlock6", {duration:0.45, height:"0vw", autoAlpha:1, delay:0.75, ease: "Power1.easeOut"})
-    // gsap.to(".bloba", {duration:8,  x:"+=10vw", rotate:-20, scale: 1, ease: "Power3.easeInOut", yoyo:true, repeat:-1},0); 
-    gsap.from("#frame1", {duration:0.8, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.5); 
-    gsap.from("#mc_embed_signup", {duration:0.8, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.5); 
-    gsap.to("#comp_img", {duration:0.8, x:"+=20vw", ease: "Power3.easeOut", opacity:0.5},0); 
+</body>
+<script>
 
 
 
-
-
-
-
-    console.log(gsap);
-
-// gsap.set("#content", {height:"70%", width:"70%"})
-// gsap.set("#bg_circle", {x:-500})
-// gsap.set("#bg_circle2", {x:"110vw", y:"110vh"})
-// gsap.set("#comp_img", {x:"-100vw"})
-
-// gsap.set("#artist_name", {rotate:-10})
-
-var tl = gsap.timeline();
-// tl.to("#bg_circle", {duration: 30, x:"100vw", y:"100vh", delay:1, repeat:-1},0);
-// tl.to("#bg_circle2", {duration: 30, x:-300, y:-300, repeat:-1},0);
-
-
-// tl.from(".wrapper", {x: 100, duration: 1});
-// tl.from("#content", {duration:0.2, backgroundSize:"0% 0%"},0)
-
-
-
-// document.getElementById("content").addEventListener("mouseover", mouseOverPlayer);
-// document.getElementById("content").addEventListener("mouseleave", mouseOffPlayer);
-
-// gsap.set("#content", {height:"80%", width:"80%"})
-gsap.set(".wrapper", {width:"100%", x:"110%"}) 
-// gsap.set(".wrapper", {height:"80%", width:"80%"}) 
-
-gsap.set("#status", {autoAlpha:0})   
-function mouseOverPlayer(){
-    // console.log("TEST")
-    // gsap.to("#content", {duration:0.2, height:"80%", width:"80%"})
-    // gsap.to("#artist_name", {duration:0.2, autoAlpha:0})    
-    // gsap.to("#contentBlock", {duration: 0.2, autoAlpha:0});
-    // gsap.to("#play-toggle", {duration: 0.2, autoAlpha:1});
-    // // gsap.to("#pause-toggle", {duration: 0.2, autoAlpha:1});
-    // gsap.to("#render-toggle", {duration: 0.2, autoAlpha:1});
-    // gsap.to("#download", {duration: 0.2, autoAlpha:1});
-    // gsap.to("#totalDuration", {duration: 0.2, autoAlpha:1});
-    // gsap.to("#render-toggle", {duration: 0.2, autoAlpha:1});
-    // gsap.to("#contentSplash", {duration: 0.2, autoAlpha:0});
-    // gsap.set(".wrapper", {width:"100%"},0) 
-    // gsap.to(".wrapper", {duration:0.2, x:0, delay:0.3, autoAlpha:1}) 
-   
-    // gsap.from("#status", {duration:0.2, autoAlpha:1})       
+function mouseOverPlayer(){  
 }
 
 function mouseOffPlayer(){
-    // gsap.to(".wrapper", {duration:0.2, x:"+=1200", delay:0.3, autoAlpha:1},0) 
-    // console.log("TEST")
-    // gsap.to("#content", {duration:0.2, width:336, height:280})
-    // gsap.to("#contentBlock", {duration: 0.2, autoAlpha:1});
-    // // gsap.to("#play-toggle", {duration: 0.2, autoAlpha:0});
-    // gsap.to("#contentSplash", {duration: 0.2, autoAlpha:0});
-    // gsap.to("#artist_name", {duration:0.2, autoAlpha:1})   
-    // // gsap.set("#status", {autoAlpha:1})  
-
-    // gsap.to("#render-toggle", {duration: 0.2, autoAlpha:0});
-    // gsap.to("#download", {duration: 0.2, autoAlpha:0});
-    // gsap.to("#totalDuration", {duration: 0.2, autoAlpha:0});
-    // gsap.to("#render-toggle", {duration: 0.2, autoAlpha:0});
-    // gsap.to("#play-toggle", {duration: 0.2, autoAlpha:0});
 
 }
-
-
-
-
 
 //helpers math random 
 function random(min, max) {
@@ -615,31 +257,14 @@ function tweenProperty(target, prop) {
   });
 }
 
-//set props
-// gsap.set("#path3", { drawSVG: "0% 0%" });
-// gsap.set("#path2", { drawSVG: "0% 0%" });
-// gsap.set("#path1", { drawSVG: "0% 0%" });
-//aligns svg within icon
-// gsap.set("#Layer_2", {scale:0.8, y:"+=11px", x:"+=3px"})
-
 //array of client work
 let clientWorkExamples = [
   "#logo",
-  // ".drag-item-2",
-  // ".drag-item-3",
-  // ".drag-item-4",
-  // ".drag-item-5",
-  // ".drag-item-6",
-  // ".drag-item-7",
-  // ".drag-item-8",
-  // ".drag-item-9",
 ];
 
 // call to draw signature
 let drawSplashLogo = () => {
-
   startTheShow();
- 
   // const splashLogoTl = gsap.timeline();
   // splashLogoTl.timeScale(1.3);
   // splashLogoTl.to("#path2", { duration: 0.8, drawSVG: "0% 100%", ease: "Power4.easeOut" }, 2);
@@ -648,43 +273,23 @@ let drawSplashLogo = () => {
            
   clientWorkExamples.forEach(el => {
     // gsap.set(el, {x:"50vw", y:"40vh", autoAlpha:1});
-    gsap.set(el, {top:100, autoAlpha:1});
+    gsap.set(el, {autoAlpha:1});
   });
 
   for(i=0; i < clientWorkExamples.length; i++){
     console.log(i)
     let randomNum = (random(-180, 180)) + i *4;
     // gsap.from(clientWorkExamples[i], {duration:0.4, autoAlpha:0, ease:"bounce.easeOut", /* rotate:randomNum, */ scale:0, yoyo:true, repeat:1, delay:(0.04 + i)/4});
-  
 }
 
 gsap.delayedCall(0.1, drawSplashLogo);
 
-let startTheShow = () => {
-  
+let startTheShow = () => {  
 gsap.from(clientWorkExamples, {duration:1.8, autoAlpha:1, y:"+=15px", ease:"PowerEase1.InOut", /* rotate:randomNum, */ yoyo:true, repeat:-1});
-// gsap.to("#draggable-cont", {duration:1.8, backgroundColor: 'rgba(0, 0, 0, 0)'});
-  
-  console.log("hitting");
-  
-  
-// tweenProperty(".drag-item-1", "y");
-// tweenProperty(".drag-item-1", "x");
-// tweenProperty(".drag-item-2", "y");
-// tweenProperty(".drag-item-2", "x");
-// tweenProperty(".drag-item-3", "y");
-// tweenProperty(".drag-item-3", "x");
-// tweenProperty(".drag-item-4", "y");
-// tweenProperty(".drag-item-4", "x");
-// tweenProperty(".drag-item-5", "y");
-// tweenProperty(".drag-item-5", "x");
-// tweenProperty(".drag-item-6", "y");
-// tweenProperty(".drag-item-6", "x");
-// tweenProperty(".drag-item-7", "y");
-// tweenProperty(".drag-item-7", "x");
-// tweenProperty(".drag-item-8", "y");
-// tweenProperty(".drag-item-9", "x");
- 
+gsap.to("#stageBlock", {duration:0.5, autoAlpha:0, delay:0, ease: "Power1.easeOut"})
+gsap.from("#frame1", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.25); 
+gsap.from("#mc_embed_signup", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.5); 
+gsap.to("#comp_img", {duration:0.5, x:"+=20vw", ease: "Power3.easeOut", opacity:0.5},0.75); 
 }
 
 //create draggable
@@ -692,20 +297,10 @@ Draggable.create(clientWorkExamples, {
   // type: 'rotation',
   throwProps: true,
   bounds: document.getElementById("main"),
-  dragResistance: 0.025,
-  edgeResistance: 1,
+  dragResistance: 0.4,
+  edgeResistance: 0.3,
 });
 
-
-
-
-
-
-
-
-
-
-
-// console.log(SplitText);
   </script>
+
 </html>
