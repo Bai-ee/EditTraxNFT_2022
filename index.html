@@ -138,6 +138,138 @@ pointer-events:none;
 
 
 
+
+
+* {
+margin: 0;
+/*   background-color: white; */
+}   
+
+#draggable-cont {
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    top:0;
+    background-color:black;
+    opacity:1;
+    z-index: 99999;
+    place-items: center;
+    z-index: 5000;
+}
+
+.drag-item-1 {
+    /* img 2 */
+    position: absolute;
+    width: 103px;
+    height: 103px;
+    border-radius: 35px;
+/*     background-color: red; */
+    align-self: center;
+      z-index: 5100;
+}
+
+.drag-item-2 {
+    /* img 2 */
+    position: absolute;
+    width: 103px;
+    height: 103px;
+    border-radius: 35px;
+      z-index: 5200;
+    background-color:red;
+}
+
+.drag-item-3 {
+    /* img 2 */
+    position: absolute;
+    width: 103px;
+    height: 103px;
+    border-radius: 35px;
+      z-index: 5300;
+    background-color:red;
+}
+
+.drag-item-4 {
+    /* img 2 */
+    position: absolute;
+    width: 103px;
+    height: 103px;
+    border-radius: 35px;
+      z-index: 5400;
+    background-color:red;
+}
+
+.drag-item-5 {
+    /* img 2 */
+    position: absolute;
+    width: 103px;
+    height: 103px;
+    border-radius: 35px;
+      z-index: 5500;
+    background-color:red;
+}
+
+.drag-item-6 {
+    /* img 2 */
+    position: absolute;
+    width: 103px;
+    height: 103px;
+    border-radius: 35px;
+      z-index: 5600;
+/*     background-color:red; */
+}
+
+.drag-item-7 {
+    /* img 2 */
+    position: absolute;
+    width: 103px;
+    height: 103px;
+    border-radius: 35px;
+      z-index: 5700;
+/*     background-color:red; */
+}
+
+.drag-item-8 {
+    /* img 2 */
+    position: absolute;
+    width: 103px;
+    height: 103px;
+    border-radius: 35px;
+      z-index: 5800;
+/*     background-color:red; */
+}
+
+.drag-item-9 {
+    /* img 2 */
+/*     position: absolute;
+    width: 103px;
+    height: 103px;
+    border-radius: 35px;
+      z-index: 5800; */
+/*     background-color:red; */
+  position: absolute;
+width: 103px;
+height: 103px;
+
+background: #FFFFFF;
+border: 0.5px solid rgba(0, 0, 0, 0.09);
+box-sizing: border-box;
+box-shadow: inset 2px 3px 9px rgba(0, 0, 0, 0.17);
+border-radius: 35px;
+        z-index: 5900;
+}
+
+#frame1 {
+  display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+
+
+
 @media only screen and (orientation:portrait){
   #turn{ display:none; }
   /* #container{ display:block; } */
@@ -242,20 +374,37 @@ pointer-events:none;
 
   </nav>
 
+
+  
+
+
   <main id="main" class="absolute w-full bg-cover bg-center flex justify-center" style="
     background: linear-gradient(120deg, #1f005c, #8c00a0, #e30084, #ff2830, #ffb56b);
   background-color: #f8f8f8;">
     <!-- background-image: url(./assets/img/IMG_2731.jpg);   -->
 
-  <div  class="inline-flex flex-row space-y-3 items-center justify-end gap-y-0.5 content-between" style="z-index: 500;">
+    <div  class="" style="z-index: 500;">
+  <!-- <div  class="inline-flex flex-row space-y-3 items-center justify-end gap-y-0.5 content-between" style="z-index: 500;"> -->
 
-      <div id="frame1" class="flex-row justify-center p-3" style="">
+
+    <!-- <div id="frame1" class="flex-row justify-center p-3" style=""> -->
+      <div id="frame1" class="" style="">
+
+      <div id="logo" class="absolute flex-row justify-center p-3" style="">
+
+        <!-- <a href=" https://www.smartbarchicago.com/events/" target="_blank"> -->
+          <img id="main_img"
+          src="./assets/img/logo_no_dropshadow.png"
+          alt="..."
+        />
+    
+      </div>
 
         <!-- <div id="turn" style="color:#00FF00; font-size:40px; display:none">
           Please rotate your device!
         </div> -->
 
-        <a href=" https://www.smartbarchicago.com/events/" target="_blank">
+        <a href="https://twitter.com/edittrax/" target="_blank">
         <img id="main_img"
         src="./assets/img/copy.png"
         alt="..."
@@ -311,12 +460,16 @@ pointer-events:none;
               style="z-index:500; max-width:80vw; max-height:80vh; margin-left:auto; margin-right:auto"
             />
               </a>
-      
-              <div>
 
-               
-  
 
+                                
+                <script src="https://assets.codepen.io/910391/gsap.min.js"></script>
+                <script src="https://assets.codepen.io/910391/Draggable.min.js"></script>
+                <script src="https://assets.codepen.io/910391/InertiaPlugin.min.js">
+                </script>
+                <script src="https://assets.codepen.io/910391/DrawSVGPlugin.min.js"></script>
+                <script src="https://assets.codepen.io/910391/CustomEase.min.js"></script>
+                
 
 
   </body>
@@ -376,9 +529,9 @@ gsap.set("#comp_img", {x:"+100vw", y:"-20vh", scale:1.5})
     console.log(gsap);
 
 // gsap.set("#content", {height:"70%", width:"70%"})
-gsap.set("#bg_circle", {x:-500})
-gsap.set("#bg_circle2", {x:"110vw", y:"110vh"})
-gsap.set("#comp_img", {x:"-100vw"})
+// gsap.set("#bg_circle", {x:-500})
+// gsap.set("#bg_circle2", {x:"110vw", y:"110vh"})
+// gsap.set("#comp_img", {x:"-100vw"})
 
 // gsap.set("#artist_name", {rotate:-10})
 
@@ -392,8 +545,8 @@ var tl = gsap.timeline();
 
 
 
-document.getElementById("content").addEventListener("mouseover", mouseOverPlayer);
-document.getElementById("content").addEventListener("mouseleave", mouseOffPlayer);
+// document.getElementById("content").addEventListener("mouseover", mouseOverPlayer);
+// document.getElementById("content").addEventListener("mouseleave", mouseOffPlayer);
 
 // gsap.set("#content", {height:"80%", width:"80%"})
 gsap.set(".wrapper", {width:"100%", x:"110%"}) 
@@ -435,6 +588,121 @@ function mouseOffPlayer(){
     // gsap.to("#play-toggle", {duration: 0.2, autoAlpha:0});
 
 }
+
+
+
+
+
+//helpers math random 
+function random(min, max) {
+  if (max == null) { max = min; min = 0; }
+  if (min > max) { var tmp = min; min = max; max = tmp; }
+  return min + (max - min) * Math.random();
+}
+
+function tweenProperty(target, prop) {
+  gsap.to(target, {
+    [prop]: random(500, 1000),
+    // duration:random(100, 1000), 
+    duration:30, 
+    // ease: Sine.easeInOut,
+    onComplete: tweenProperty,
+    onCompleteParams: [target, prop] ,
+    // ease: CustomEase.create("custom", "M0,0,C-0.007,0.237,0.451,0.633,0.68,0.824,0.909,1.015,0.908,1,1,1")
+    
+  });
+}
+
+//set props
+// gsap.set("#path3", { drawSVG: "0% 0%" });
+// gsap.set("#path2", { drawSVG: "0% 0%" });
+// gsap.set("#path1", { drawSVG: "0% 0%" });
+//aligns svg within icon
+// gsap.set("#Layer_2", {scale:0.8, y:"+=11px", x:"+=3px"})
+
+//array of client work
+let clientWorkExamples = [
+  "#logo",
+  // ".drag-item-2",
+  // ".drag-item-3",
+  // ".drag-item-4",
+  // ".drag-item-5",
+  // ".drag-item-6",
+  // ".drag-item-7",
+  // ".drag-item-8",
+  // ".drag-item-9",
+];
+
+// call to draw signature
+let drawSplashLogo = () => {
+
+  startTheShow();
+ 
+  // const splashLogoTl = gsap.timeline();
+  // splashLogoTl.timeScale(1.3);
+  // splashLogoTl.to("#path2", { duration: 0.8, drawSVG: "0% 100%", ease: "Power4.easeOut" }, 2);
+  // splashLogoTl.to("#path1", { duration: 0.6, drawSVG: "0% 100%", ease: "Power0.easeOut",onComplete:startTheShow }, 2.6);
+  }
+           
+  clientWorkExamples.forEach(el => {
+    // gsap.set(el, {x:"50vw", y:"40vh", autoAlpha:1});
+    gsap.set(el, {top:100, autoAlpha:1});
+  });
+
+  for(i=0; i < clientWorkExamples.length; i++){
+    console.log(i)
+    let randomNum = (random(-180, 180)) + i *4;
+    // gsap.from(clientWorkExamples[i], {duration:0.4, autoAlpha:0, ease:"bounce.easeOut", /* rotate:randomNum, */ scale:0, yoyo:true, repeat:1, delay:(0.04 + i)/4});
+  
+}
+
+gsap.delayedCall(0.1, drawSplashLogo);
+
+let startTheShow = () => {
+  
+gsap.from(clientWorkExamples, {duration:1.8, autoAlpha:1, y:"+=15px", ease:"PowerEase1.InOut", /* rotate:randomNum, */ yoyo:true, repeat:-1});
+// gsap.to("#draggable-cont", {duration:1.8, backgroundColor: 'rgba(0, 0, 0, 0)'});
+  
+  console.log("hitting");
+  
+  
+// tweenProperty(".drag-item-1", "y");
+// tweenProperty(".drag-item-1", "x");
+// tweenProperty(".drag-item-2", "y");
+// tweenProperty(".drag-item-2", "x");
+// tweenProperty(".drag-item-3", "y");
+// tweenProperty(".drag-item-3", "x");
+// tweenProperty(".drag-item-4", "y");
+// tweenProperty(".drag-item-4", "x");
+// tweenProperty(".drag-item-5", "y");
+// tweenProperty(".drag-item-5", "x");
+// tweenProperty(".drag-item-6", "y");
+// tweenProperty(".drag-item-6", "x");
+// tweenProperty(".drag-item-7", "y");
+// tweenProperty(".drag-item-7", "x");
+// tweenProperty(".drag-item-8", "y");
+// tweenProperty(".drag-item-9", "x");
+ 
+}
+
+//create draggable
+Draggable.create(clientWorkExamples, {
+  // type: 'rotation',
+  throwProps: true,
+  bounds: document.getElementById("main"),
+  dragResistance: 0.025,
+  edgeResistance: 1,
+});
+
+
+
+
+
+
+
+
+
+
 
 // console.log(SplitText);
   </script>
