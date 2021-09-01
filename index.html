@@ -87,6 +87,27 @@
   <div id="status">Loading...</div> 
   <div id="totalDuration"></div>
   <div id="progress"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   <!-- <div class="h-auto w-auto bg-cover bg-center" style="height: 20vh; width:20vh; background-image: url(./assets/img/stack-logo2.png);"> -->
 </nav>
@@ -204,9 +225,7 @@ background-color: #f8f8f8;">
     
         </div>
 
-        <div id="subhead"> 
-          Verifiably Scarce Audio Players Built On The Blockchain
-      </div>
+
         
 
 
@@ -218,7 +237,15 @@ background-color: #f8f8f8;">
 
 
 
+          <div id="subhead2" style="text-align:center"> 
+            Create & Download Custom Edits Of A Preloaded Stereo Track. <br>Collect & Trade Players Like Vinyl
+        </div>
 
+        <div id="footerText" style="text-align:center"> 
+          Create & Download Custom Edits Of A Preloaded Stereo Track. <br>Collect & Trade Players Like Vinyl
+      </div>
+
+   
 
 
 
@@ -269,7 +296,6 @@ background-color: #f8f8f8;">
 
 
 
-
         </div>
 
 
@@ -280,9 +306,13 @@ background-color: #f8f8f8;">
 
         <footer id="footer" class="flex justify-center px-4 w-screen text-gray-100 bg-gray-800">
           <div class="container py-6">
-              <h1 class="text-center text-lg font-bold lg:text-2xl">
-                  Join 31,000+ other and never miss <br> out on new tips, tutorials, and more.
+              <h1 id="footerText" class="text-center text-lg font-bold lg:text-2xl">
+                Be Part Of Our Beta Launch<br> & Feature Exploration
               </h1>
+
+              <h1 id="footerText_sub" class="text-center text-lg font-bold lg:text-2xl">
+                CONTACT:<br> Bryan Balli <br> Creative Developer <br> bryanballi@gmail.com
+            </h1>
 
 
 
@@ -323,7 +353,7 @@ background-color: #f8f8f8;">
   
               <hr class="h-px mt-6 border-none">
   
-              <div class="flex flex-col items-center justify-between mt-6 md:flex-row">
+              <div class="flex flex-col items-center justify-between mt-6 md:flex-row"style="justify-content:center">
                   <div id="footer_logo">
                       <a href="#" class="text-xl font-bold">EditTrax.nft</a>
                   </div>
@@ -344,6 +374,8 @@ background-color: #f8f8f8;">
         
 
 
+
+
               
               
 <script src="scroll.js"></script>
@@ -353,7 +385,20 @@ background-color: #f8f8f8;">
 
 
 <script>
+function setup() {
 
+  console.log("RUNNING")
+    return {
+
+      activeTab: 0,
+      tabs: [
+          "Tab No.1",
+          "Tab No.2",
+          "Tab No.3",
+          "Tab No.4",
+      ]
+    };
+  };
 
 // gsap.set("#close", {autoAlpha:0});
 // gsap.set("#render-toggle", {autoAlpha:0});
