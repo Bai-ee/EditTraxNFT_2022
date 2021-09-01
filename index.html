@@ -83,10 +83,10 @@
 
 <nav id="nav" class="top-0 px-8 py-6" style="">
   
+  <button id="play-toggle" class="play" disabled></button>
   <div id="status">Loading...</div> 
   <div id="totalDuration"></div>
   <div id="progress"></div>
-  <button id="play-toggle" class="play" disabled></button>
   
   <!-- <div class="h-auto w-auto bg-cover bg-center" style="height: 20vh; width:20vh; background-image: url(./assets/img/stack-logo2.png);"> -->
 </nav>
@@ -125,7 +125,7 @@ background-color: #f8f8f8;">
                         EditTrax
                     </p>
                     <p id="nft_name_logo">
-                        .nft
+                        .NFT
                     </p>                 
                   <div class="viewport_logo"></div>          
               </div>
@@ -361,7 +361,7 @@ background-color: #f8f8f8;">
 // gsap.set("#totalDuration", {autoAlpha:0});
 // gsap.set("#play-toggle", {autoAlpha:0});
 // gsap.set(".wrapper", {autoAlpha:0});
-// gsap.set("#artist_name_logo", {rotate:-15,pointerEvents:"none"});
+gsap.set("#artist_name_logo", {rotate:-15,pointerEvents:"none"});
 // gsap.set("#artist_name", {rotate:-15,pointerEvents:"none"});
 // gsap.set("#contentSplash", {pointerEvents:"none"});
 // gsap.set("#logo", {autoAlpha:1});
@@ -486,8 +486,8 @@ Draggable.create(clientWorkExamples, {
 
 
 // gsap.set("#content", {height:"70%", width:"70%"})
-gsap.set("#bg_circle", {x:-300, autoAlpha:0.3})
-gsap.set("#bg_circle2", {x:"100vw", y:"20vh", autoAlpha:0.3})
+gsap.set("#bg_circle", {x:-300, autoAlpha:0.1})
+gsap.set("#bg_circle2", {x:"100vw", y:"20vh", autoAlpha:0.1})
 
 var tl = gsap.timeline();
 tl.to("#bg_circle", {duration: 100,scale:0.5, x:"100vw", y:"100vh", delay:1, yoyo:true, repeat:-1},0);

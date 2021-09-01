@@ -61,7 +61,7 @@ var activeBufferIndex = -1;
 var renderedBufferIndex = 99;
 
 Tone.loaded().then(function () {
-    status.innerHTML = "Track Loaded"
+    status.innerHTML = "BAI-EE | Edit Trax Demo"
     playToggle.disabled = false;
     enableElements();
     updateParts();

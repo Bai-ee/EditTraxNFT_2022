@@ -1,10 +1,10 @@
-/* 
+
 @font-face {
   font-family: Poppins;
   src: url(Poppins-Black.otf);
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: Digitalism;
   src: url(digitalism.ttf);
 }
@@ -12,7 +12,7 @@
 @font-face {
   font-family: Randhu;
   src: url(Randhu.otf);
-}  */
+}   */
 
 #stageBlock {
   background-color: black;
@@ -40,6 +40,7 @@
   width: auto;
   text-align: center;
   font-size: 30px;
+  margin-left: 24px;
  
   /* align-self; ; */
   /* background-color: yellow; */
@@ -116,7 +117,7 @@ height:280px;
   background-size: cover;
   background-image: url(play_img.png);
   cursor: pointer;
-  opacity:0.5;
+  opacity:1;
   background-blend-mode:hard-light;
   z-index: 600;
 }
@@ -320,7 +321,7 @@ input.repeat {
 #artist_name_logo, #track_name_logo, #nft_name_logo {
   position: absolute;
   z-index:5;
-  font-size:55px;
+  font-size:85px;
   text-align: left;
   font-family: Randhu;
   color:white;
@@ -342,12 +343,13 @@ input.repeat {
 }
 
 #nft_name_logo {
-  font-size:30px;
+  font-size:40px;
   font-family: Poppins;
-  top:146px;
-  left:212px;
-
+  top:96px;
+  left:112px;
 }
+
+
 
 #track_name {
   top: 120px;
@@ -372,6 +374,7 @@ input.repeat {
   font-size: 50px;
   font-family: Randhu;
   background-color: transparent;
+  pointer-events:none;
   /* background-color: yellow; */
 }
 
@@ -415,6 +418,7 @@ input.repeat {
   position:fixed;
   top:0;
   left:0;
+  z-index:1;
 }
 
 
@@ -533,7 +537,7 @@ pointer-events:none;
   height:100px;
   width:100vw;
   position:fixed;
-  z-index: 500;
+  z-index: 2000;
   /* background-color:yellow; */
     background: rgba(255, 255, 255, 0.151);
   backdrop-filter: saturate(100%) blur(10px);
