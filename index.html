@@ -79,6 +79,7 @@ html body {
   background-color: black;
   position:absolute;
   width:100vw;
+  height:100%;
   z-index: 99999;
 }
 
@@ -94,7 +95,11 @@ html body {
 
 #main_img {
 pointer-events:none;
+}
 
+#main {
+  /* height:150vh;
+  align-items: center; */
 }
 
 #draggable-cont {
@@ -107,6 +112,10 @@ pointer-events:none;
     z-index: 99999;
     place-items: center;
     z-index: 5000;
+}
+
+#img_cont {
+  /* margin-top:110px; */
 }
 
 #frame1 {
@@ -161,30 +170,33 @@ background-color: #f8f8f8;">
     <!-- <div id="frame1" class="flex-row justify-center p-3" style=""> -->
       <div id="frame1" class="" style="">
 
-      <div id="logo" class="absolute flex-row justify-center p-3" style="top:100px">
+        <div id="logo" class="mt-16 absolute flex-row justify-center p-3" style="top:0vh">
 
-        <!-- <a href=" https://www.smartbarchicago.com/events/" target="_blank"> -->
-          <img id="main_img"
-          src="./assets/img/logo_no_dropshadow.png"
-          alt="..."
-          
-        />
-    
-      </div>
+          <!-- <a href=" https://www.smartbarchicago.com/events/" target="_blank"> -->
+            <img id="main_img"
+            src="./assets/img/logo_no_dropshadow.png"
+            alt="..."
+            
+          />
+      
+        </div>
 
+        <div id="img_cont" class="mt-32 sm:mt-0">
         <!-- <div id="turn" style="color:#00FF00; font-size:40px; display:none">
           Please rotate your device!
         </div> -->
 
-        <a href="https://twitter.com/edittrax/" target="_blank">
-        <img id="copy_img"
-        src="./assets/img/copy.png"
-        alt="..."
-        style="z-index:500; max-width:80vw; max-height:80vh; margin-left:auto; margin-right:auto"
-      />
-        </a>
+          <a href="https://twitter.com/edittrax/" target="_blank">
+          <img id="copy_img"
+          src="./assets/img/copy.png"
+          alt="..."
+          style="z-index:500; max-width:80vw; max-height:80vh; margin-left:auto; margin-right:auto"
 
-        <div>
+          />
+          </a>
+        </div>
+      <div>
+
 
 <!-- Begin Mailchimp Signup Form -->
             <link href="./signup.css" rel="stylesheet" type="text/css">
@@ -271,12 +283,10 @@ let drawSplashLogo = () => {
   }
            
   clientWorkExamples.forEach(el => {
-    // gsap.set(el, {x:"50vw", y:"40vh", autoAlpha:1});
     gsap.set(el, {autoAlpha:1});
   });
 
   for(i=0; i < clientWorkExamples.length; i++){
-    console.log(i)
     let randomNum = (random(-180, 180)) + i *4;
     // gsap.from(clientWorkExamples[i], {duration:0.4, autoAlpha:0, ease:"bounce.easeOut", /* rotate:randomNum, */ scale:0, yoyo:true, repeat:1, delay:(0.04 + i)/4});
 }
