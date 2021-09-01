@@ -6,7 +6,7 @@ const objkt = new URLSearchParams(window.location.search).get('objkt')
 var isOwned = false;
 
 let playToggle = document.querySelector("#play-toggle");
-let downloadButton = document.querySelector("#download");
+let downloadButton = document.querySelector("#download-link");
 let status = document.querySelector("#status");
 
 

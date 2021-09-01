@@ -1,5 +1,18 @@
+/* 
+@font-face {
+  font-family: Poppins;
+  src: url(Poppins-Black.otf);
+}
 
+@font-face {
+  font-family: Digitalism;
+  src: url(digitalism.ttf);
+}
 
+@font-face {
+  font-family: Randhu;
+  src: url(Randhu.otf);
+}  */
 
 #stageBlock {
   background-color: black;
@@ -36,7 +49,7 @@
 #content {
   position: relative;
   pointer-events: auto;
-  cursor: pointer;
+  /* cursor: pointer; */
 	margin: auto;
   /* background-color: red; */
   border-radius:30px;
@@ -60,7 +73,6 @@ height:280px;
 #content_logo {
   position: relative;
   pointer-events: auto;
-  cursor: pointer;
 	margin: auto;
   background-color: red;
   border-radius:30px;
@@ -153,7 +165,6 @@ height:280px;
 #play-toggle.play {
   background-image: url(play_img.png);
   background-blend-mode: hard-light;
-  opacity:0;
 }
 
 #play-toggle.stop {
@@ -386,7 +397,7 @@ input.repeat {
   background-color:transparent;
   width:100%;
   height:100%;
-  opacity:0.;
+  opacity:1;
   background-size: cover;
 }
 
@@ -394,7 +405,7 @@ input.repeat {
   background-image: url(photo-1563089145-599997674d42.jpeg);
   width:100%;
   height:100%;
-  opacity:0.5;
+  opacity:1;
   background-size: cover;
   background-blend-mode: hard-light;
 }
@@ -492,13 +503,14 @@ pointer-events:none;
     font-size:1.5rem;
     height:auto;
     margin-top:30px;
-    margin-bottom:100px;
+    margin-bottom:30px;
 }
 
 
 
 #logo_logo {
   display:flex;
+  cursor: grab;
 }
 
 
