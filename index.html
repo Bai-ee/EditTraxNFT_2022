@@ -39,6 +39,14 @@
 <script src="axios.min.js"></script>
 <script src="gsap.min.js"></script>
 <script src="Draggable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5ee853d04398bdc9145d39487/cf967bfd75b619bee5ff89c17.js");</script>
+<script src="https://assets.codepen.io/910391/gsap.min.js"></script>
+<script src="https://assets.codepen.io/910391/Draggable.min.js"></script>
+<script src="https://assets.codepen.io/910391/InertiaPlugin.min.js"></script>
+<script src="https://assets.codepen.io/910391/DrawSVGPlugin.min.js"></script>
+<script src="https://assets.codepen.io/910391/CustomEase.min.js"></script>
+
 <link type="text/css" rel="stylesheet" href="style.css" />
 <link rel="shortcut icon" href="./assets/img/favicon_et.png" />
 <link
@@ -57,262 +65,81 @@
 
 <title>Edit Trax</title>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- <script src="https://assets.codepen.io/910391/DrawSVGPlugin.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-<!-- <script src="./MorphSVGPlugin.min.js"crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5ee853d04398bdc9145d39487/cf967bfd75b619bee5ff89c17.js");</script>
-<script src="https://assets.codepen.io/910391/gsap.min.js"></script>
-<script src="https://assets.codepen.io/910391/Draggable.min.js"></script>
-<script src="https://assets.codepen.io/910391/InertiaPlugin.min.js"></script>
-<script src="https://assets.codepen.io/910391/DrawSVGPlugin.min.js"></script>
-<script src="https://assets.codepen.io/910391/CustomEase.min.js"></script>
-
-<style>
-
-</style>
-
-
 </head>
 
 <body class="text-gray-800 antialiased">
 
-    <div id="bg_circle" style="z-index:500; width: 300px; height: 300px; background-color: rgba(243, 161, 108, 1); border-radius: 9999px;"></div>
-    <div id="bg_circle2" style="z-index:500; width: 500px; height: 500px; background-color: rgb(134, 34, 134); border-radius: 9999px;"></div>    
+  <div id="stageBlock"></div>
+  <div id="bg_circle" style="z-index:500; width: 300px; height: 300px; background-color: rgba(243, 161, 108, 1); border-radius: 9999px;"></div>
+  <div id="bg_circle2" style="z-index:500; width: 500px; height: 500px; background-color: rgb(134, 34, 134); border-radius: 9999px;"></div>    
 
-<div id="stageBlock"></div>
+  <nav id="nav" class="top-0 px-8 py-6" style="">
+    <button id="play-toggle" class="play" disabled></button>
+    <div id="status">Loading...</div> 
+    <div id="totalDuration"></div>
+    <div id="progress"></div>
+  </nav>
 
-<nav id="nav" class="top-0 px-8 py-6" style="">
-  
-  <button id="play-toggle" class="play" disabled></button>
-  <div id="status">Loading...</div> 
-  <div id="totalDuration"></div>
-  <div id="progress"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <!-- <div class="h-auto w-auto bg-cover bg-center" style="height: 20vh; width:20vh; background-image: url(./assets/img/stack-logo2.png);"> -->
-</nav>
-
-<main id="main" class="absolute w-full bg-cover bg-center flex justify-center" style="
-  background: linear-gradient(120deg, #1f005c, #8c00a0, #e30084, #ff2830, #ffb56b);
-background-color: #f8f8f8;">
-  <!-- background-image: url(./assets/img/IMG_2731.jpg);   -->
+  <main id="main" class="absolute w-full bg-cover bg-center flex justify-center" style="
+    background: linear-gradient(120deg, #1f005c, #8c00a0, #e30084, #ff2830, #ffb56b);
+  background-color: #f8f8f8;">
 
     <div  class="" style="pointer-events:none">
-  <!-- <div  class="inline-flex flex-row space-y-3 items-center justify-end gap-y-0.5 content-between" style="z-index: 500;"> -->
-
-
-    <!-- <div id="frame1" class="flex-row justify-center p-3" style=""> -->
+      <div id="logo_circle"></div>
       <div id="frame1" class="" style="">
-
-
-
-
-
-
-            <!-- <div id="logo">Loading...</div> -->
-
-
-
-
-          <div id="logo_logo" class="" style="top:0vh">
-
-
-              <div id="content_logo">
-                <div id="content_bg_logo"></div>
-          
-                  <div id="contentSplash_logo">
-
-                    <p id="artist_name_logo">
-                        EditTrax
-                    </p>
-                    <p id="nft_name_logo">
-                        .NFT
-                    </p>                 
-                  <div class="viewport_logo"></div>          
-              </div>
+        <div id="logo_logo" class="" style="top:0vh">
+          <div id="content_logo">
+            <div id="content_bg_logo"></div>
+            <div id="contentSplash_logo">
+              <p id="artist_name_logo">EditTrax</p>
+              <p id="nft_name_logo">.NFT</p>                 
+              <div class="viewport_logo"></div>          
             </div>
-
-        </div>
-
-        
-
-      <div id="2_cont" style="pointer-events:none;">
-
-
-        <div id="frame2" class="flex-row justify-center p-3" style="">
-
-
-
-
-              
-
-
-
-
-
-          <!-- <a href=" https://www.twitter.com/edittrax" target="_blank">
-          <img id="main_img"
-          src="./assets/img/frame2.png"
-          alt="..."
-          style="z-index:500; top:50px; max-width:80vw; max-height:80vh; margin-left:auto; margin-right:auto"
-        />
-          </a> -->
-
-
-
-
-
-        <div id="img_cont" class="sm:mt-0">
-          <!-- <div id="turn" style="color:#00FF00; font-size:40px; display:none">
-            Please rotate your device!
-          </div> -->
-          
-            <div id="frame2_copy"> 
-              Interactive Digital Audio Distribution
-            </div>
-  
-            <div id="subhead"> 
-                Verifiably Scarce Audio Players Built On The Blockchain
-            </div>
-  
-
-        </div>
-
-
-
-
-          <div id="content">
-  
-            <div id="content_bg"></div>
-    
-
-    <!-- <button id="close"></button> -->
-    <a href="" id="download-link"></a>
-    <div class="wrapper">
-        <div class="boxes"></div>
-    </div>
-
-    <!-- <p id="artist_name">
-        EditTrax
-    </p>
-    <p id="nft_name">
-        .nft
-    </p> -->
-
-
-      
-    <div class="viewport"></div>
-    
-        </div>
-
-
-        
-
-
-
-
-
-
           </div>
-
-
-
-          <div id="subhead2" style="text-align:center"> 
-            Create & Download Custom Edits Of A Preloaded Stereo Track. <br>Collect & Trade Players Like Vinyl
         </div>
 
-        <div id="footerText" style="text-align:center"> 
+        <div id="2_cont" style="pointer-events:none;">
+          <div id="frame2" class="flex-row justify-center p-3" style="">
+            <div id="img_cont" class="sm:mt-0">
+                <div id="frame2_copy"> 
+                  Interactive Digital Audio Distribution
+                </div>
+                <div id="subhead"> 
+                    Verifiably Scarce Audio Players Built On The Blockchain
+                </div>
+            </div>        
+            <div id="content">
+              <div id="content_bg"></div>
+              <a href="" id="download-link"></a>
+              <div class="wrapper">
+              <div class="boxes"></div>
+            </div>
+          <div class="viewport"></div>    
+        </div>
+      </div>
+      <div id="subhead2" style="text-align:center"> 
           Create & Download Custom Edits Of A Preloaded Stereo Track. <br>Collect & Trade Players Like Vinyl
       </div>
+      <div id="footerText" style="text-align:center"> 
+        Create & Download Custom Edits Of A Preloaded Stereo Track. <br>Collect & Trade Players Like Vinyl
+      </div>
 
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- <div id="logo" class="mt-16 absolute flex-row justify-center p-3" style="top:0vh"> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-        <footer id="footer" class="flex justify-center px-4 w-screen text-gray-100 bg-gray-800">
+    </div>
+    
+    <footer id="footer" class="flex justify-center px-4 w-screen text-gray-100 bg-gray-800">
           <div class="container py-6">
               <h1 id="footerText" class="text-center text-lg font-bold lg:text-2xl">
-                Be Part Of Our Beta Launch<br> & Feature Exploration
+                Be Part Of Our Beta Launch<br> & Feature Exploration!
               </h1>
 
-              <h1 id="footerText_sub" class="text-center text-lg font-bold lg:text-2xl">
-                CONTACT:<br> Bryan Balli <br> Creative Developer <br> bryanballi@gmail.com
-            </h1>
+              <h1 id="footerText_contact" class="text-center text-lg font-bold lg:text-2xl">
+                CONTACT:
+              </h1>
+
+
+              <h1 id="footerText_sub" class="text-center lg:text-2xl">
+                <br> Creative Developer <br> bryanballi@gmail.com
+              </h1>
 
 
 
@@ -328,14 +155,13 @@ background-color: #f8f8f8;">
             <div id="mc_embed_signup" style="margin-top: -0px;">
             
               <form action="https://nft.us5.list-manage.com/subscribe/post?u=fc4f6490d102a2f385e8b3c64&amp;id=ed21c6a8cb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div class="clear" style="display: flex; z-index:99999">
+                <div class="clear flex-col" style="display: flex; z-index:99999; align-items:center">
                   
-                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="ENTER EMAIL" required style="margin-right: 10px; font-color:red">
+                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="ENTER EMAIL" required style="">
                   <input type="submit" value="CONTACT" name="subscribe" id="mc-embedded-subscribe" class="button">
                 
                   <a href="https://www.twitter.com/edittrax/" target="_blank">
-                    <div class="h-auto w-auto bg-cover bg-center mt-1 ml-0" style="margin-left:10px; height: 55px; width:55px;background-image: url(./assets/img/twitch_whtpng.png);">
-                    </div>
+                    <div class="h-auto w-auto bg-cover bg-center mt-1 ml-0" style="margin-left:10px; height: 55px; width:55px;background-image: url(./assets/img/twitch_whtpng.png);"></div>
                   </a>  
 
               </form>
@@ -354,9 +180,15 @@ background-color: #f8f8f8;">
               <hr class="h-px mt-6 border-none">
   
               <div class="flex flex-col items-center justify-between mt-6 md:flex-row"style="justify-content:center">
+
                   <div id="footer_logo">
-                      <a href="#" class="text-xl font-bold">EditTrax.nft</a>
+                      <a href="#" class="text-xl font-bold">
+
+                        <div class="h-auto w-auto bg-cover bg-center mt-1 ml-0" style="margin-left:10px; height: 148px; width:287px; background-image: url(./assets/img/logo_circ_trans.png);"></div>
+
+                      </a>
                   </div>
+
                   <div class="flex mt-4 md:m-0">
                       <div class="-mx-4">
                         <!-- <a href="#" class="px-4 text-sm">About</a>
