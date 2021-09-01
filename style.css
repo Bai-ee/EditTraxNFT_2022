@@ -1,3 +1,6 @@
+
+
+
 #stageBlock {
   background-color: black;
   z-index: 99999;
@@ -31,6 +34,30 @@
 }
 
 #content {
+  position: relative;
+  pointer-events: auto;
+  cursor: pointer;
+	margin: auto;
+  /* background-color: red; */
+  border-radius:30px;
+width: 336px;
+height:280px;
+  /* max-width:300px;  */
+  background-position: top; 
+  background-repeat: no-repeat; 
+  background-size: fit; 
+  overflow:hidden;
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgba(255, 255, 255, 0.151);
+  backdrop-filter: saturate(100%) blur(10px); */
+  max-width:861px;
+
+}
+
+#content_logo {
   position: relative;
   pointer-events: auto;
   cursor: pointer;
@@ -237,6 +264,14 @@ input.repeat {
   left: 50%;
 }
 
+.viewport_logo {
+  position: absolute;
+  pointer-events: none;  
+  width: 100%;
+  bottom: 100px;
+  left: 50%;
+}
+
 .num {
   width:100%;
   position: absolute;
@@ -270,6 +305,15 @@ input.repeat {
   color:white;
 }
 
+#artist_name_logo, #track_name_logo, #nft_name_logo {
+  position: absolute;
+  z-index:5;
+  font-size:55px;
+  text-align: left;
+  font-family: Randhu;
+  color:white;
+}
+
 
 #artist_name {
   font-size:80px;
@@ -278,6 +322,14 @@ input.repeat {
 }
 
 #nft_name {
+  font-size:30px;
+  font-family: Poppins;
+  top:146px;
+  left:212px;
+
+}
+
+#nft_name_logo {
   font-size:30px;
   font-family: Poppins;
   top:146px;
@@ -311,16 +363,161 @@ input.repeat {
   /* background-color: yellow; */
 }
 
+#contentSplash_logo {
+  background-color: rgb(0, 0, 0);
+  max-width:50%;
+  min-height:50%;
+  width:200px;
+  height:200px;
+  z-index: 20;
+  position:absolute;
+  border-radius: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-family: Randhu;
+  background-color: transparent;
+  /* background-color: yellow; */
+}
+
 #content_bg {
+  /* background-image: url(photo-1563089145-599997674d42.jpeg); */
+  background-color:transparent;
+  width:100%;
+  height:100%;
+  opacity:0.;
+  background-size: cover;
+}
+
+#content_bg_logo {
   background-image: url(photo-1563089145-599997674d42.jpeg);
   width:100%;
   height:100%;
-  opacity:0.9;
+  opacity:0.5;
   background-size: cover;
+  background-blend-mode: hard-light;
 }
 
 #bg_circle, #bg_circle2 {
   position:fixed;
   top:0;
   left:0;
+}
+
+
+
+
+
+* {
+margin: 0;
+/*   background-color: white; */
+}   
+
+
+html body {
+  background-color:black;
+  scroll-behavior: smooth;
+}
+
+#stageBlock {
+  background-color: black;
+  position:absolute;
+  width:100vw;
+  height:100%;
+  z-index: 99999;
+}
+
+#adHit {
+  background-color:#2add84;
+  position:absolute;
+  height:100vh;
+  width:100vw;
+  z-index: 105;
+  opacity:0
+
+}
+
+#main_img {
+pointer-events:none;
+}
+
+#main {
+  /* height:200vh; */
+  align-items: center; 
+  min-height:100vh;
+}
+
+#draggable-cont {
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    top:0;
+    background-color:black;
+    opacity:1;
+    z-index: 99999;
+    place-items: center;
+    z-index: 5000;
+}
+
+#img_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#frame1 {
+  display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+#frame2_copy, #subhead, #ead {
+    font-family: Poppins;
+    /* font-style: italic; */
+    max-width:500px;
+    font-size:3rem;
+    color:white;
+    text-align: center;
+    line-height:1.15;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:400px;
+}
+
+#subhead {
+    font-size:1.5rem;
+    height:auto;
+    margin-top:30px;
+    margin-bottom:100px;
+}
+
+
+
+#logo_logo {
+  display:flex;
+}
+
+
+#logo {
+    display:flex;
+}
+
+@media only screen and (orientation:portrait){
+  #turn{ display:none; }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {    
+  #mc_embed_signup { display: none; }
+  #main_img { display: none; }
+  #nav{ display:none; }
+  #turn{ display:block; }
+  }
+
+@media only screen and (orientation:portrait){
+  #turn{ display:block; }
 }

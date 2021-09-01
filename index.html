@@ -63,8 +63,7 @@
 <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5ee853d04398bdc9145d39487/cf967bfd75b619bee5ff89c17.js");</script>
 <script src="https://assets.codepen.io/910391/gsap.min.js"></script>
 <script src="https://assets.codepen.io/910391/Draggable.min.js"></script>
-<script src="https://assets.codepen.io/910391/InertiaPlugin.min.js">
-</script>
+<script src="https://assets.codepen.io/910391/InertiaPlugin.min.js"></script>
 <script src="https://assets.codepen.io/910391/DrawSVGPlugin.min.js"></script>
 <script src="https://assets.codepen.io/910391/CustomEase.min.js"></script>
 
@@ -85,111 +84,8 @@
   src: url(Randhu.otf);
 }
 
-* {
-margin: 0;
-/*   background-color: white; */
-}   
-
-
-html body {
-  background-color:black;
-  scroll-behavior: smooth;
-}
-
-#stageBlock {
-  background-color: black;
-  position:absolute;
-  width:100vw;
-  height:100%;
-  z-index: 99999;
-}
-
-#adHit {
-  background-color:#2add84;
-  position:absolute;
-  height:100vh;
-  width:100vw;
-  z-index: 105;
-  opacity:0
-
-}
-
-#main_img {
-pointer-events:none;
-}
-
-#main {
-  /* height:200vh; */
-  align-items: center; 
-  min-height:100vh;
-}
-
-#draggable-cont {
-    position:fixed;
-    width:100vw;
-    height:100vh;
-    top:0;
-    background-color:black;
-    opacity:1;
-    z-index: 99999;
-    place-items: center;
-    z-index: 5000;
-}
-
-#img_cont {
-  /* margin-top:110px; */
-}
-
-#frame1 {
-  display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    align-content: center;
-}
-
-#frame2_copy, #subhead, #ead {
-    font-family: Poppins;
-    max-width:500px;
-    font-size:3rem;
-    color:white;
-    text-align: center;
-    line-height:1.15;
-    margin-left:20px;
-    margin-right:20px;
-    margin-top:400px;
-}
-
-#subhead {
-    font-size:1.5rem;
-    height:auto;
-    margin-top:30px;
-    margin-bottom:100px;
-}
-
-
-
-#logo {
-    display:flex;
-}
-
-@media only screen and (orientation:portrait){
-  #turn{ display:none; }
-}
-
-
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {    
-  #mc_embed_signup { display: none; }
-  #main_img { display: none; }
-  #nav{ display:none; }
-  #turn{ display:block; }
-  }
-
-@media only screen and (orientation:portrait){
-  #turn{ display:block; }
-}
-
 </style>
+
 
 </head>
 
@@ -197,10 +93,6 @@ pointer-events:none;
 
     <div id="bg_circle" style="z-index:500; width: 300px; height: 300px; background-color: rgba(243, 161, 108, 1); border-radius: 9999px;"></div>
     <div id="bg_circle2" style="z-index:500; width: 500px; height: 500px; background-color: rgb(134, 34, 134); border-radius: 9999px;"></div>    
-
-<!-- <a href="https://www.twitter.com/edittrax/" target="_blank">
-  <div id="adHit"></div>
-</a> -->
 
 <div id="stageBlock"></div>
 
@@ -225,100 +117,121 @@ background-color: #f8f8f8;">
 
             <div id="status">Loading...</div>
 
+            <!-- <div id="logo">Loading...</div> -->
 
 
 
-            <div id="logo" class="mt-16 absolute flex-row justify-center p-3" style="top:0vh">
+
+          <div id="logo_logo" class="mt-16 absolute flex-row justify-center p-3" style="top:0vh">
 
 
-              <div id="content">
-  
-                  <div id="content_bg"></div>
+              <div id="content_logo">
+                <div id="content_bg_logo"></div>
           
-                  <div id="contentSplash">
-                      <!-- <p id="artist_name"><a href="https://en.wikipedia.org/wiki/Violet_(color)">
-                    EditTrax
-                    </a>
-                  </p> -->
-                  </div> 
-                      <!-- <p1 id="artist_name"><a href="https://en.wikipedia.org/wiki/Violet_(color)">
-                          PAUL JOHNSON
-                      </a></p1>
-          
-                      <p id="track_name"><a href="https://en.wikipedia.org/wiki/Violet_(color)">
-                          MUTHA' FUCKA
-                      </a></p> -->
-          
-          
-                  <!-- <div id="status">Loading...</div> -->
-                  <!-- <div id="status">Loading...</div> -->
-          <div id="totalDuration"></div>
-          <div id="progress"></div>
-          <button id="play-toggle" class="play" disabled></button>
-          <button id="close"></button>
-          <a href="" id="download-link"></a>
-          <div class="wrapper">
-              <div class="boxes"></div>
-          </div>
-  
-          <p id="artist_name">
-              EditTrax
-          </p>
-          <p id="nft_name">
-              .nft
-          </p>
-  
-  
-            
-          <div class="viewport"></div>
-          
+                  <div id="contentSplash_logo">
+
+                    <p id="artist_name_logo">
+                        EditTrax
+                    </p>
+                    <p id="nft_name_logo">
+                        .nft
+                    </p>                 
+                  <div class="viewport_logo"></div>          
               </div>
-
-            
-
-
-      
-
-
-
+            </div>
 
         </div>
 
-
-
-          <!-- <a href=" https://www.smartbarchicago.com/events/" target="_blank"> -->
-            <!-- <img id="main_img"
-            src="./assets/img/logo_no_dropshadow.png"
-            alt="..."
-            
-          /> -->
-      
-        </div>
-
-        <div id="img_cont" class="mt-32 sm:mt-0">
-        <!-- <div id="turn" style="color:#00FF00; font-size:40px; display:none">
-          Please rotate your device!
-        </div> -->
-
-        <div id="frame2_copy"> 
-
-Interactive Digital Audio Distribution
-        </div>
-
-        <div id="subhead"> 
-
-            Verifiably Scarce Audio Players Built On The Blockchain
-        </div>
-
-          <!-- <a href="https://twitter.com/edittrax/" target="_blank">
-          <img id="copy_img"
-          src="./assets/img/copy.png"
-          alt="..."
-          style="z-index:500; max-width:80vw; max-height:80vh; margin-left:auto; margin-right:auto"/>
-          </a> -->
-        </div>
+        
 
       <div>
+
+
+        <div id="frame2" class="flex-row justify-center p-3" style="">
+
+
+
+
+              
+
+
+
+
+
+          <!-- <a href=" https://www.twitter.com/edittrax" target="_blank">
+          <img id="main_img"
+          src="./assets/img/frame2.png"
+          alt="..."
+          style="z-index:500; top:50px; max-width:80vw; max-height:80vh; margin-left:auto; margin-right:auto"
+        />
+          </a> -->
+
+
+
+
+
+        <div id="img_cont" class="mt-32 sm:mt-0">
+          <!-- <div id="turn" style="color:#00FF00; font-size:40px; display:none">
+            Please rotate your device!
+          </div> -->
+          
+            <div id="frame2_copy"> 
+              Interactive Digital Audio Distribution
+            </div>
+  
+            <div id="subhead"> 
+                Verifiably Scarce Audio Players Built On The Blockchain
+            </div>
+  
+
+          </div>
+
+
+
+
+          <div id="content">
+  
+            <div id="content_bg"></div>
+    
+            <div id="contentSplash">
+                <!-- <p id="artist_name"><a href="https://en.wikipedia.org/wiki/Violet_(color)">
+              EditTrax
+              </a>
+            </p> -->
+            </div> 
+                <!-- <p1 id="artist_name"><a href="https://en.wikipedia.org/wiki/Violet_(color)">
+                    PAUL JOHNSON
+                </a></p1>
+    
+                <p id="track_name"><a href="https://en.wikipedia.org/wiki/Violet_(color)">
+                    MUTHA' FUCKA
+                </a></p> -->
+    
+    
+            <!-- <div id="status">Loading...</div> -->
+            <!-- <div id="status">Loading...</div> -->
+    <div id="totalDuration"></div>
+    <div id="progress"></div>
+    <button id="play-toggle" class="play" disabled></button>
+    <!-- <button id="close"></button> -->
+    <a href="" id="download-link"></a>
+    <div class="wrapper">
+        <div class="boxes"></div>
+    </div>
+
+    <!-- <p id="artist_name">
+        EditTrax
+    </p>
+    <p id="nft_name">
+        .nft
+    </p> -->
+
+
+      
+    <div class="viewport"></div>
+    
+        </div>
+
 
         
 
@@ -349,27 +262,63 @@ Interactive Digital Audio Distribution
 
             </div>
 
-            <div id="frame2" class="flex-row justify-center p-3" style="">
+
+
+
+          </div>
 
 
 
 
-              
 
 
 
 
 
-              <!-- <a href=" https://www.twitter.com/edittrax" target="_blank">
-              <img id="main_img"
-              src="./assets/img/frame2.png"
-              alt="..."
-              style="z-index:500; top:50px; max-width:80vw; max-height:80vh; margin-left:auto; margin-right:auto"
-            />
-              </a> -->
 
 
-            </div>
+
+
+
+
+
+
+
+
+            <!-- <div id="logo" class="mt-16 absolute flex-row justify-center p-3" style="top:0vh"> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         </div>
@@ -389,20 +338,23 @@ Interactive Digital Audio Distribution
 <script>
 
 
-gsap.set("#close", {autoAlpha:0});
-gsap.set("#render-toggle", {autoAlpha:0});
-gsap.set("#pause-toggle", {autoAlpha:0});
-gsap.set("#totalDuration", {autoAlpha:0});
-gsap.set("#play-toggle", {autoAlpha:0});
-gsap.set(".wrapper", {autoAlpha:0});
-gsap.set("#artist_name", {rotate:-15,pointerEvents:"none"});
-gsap.set("#contentSplash", {pointerEvents:"none"});
-gsap.set("#logo", {autoAlpha:1});
-gsap.set("#play-toggle", {x:60});
+// gsap.set("#close", {autoAlpha:0});
+// gsap.set("#render-toggle", {autoAlpha:0});
+// gsap.set("#pause-toggle", {autoAlpha:0});
+// gsap.set("#totalDuration", {autoAlpha:0});
+// gsap.set("#play-toggle", {autoAlpha:0});
+// gsap.set(".wrapper", {autoAlpha:0});
+// gsap.set("#artist_name_logo", {rotate:-15,pointerEvents:"none"});
+// gsap.set("#artist_name", {rotate:-15,pointerEvents:"none"});
+// gsap.set("#contentSplash", {pointerEvents:"none"});
+// gsap.set("#logo", {autoAlpha:1});
+// gsap.set("#play-toggle", {x:60});
+
+gsap.set("#content", {duration:0.2, height:336, width:"90vw", top:0})
 
 
-document.getElementById("content_bg").addEventListener("click", mouseOverPlayer);
-document.getElementById("close").addEventListener("click", mouseOffPlayer);
+// document.getElementById("content_bg").addEventListener("click", mouseOverPlayer);
+// document.getElementById("close").addEventListener("click", mouseOffPlayer);
 
 function mouseOverPlayer(){
     console.log("TEST")
@@ -424,7 +376,7 @@ gsap.set("#play-toggle", {autoAlpha:0.8});
 gsap.set("#nft_name", {duration:0.5, autoAlpha:0});
 gsap.to("#artist_name", {duration:0.2, top:-36, right:-72, scale:0.2}); 
 
-document.getElementById("frame2_copy").innerHTML = "Create, Download and Resell Custom Edits";
+// document.getElementById("frame2_copy").innerHTML = "Create, Download and Resell Custom Edits";
 
 
 
@@ -472,7 +424,7 @@ function tweenProperty(target, prop) {
 
 //array of client work
 let clientWorkExamples = [
-//   "#logo",
+  "#logo_logo",
 ];
 
 // call to draw signature
@@ -497,7 +449,7 @@ let drawSplashLogo = () => {
 gsap.delayedCall(0.1, drawSplashLogo);
 
 let startTheShow = () => {  
-gsap.from("#logo", {duration:1.8, autoAlpha:1, y:"+=15px", ease:"PowerEase1.InOut", /* rotate:randomNum, */ yoyo:true, repeat:-1});
+gsap.from("#logo_logo", {duration:1.8, autoAlpha:1, y:"+=15px", ease:"PowerEase1.InOut", /* rotate:randomNum, */ yoyo:true, repeat:-1});
 gsap.to("#stageBlock", {duration:1, autoAlpha:0, delay:0, ease: "Power1.easeOut"})
 gsap.from("#content", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.5); 
 gsap.from("#subhead", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.35); 

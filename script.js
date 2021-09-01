@@ -23,7 +23,7 @@ for (var i = 0, element; element = elements[i]; i++) {
     })
 }
 
-document.getElementById("close").addEventListener("click", stopPlayer);
+// document.getElementById("close").addEventListener("click", stopPlayer);
 
 function stopPlayer(){
     console.log("YES");
@@ -264,3 +264,14 @@ setInterval(() => {
 }, 16);
 
 validateToken(viewer, objkt);
+
+
+
+
+
+
+
+
+/////////////////////
+
+
