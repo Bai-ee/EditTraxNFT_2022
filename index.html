@@ -81,8 +81,14 @@
 
 <div id="stageBlock"></div>
 
-<nav id="nav" class="top-0 absolute z-50 w-full flex flex-col px-8 py-6" style="background-color:rgba(0, 0, 0, 0);">
-    <!-- <div class="h-auto w-auto bg-cover bg-center" style="height: 20vh; width:20vh; background-image: url(./assets/img/stack-logo2.png);"> -->
+<nav id="nav" class="top-0 px-8 py-6" style="">
+  
+  <div id="status">Loading...</div> 
+  <div id="totalDuration"></div>
+  <div id="progress"></div>
+  <button id="play-toggle" class="play" disabled></button>
+  
+  <!-- <div class="h-auto w-auto bg-cover bg-center" style="height: 20vh; width:20vh; background-image: url(./assets/img/stack-logo2.png);"> -->
 </nav>
 
 <main id="main" class="absolute w-full bg-cover bg-center flex justify-center" style="
@@ -90,7 +96,7 @@
 background-color: #f8f8f8;">
   <!-- background-image: url(./assets/img/IMG_2731.jpg);   -->
 
-    <div  class="" style="z-index: 500;">
+    <div  class="" style="pointer-events:none">
   <!-- <div  class="inline-flex flex-row space-y-3 items-center justify-end gap-y-0.5 content-between" style="z-index: 500;"> -->
 
 
@@ -100,14 +106,14 @@ background-color: #f8f8f8;">
 
 
 
-            <div id="status">Loading...</div>
+
 
             <!-- <div id="logo">Loading...</div> -->
 
 
 
 
-          <div id="logo_logo" class="mt-16 absolute flex-row justify-center p-3" style="top:0vh">
+          <div id="logo_logo" class="" style="top:0vh">
 
 
               <div id="content_logo">
@@ -129,7 +135,7 @@ background-color: #f8f8f8;">
 
         
 
-      <div>
+      <div id="2_cont" style="pointer-events:none;">
 
 
         <div id="frame2" class="flex-row justify-center p-3" style="">
@@ -155,7 +161,7 @@ background-color: #f8f8f8;">
 
 
 
-        <div id="img_cont" class="mt-32 sm:mt-0">
+        <div id="img_cont" class="sm:mt-0">
           <!-- <div id="turn" style="color:#00FF00; font-size:40px; display:none">
             Please rotate your device!
           </div> -->
@@ -178,26 +184,7 @@ background-color: #f8f8f8;">
   
             <div id="content_bg"></div>
     
-            <div id="contentSplash">
-                <!-- <p id="artist_name"><a href="https://en.wikipedia.org/wiki/Violet_(color)">
-              EditTrax
-              </a>
-            </p> -->
-            </div> 
-                <!-- <p1 id="artist_name"><a href="https://en.wikipedia.org/wiki/Violet_(color)">
-                    PAUL JOHNSON
-                </a></p1>
-    
-                <p id="track_name"><a href="https://en.wikipedia.org/wiki/Violet_(color)">
-                    MUTHA' FUCKA
-                </a></p> -->
-    
-    
-            <!-- <div id="status">Loading...</div> -->
-            <!-- <div id="status">Loading...</div> -->
-    <div id="totalDuration"></div>
-    <div id="progress"></div>
-    <button id="play-toggle" class="play" disabled></button>
+
     <!-- <button id="close"></button> -->
     <a href="" id="download-link"></a>
     <div class="wrapper">
@@ -223,31 +210,6 @@ background-color: #f8f8f8;">
         
 
 
-<!-- Begin Mailchimp Signup Form -->
-            <link href="./signup.css" rel="stylesheet" type="text/css">
-            <style type="text/css">
-              #mc_embed_signup{background:rgba(0, 0, 0, 0); clear:left; font:14px Helvetica,Arial,sans-serif; border-radius:5px}
-              /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-            </style>
-
-            <!-- MAIL CHIMP SIGN UP -->
-            <div id="mc_embed_signup" style="margin-top: -0px;">
-            
-              <form action="https://nft.us5.list-manage.com/subscribe/post?u=fc4f6490d102a2f385e8b3c64&amp;id=ed21c6a8cb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div class="clear" style="display: flex; z-index:99999">
-                  
-                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="ENTER EMAIL" required style="margin-right: 10px; font-color:red">
-                  <input type="submit" value="CONTACT" name="subscribe" id="mc-embedded-subscribe" class="button">
-                
-                  <a href="https://www.twitter.com/edittrax/" target="_blank">
-                    <div class="h-auto w-auto bg-cover bg-center mt-1 ml-0" style="margin-left:10px; height: 55px; width:55px;background-image: url(./assets/img/twitch_whtpng.png);">
-                    </div>
-                  </a>  
-
-              </form>
-
-            </div>
 
 
 
@@ -313,6 +275,71 @@ background-color: #f8f8f8;">
 
 
 
+
+
+
+        <footer id="footer" class="flex justify-center px-4 w-screen text-gray-100 bg-gray-800">
+          <div class="container py-6">
+              <h1 class="text-center text-lg font-bold lg:text-2xl">
+                  Join 31,000+ other and never miss <br> out on new tips, tutorials, and more.
+              </h1>
+
+
+
+<!-- Begin Mailchimp Signup Form -->
+            <link href="./signup.css" rel="stylesheet" type="text/css">
+            <style type="text/css">
+              #mc_embed_signup{background:rgba(0, 0, 0, 0); clear:left; font:14px Helvetica,Arial,sans-serif; border-radius:5px}
+              /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+            </style>
+
+            <!-- MAIL CHIMP SIGN UP -->
+            <div id="mc_embed_signup" style="margin-top: -0px;">
+            
+              <form action="https://nft.us5.list-manage.com/subscribe/post?u=fc4f6490d102a2f385e8b3c64&amp;id=ed21c6a8cb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div class="clear" style="display: flex; z-index:99999">
+                  
+                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="ENTER EMAIL" required style="margin-right: 10px; font-color:red">
+                  <input type="submit" value="CONTACT" name="subscribe" id="mc-embedded-subscribe" class="button">
+                
+                  <a href="https://www.twitter.com/edittrax/" target="_blank">
+                    <div class="h-auto w-auto bg-cover bg-center mt-1 ml-0" style="margin-left:10px; height: 55px; width:55px;background-image: url(./assets/img/twitch_whtpng.png);">
+                    </div>
+                  </a>  
+
+              </form>
+
+            </div>
+  
+              <!-- <div class="flex justify-center mt-6">
+                  <div class="bg-white rounded-lg">
+                      <div class="flex flex-wrap justify-between md:flex-row">
+                          <input type="email" class="m-1 p-2 appearance-none text-gray-700 text-sm focus:outline-none" placeholder="Enter your email">
+                          <button class="w-full m-1 p-2 text-sm bg-gray-800 rounded-lg font-semibold uppercase lg:w-auto">subscribe</button>
+                      </div>
+                  </div>
+              </div> -->
+  
+              <hr class="h-px mt-6 border-none">
+  
+              <div class="flex flex-col items-center justify-between mt-6 md:flex-row">
+                  <div id="footer_logo">
+                      <a href="#" class="text-xl font-bold">EditTrax.nft</a>
+                  </div>
+                  <div class="flex mt-4 md:m-0">
+                      <div class="-mx-4">
+                        <!-- <a href="#" class="px-4 text-sm">About</a>
+                        <a href="#" class="px-4 text-sm">Blog</a>
+                        <a href="#" class="px-4 text-sm">News</a>
+                        <a href="#" class="px-4 text-sm">Contact</a> -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
         
         
 
@@ -322,6 +349,9 @@ background-color: #f8f8f8;">
 <script src="scroll.js"></script>
 <script src="script.js"></script>
 </body>
+
+
+
 <script>
 
 

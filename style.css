@@ -24,8 +24,8 @@
 
 #status {
   color: white;
-  position: absolute;
-  width: 115px;
+  /* position: absolute; */
+  width: auto;
   text-align: center;
   font-size: 14px;
   top: 33px;
@@ -34,10 +34,10 @@
 
 #totalDuration {
   color: white;
-  position: absolute;
+  /* position: absolute; */
   font-family: Poppins;
   top: 0px;
-  width: 309px;
+  width: auto;
   text-align: center;
   font-size: 30px;
  
@@ -109,7 +109,7 @@ height:280px;
 }
 
 #play-toggle {
-  position: absolute;
+  /* position: absolute; */
   width:90px;
   height:90px;
   top:-22px;
@@ -118,6 +118,7 @@ height:280px;
   cursor: pointer;
   opacity:0.5;
   background-blend-mode:hard-light;
+  z-index: 600;
 }
 
 #info_cta {
@@ -476,6 +477,7 @@ pointer-events:none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  pointer-events: none;
 }
 
 #frame1 {
@@ -484,6 +486,8 @@ pointer-events:none;
     align-items: center;
     flex-direction: column;
     align-content: center;
+    pointer-events:none;
+    margin-top:17vh;
 }
 
 #frame2_copy, #subhead, #ead {
@@ -496,7 +500,12 @@ pointer-events:none;
     line-height:1.15;
     margin-left:20px;
     margin-right:20px;
-    margin-top:400px;
+    /* margin-top:400px; */
+    pointer-events: none;
+}
+
+#frame2 {
+  pointer-events: none;
 }
 
 #subhead {
@@ -511,11 +520,31 @@ pointer-events:none;
 #logo_logo {
   display:flex;
   cursor: grab;
+  z-index:490;
 }
 
 
 #logo {
     display:flex;
+    z-index: 100;
+}
+
+#nav {
+  height:100px;
+  width:100vw;
+  position:fixed;
+  z-index: 500;
+  /* background-color:yellow; */
+    background: rgba(255, 255, 255, 0.151);
+  backdrop-filter: saturate(100%) blur(10px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+#footer {
+  background: rgba(255, 255, 255, 0.151);
+  backdrop-filter: saturate(100%) blur(10px);
 }
 
 @media only screen and (orientation:portrait){
