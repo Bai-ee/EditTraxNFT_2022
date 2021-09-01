@@ -9,6 +9,8 @@ let playToggle = document.querySelector("#play-toggle");
 let downloadButton = document.querySelector("#download");
 let status = document.querySelector("#status");
 
+
+
 let elements = document.querySelectorAll("input[type=number]");
 
 for (var i = 0, element; element = elements[i]; i++) {
@@ -20,6 +22,15 @@ for (var i = 0, element; element = elements[i]; i++) {
         updatePlayClass();
     })
 }
+
+document.getElementById("close").addEventListener("click", stopPlayer);
+
+function stopPlayer(){
+    console.log("YES");
+    Tone.Transport.stop();
+
+}
+
 
 function enableElements() {
     for (var i = 0, element; element = elements[i]; i++) {
@@ -162,6 +173,10 @@ autoStop = function() {
     Tone.Transport.stop();
     updatePlayClass();
 }
+
+
+
+
 
 playToggle.dataset.index = renderedBufferIndex;
 
