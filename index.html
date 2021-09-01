@@ -34,6 +34,12 @@
 <!-- Publisher's Facebook Page  -->
 <meta property="article:publisher" content="Edit Trax" />
 
+<script src="Tone.js"></script>
+<script src="bufferToWav.js"></script>
+<script src="axios.min.js"></script>
+<script src="gsap.min.js"></script>
+<script src="Draggable.min.js"></script>
+<link type="text/css" rel="stylesheet" href="style.css" />
 <link rel="shortcut icon" href="./assets/img/favicon_et.png" />
 <link
   rel="apple-touch-icon"
@@ -63,6 +69,21 @@
 <script src="https://assets.codepen.io/910391/CustomEase.min.js"></script>
 
 <style>
+
+@font-face {
+  font-family: Poppins;
+  src: url(Poppins-Black.otf);
+}
+
+@font-face {
+  font-family: Digitalism;
+  src: url(digitalism.ttf);
+}
+
+@font-face {
+  font-family: Randhu;
+  src: url(Randhu.otf);
+}
 
 * {
 margin: 0;
@@ -98,8 +119,9 @@ pointer-events:none;
 }
 
 #main {
-  /* height:150vh;
-  align-items: center; */
+  /* height:200vh; */
+  align-items: center; 
+  min-height:100vh;
 }
 
 #draggable-cont {
@@ -126,6 +148,21 @@ pointer-events:none;
     align-content: center;
 }
 
+#frame2_copy {
+    font-family: Poppins;
+    max-width:500px;
+    font-size:3rem;
+    color:white;
+    text-align: center;
+    line-height:1.15;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:400px;
+}
+#logo {
+    display:flex;
+}
+
 @media only screen and (orientation:portrait){
   #turn{ display:none; }
 }
@@ -147,6 +184,9 @@ pointer-events:none;
 </head>
 
 <body class="text-gray-800 antialiased">
+
+    <div id="bg_circle" style="z-index:500; width: 300px; height: 300px; background-color: rgba(243, 161, 108, 1); border-radius: 9999px;"></div>
+    <div id="bg_circle2" style="z-index:500; width: 500px; height: 500px; background-color: rgb(134, 34, 134); border-radius: 9999px;"></div>    
 
 <a href="https://www.twitter.com/edittrax/" target="_blank">
   <div id="adHit"></div>
@@ -170,14 +210,65 @@ background-color: #f8f8f8;">
     <!-- <div id="frame1" class="flex-row justify-center p-3" style=""> -->
       <div id="frame1" class="" style="">
 
+
+            <div id="status">Loading...</div>
+
+
         <div id="logo" class="mt-16 absolute flex-row justify-center p-3" style="top:0vh">
 
+
+
+            <div id="content">
+
+                <div id="content_bg"></div>
+        
+                <div id="contentSplash">
+                    <!-- <p id="artist_name"><a href="https://en.wikipedia.org/wiki/Violet_(color)">
+                  EditTrax
+                  </a>
+                </p> -->
+                </div> 
+                    <!-- <p1 id="artist_name"><a href="https://en.wikipedia.org/wiki/Violet_(color)">
+                        PAUL JOHNSON
+                    </a></p1>
+        
+                    <p id="track_name"><a href="https://en.wikipedia.org/wiki/Violet_(color)">
+                        MUTHA' FUCKA
+                    </a></p> -->
+        
+        
+                <!-- <div id="status">Loading...</div> -->
+                <!-- <div id="status">Loading...</div> -->
+        <div id="totalDuration"></div>
+        <div id="progress"></div>
+        <button id="play-toggle" class="play" disabled></button>
+        <button id="close"></button>
+        <a href="" id="download-link"></a>
+        <p id="artist_name">
+            EditTrax
+        </p>
+        <p id="nft_name">
+            .nft
+        </p>
+
+        <div class="wrapper">
+            <div class="boxes"></div>
+        </div>
+          
+        <div class="viewport"></div>
+        
+            </div>
+
+        </div>
+
+
+
           <!-- <a href=" https://www.smartbarchicago.com/events/" target="_blank"> -->
-            <img id="main_img"
+            <!-- <img id="main_img"
             src="./assets/img/logo_no_dropshadow.png"
             alt="..."
             
-          />
+          /> -->
       
         </div>
 
@@ -195,7 +286,10 @@ background-color: #f8f8f8;">
           />
           </a>
         </div>
+
       <div>
+
+        
 
 
 <!-- Begin Mailchimp Signup Form -->
@@ -212,7 +306,7 @@ background-color: #f8f8f8;">
               <form action="https://nft.us5.list-manage.com/subscribe/post?u=fc4f6490d102a2f385e8b3c64&amp;id=ed21c6a8cb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div class="clear" style="display: flex; z-index:99999">
                   
-                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="ENTER EMAIL" required style="margin-right: 10px; font-color:red">
+                  <!-- <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="ENTER EMAIL" required style="margin-right: 10px; font-color:red"> -->
                   <input type="submit" value="CONTACT" name="subscribe" id="mc-embedded-subscribe" class="button">
                 
                   <a href="https://www.twitter.com/edittrax/" target="_blank">
@@ -226,25 +320,106 @@ background-color: #f8f8f8;">
 
             <div id="frame2" class="flex-row justify-center p-3" style="">
 
-              <a href=" https://www.twitter.com/edittrax" target="_blank">
+
+
+
+
+
+
+
+            <div id="frame2_copy"> 
+
+                Create & Download Custom Edits Of A Preloaded Track
+            </div>
+              
+
+
+
+
+
+              <!-- <a href=" https://www.twitter.com/edittrax" target="_blank">
               <img id="main_img"
               src="./assets/img/frame2.png"
               alt="..."
               style="z-index:500; top:50px; max-width:80vw; max-height:80vh; margin-left:auto; margin-right:auto"
             />
-              </a>
-              
-              
+              </a> -->
 
+
+            </div>
+
+
+        </div>
+
+
+
+
+        
+        
+
+
+              
+              
+<script src="scroll.js"></script>
+<script src="script.js"></script>
 </body>
 <script>
 
 
+gsap.set("#close", {autoAlpha:0});
+gsap.set("#render-toggle", {autoAlpha:0});
+gsap.set("#pause-toggle", {autoAlpha:0});
+gsap.set("#totalDuration", {autoAlpha:0});
+gsap.set("#play-toggle", {autoAlpha:0});
+gsap.set(".wrapper", {autoAlpha:0});
+gsap.set("#artist_name", {rotate:-15,pointerEvents:"none"});
+gsap.set("#contentSplash", {pointerEvents:"none"});
 
-function mouseOverPlayer(){  
+
+
+document.getElementById("content_bg").addEventListener("click", mouseOverPlayer);
+document.getElementById("close").addEventListener("click", mouseOffPlayer);
+
+function mouseOverPlayer(){
+    console.log("TEST")
+
+    gsap.set(".wrapper", {autoAlpha:1, pointerEvents:"auto"});
+    gsap.to("#content", {duration:0.2, height:"90vh", width:"90vw", top:0})
+    gsap.to("#contentBlock", {duration: 0.2, autoAlpha:0});
+    // gsap.from(".wrapper", {duration: 2, x:"100vw",autoAlpha:0});
+    gsap.set("#mc_embed_signup", {autoAlpha:0});
+    gsap.set("#copy_img", {autoAlpha:0});
+    // gsap.to("#frame1", {duration:0.2, autoAlpha:0, ease: "Power3.easeOut"}); 
+
+    gsap.set("#close", {autoAlpha:1});
+gsap.set("#render-toggle", {autoAlpha:1});
+gsap.set("#pause-toggle", {autoAlpha:1});
+gsap.set("#totalDuration", {autoAlpha:1});
+gsap.set("#play-toggle", {autoAlpha:0.8});
+// gsap.set("#content_bg", {pointerEvents: "none"});
+gsap.set("#nft_name", {duration:0.5, autoAlpha:0});
+gsap.to("#artist_name", {duration:0.2, top:0, scale:0.5});
+
+
+
+
+    
 }
 
 function mouseOffPlayer(){
+    // gsap.to("#content", {duration:0.2, height:"90vh", width:"90vw", top:0})
+    console.log("TEST")
+    gsap.to("#content", {duration:0.2, width:336, height:280})
+    gsap.to("#contentBlock", {duration: 0.2, autoAlpha:1});
+    gsap.set("#close", {autoAlpha:0});
+gsap.set("#totalDuration", {autoAlpha:0});
+gsap.set("#play-toggle", {autoAlpha:0});
+gsap.set("#content_bg", {pointerEvents: "auto"});
+gsap.to("#nft_name", {duration:0.5, autoAlpha:1});
+gsap.set(".wrapper", {autoAlpha:0, pointerEvents:"none"});
+gsap.to("#artist_name", {duration:0.2, top:77, scale:1});
+gsap.set("#copy_img", {autoAlpha:1});
+gsap.set("#mc_embed_signup", {autoAlpha:1});
 
 }
 
@@ -309,6 +484,15 @@ Draggable.create(clientWorkExamples, {
   dragResistance: 0.4,
   edgeResistance: 0.3,
 });
+
+
+// gsap.set("#content", {height:"70%", width:"70%"})
+gsap.set("#bg_circle", {x:-500})
+gsap.set("#bg_circle2", {x:"110vw", y:"110vh"})
+
+var tl = gsap.timeline();
+tl.to("#bg_circle", {duration: 50,scale:3, x:"100vw", y:"100vh", delay:1, yoyo:true, repeat:-1},0);
+tl.to("#bg_circle2", {duration: 50, scale:3, x:-300, y:-300, yoyo:true, repeat:-1},0);
 
   </script>
 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>Housepit</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image" content="thumbnail.jpg" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+	<script src="Tone.js"></script>
+    <script src="bufferToWav.js"></script>
+    <script src="axios.min.js"></script>
+    <script src="gsap.min.js""></script>
+    <script src="Draggable.min.js"></script>
+</head>
+<body>
+	<div id="content">
+        <div id="status">Loading...</div>
+        <div id="totalDuration"></div>
+        <div id="progress"></div>
+        <button id="play-toggle" class="play" disabled></button>
+        <button id="download" disabled></button>
+        <a href="" id="download-link"></a>
+
+        <a id="info_cta" href="http://edittrax.nft" target="_blank"><img src="info_cta_img.png"></a> 
+
+        <div class="wrapper">
+            <div class="boxes"></div>
+        </div>
+          
+        <div class="viewport"></div>
+	</div>
+
+    <script src="scroll.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

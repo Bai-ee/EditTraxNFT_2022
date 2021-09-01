@@ -16,7 +16,7 @@
   #mc_embed_signup {z-index:9999999}
   #mc_embed_signup form {display:block; position:relative; right:0; text-align:center; padding:0px 0px 0px 3%;}
   #mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
-  #mc_embed_signup input {background-color:#ffffff; border:0px solid rgba(0, 0, 0, 0.822); -webkit-appearance:none;}
+  #mc_embed_signup input {border:0px solid rgba(0, 0, 0, 0.822); -webkit-appearance:none;}
   #mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
   #mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
   #mc_embed_signup input:focus {border-color:rgb(87, 21, 21);}

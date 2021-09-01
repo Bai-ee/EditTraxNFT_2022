@@ -1,0 +1,323 @@
+#stageBlock {
+  background-color: black;
+  z-index: 99999;
+  width: 100vw;
+  height: 100vh;
+  position:absolute;
+}
+
+#status {
+  color: white;
+  position: absolute;
+  width: 115px;
+  text-align: center;
+  font-size: 14px;
+  top: 33px;
+
+}
+
+#totalDuration {
+  color: white;
+  position: absolute;
+  font-family: Poppins;
+  top: 5px;
+  width: 309px;
+  text-align: center;
+  font-size: 60px;
+  right:20px;
+  /* align-self; ; */
+  /* background-color: yellow; */
+  
+}
+
+#content {
+  position: relative;
+  pointer-events: auto;
+  cursor: pointer;
+	margin: auto;
+  background-color: red;
+  border-radius:30px;
+width: 336px;
+height:280px;
+  /* max-width:300px;  */
+  background-position: top; 
+  background-repeat: no-repeat; 
+  background-size: fit; 
+  overflow:hidden;
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.151);
+  backdrop-filter: saturate(100%) blur(10px);
+
+}
+
+#info_cta {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #9F495E;
+}
+
+#play-toggle, #pause-toggle, #render-toggle{
+  background-color: transparent;
+  border-width: 0px;
+  z-index: 500;
+  right:20;
+  
+}
+
+#play-toggle {
+  position: absolute;
+  width:400px;
+  height:400px;
+  top:10%;
+  background-size: cover;
+  background-image: url(play_img.png);
+  cursor: pointer;
+  opacity:0.5;
+  background-blend-mode:hard-light;
+}
+
+#info_cta {
+  position: absolute;
+  width:50px;
+  height:50px;
+  top: 29px;
+  right: 31px;
+  background-color:transparent;
+  border-radius:100px;
+}
+
+#menu {
+  position: absolute;
+  width:50px;
+  height:50px;
+  top: 29px;
+  left: 31px;
+  background-color:transparent;
+  border-radius:100px;
+}
+
+#pause-toggle {
+  position: absolute;
+  width:45px;
+  height:45px;
+  background-size: cover;
+  right: 20px;
+  top: 120px;
+  background-image: url(pause_button.png);
+  cursor: pointer;
+}
+
+#render-toggle {
+  position: absolute;
+  width:45px;
+  height:45px;
+  background-size: cover;
+  left: 20px;
+  top: 20px;
+  background-image: url(render_button.png);
+  cursor: pointer;
+}
+
+#play-toggle.play {
+  background-image: url(play_img.png);
+  background-blend-mode: hard-light;
+  opacity:0;
+}
+
+#play-toggle.stop {
+  background-image: url(pause_button.png);
+}
+
+#close {
+  position: absolute;
+  width:90px;
+  animation-play-state: paused;
+  height:90px;
+  background-size: cover;
+  left: 0px;
+  top: 0px;
+  border: 0;
+  background-image: url(close.png);
+  cursor: pointer;
+  background-color:transparent;
+}
+
+.preview {
+  position: absolute;
+  bottom: 9px;
+  left: 10px;
+  height: 51px;
+  width: 202px;
+  border: 0;
+  background-color:transparent;
+  cursor: pointer;
+  z-index: 5;
+  background-position: top; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+
+}
+
+.preview.play {
+  background-image: url(component_preview_img.png);
+  background-color:transparent;
+}
+
+.preview.stop {
+  background-image: url(component_preview_stop_img.png);
+  background-color:transparent;
+}
+
+.previewDuration {
+  position: absolute;
+  width: 50px;
+  bottom: 100px;
+  text-align: center;
+  left: 83px;
+  font-size: 17px;
+  line-height: 1;
+  color:white;
+  text-align: center;
+  top:197px;
+}
+
+input.repeat {
+  position: absolute;
+  width: 140px;
+  top: 89px;
+  left: 43px;
+  background-color: #4caf4f00;
+  border: none;
+  color: white;
+  /* padding: 16px 32px; */
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size:38px;
+  text-align: center;
+  font-family: Poppins;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+/* scroll */
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  bottom: 20px;  
+  left: 50%;
+  position: absolute;
+}
+
+.viewport {
+  position: absolute;
+  pointer-events: none;  
+  width: 100%;
+  bottom: 100px;
+  left: 50%;
+}
+
+.num {
+  width:100%;
+  position: absolute;
+  color: #555; 
+  color: #fafafa; 
+  font-size: 23px;
+  touch-action: pan-y;
+  text-align: center;
+  align-self: center;
+  line-height: 1;
+  top:20px;
+}
+
+.box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxes {
+  position: relative;
+}
+
+#artist_name, #track_name, #nft_name {
+  position: absolute;
+  z-index:5;
+  font-size:55px;
+  text-align: left;
+  font-family: Randhu;
+  color:white;
+}
+
+
+#artist_name {
+  font-size:80px;
+  text-align:center;
+  font-family: Randhu;
+}
+
+#nft_name {
+  font-size:30px;
+  font-family: Poppins;
+  top:146px;
+  left:212px;
+
+}
+
+#track_name {
+  top: 120px;
+  font-size:27px;
+  top:150px;
+  font-family: Poppins;
+}
+
+
+#contentSplash {
+  background-color: rgb(0, 0, 0);
+  max-width:50%;
+  min-height:50%;
+  width:200px;
+  height:200px;
+  z-index: 20;
+  position:absolute;
+  border-radius: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-family: Randhu;
+  background-color: transparent;
+  /* background-color: yellow; */
+}
+
+#content_bg {
+  background-image: url(photo-1563089145-599997674d42.jpeg);
+  width:100%;
+  height:100%;
+  opacity:0.7;
+  background-size: cover;
+}
+
+#bg_circle, #bg_circle2 {
+  position:fixed;
+  top:0;
+  left:0;
+}
