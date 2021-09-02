@@ -571,7 +571,7 @@ html body {
   pointer-events:auto
 }
 
-#footerText, #footerText_sub, #footerText_contact {
+#footerHead, #footerSub, #footerHead3 {
   margin-top:100px;
   margin-bottom:100px;
   font-size:3rem;
@@ -579,20 +579,7 @@ html body {
   line-height:1.15;
 }
 
-#footerText_sub {
-  font-size:1.5rem;
-  margin-top:-20px;
-  margin-bottom:30px;
-}
-
-#footerText_contact {
-  margin-top:60px;
-  margin-bottom:30px;
-  font-family: Randhu;
-  font-size:5rem;
-}
-
-#footerText {
+#footerHead {
   font-size:3rem;
   height:auto;
   margin-top:100px;
@@ -600,6 +587,21 @@ html body {
   text-align:center;
   font-family: Poppins;
 }
+
+#footerSub {
+  margin-top:60px;
+  margin-bottom:30px;
+  font-family: Randhu;
+  font-size:5rem;
+}
+
+#footerHead3 {
+  font-size:1.5rem;
+  margin-top:-20px;
+  margin-bottom:30px;
+}
+
+
 
 @media only screen and (orientation:portrait){
   #turn{ display:none; }
