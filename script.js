@@ -45,14 +45,14 @@ const trackDir = "";
 const bpm = 120;
 
 const parts = [
-    { file: "1_Bai-ee_Thats_My_Sista.mp3", length: 16, loop: 1 },
-    { file: "2_Bai-ee_Thats_My_Sista.mp3", length: 32, loop: 1 },
-    { file: "3_Bai-ee_Thats_My_Sista.mp3", length: 64, loop: 1 },
-    { file: "4_Bai-ee_Thats_My_Sista.mp3", length: 32, loop: 1 },
-    { file: "5_Bai-ee_Thats_My_Sista.mp3", length: 16, loop: 1 },
-    { file: "8_Bai-ee_Thats_My_Sista.mp3", length: 8, loop: 1 },
-    { file: "6_Bai-ee_Thats_My_Sista.mp3", length: 16, loop: 1 },
-    { file: "7_Bai-ee_Thats_My_Sista.mp3", length: 16, loop: 1 },
+    { file: "8_Bai-ee_Thats_My_Sista.mp3", length: 8, loop: 0 },
+    { file: "7_Bai-ee_Thats_My_Sista.mp3", length: 16, loop: 0 },
+    { file: "5_Bai-ee_Thats_My_Sista.mp3", length: 16, loop: 0 },
+    { file: "4_Bai-ee_Thats_My_Sista.mp3", length: 32, loop: 0 },
+    { file: "1_Bai-ee_Thats_My_Sista.mp3", length: 16, loop: 0 },
+    { file: "2_Bai-ee_Thats_My_Sista.mp3", length: 32, loop: 0 },
+    { file: "3_Bai-ee_Thats_My_Sista.mp3", length: 64, loop: 0 },
+    { file: "6_Bai-ee_Thats_My_Sista.mp3", length: 16, loop: 0 },
 ];
 
 const buffers = parts.map(part => new Tone.Buffer({ url: trackDir + part.file }));
@@ -61,7 +61,7 @@ var activeBufferIndex = -1;
 var renderedBufferIndex = 99;
 
 Tone.loaded().then(function () {
-    status.innerHTML = "BAI-EE | Edit Trax Demo"
+    status.innerHTML = "PRE ALPHA"
     playToggle.disabled = false;
     enableElements();
     updateParts();

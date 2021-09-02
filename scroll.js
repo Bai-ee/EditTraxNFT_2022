@@ -22,7 +22,7 @@ for (let i = 1; i <= numBoxes; i++) {
   const src = "component_bg_img.png"
   const num = document.createElement("div");
   num.className = "num";
-  num.innerText = i;
+  num.innerText = "PART " + i;
   
   const img = document.createElement("img");
   img.src = src;

@@ -74,10 +74,8 @@
   <div id="bg_circle2" style="z-index:500; width: 500px; height: 500px; background-color: rgb(134, 34, 134); border-radius: 9999px;"></div>    
 
   <nav id="nav" class="top-0 px-8 py-6" style="">
-    <button id="play-toggle" class="play" disabled></button>
+    <!-- <button id="play-toggle" class="play" disabled></button> -->
     <div id="status">Loading...</div> 
-    <div id="totalDuration"></div>
-    <div id="progress"></div>
   </nav>
 
   <main id="main" class="absolute w-full bg-cover bg-center flex justify-center" style="
@@ -102,29 +100,41 @@
           <div id="frame2" class="flex-row justify-center p-3" style="">
             <div id="img_cont" class="sm:mt-0">
                 <div id="frame2_copy"> 
-                  Interactive Digital Audio Distribution
+                  Interactive Audio NFTs Tracked On <a href="https://tezos.com/">A Clean Blockchain</a>
                 </div>
-                <div id="subhead"> 
-                    Verifiably Scarce Audio Players Built On The Blockchain
-                </div>
-            </div>        
+                <div id="playcont" class="flex flex-col sm:flex-row">
+                  <div id="details"> 
+                    Create & Download Edits Of A Preloaded Track From Within Our Customized Players
+                  </div>
+                  <div id="player_controls"> 
+                    <button id="play-toggle" class="play" disabled></button>
+                    <div id="totalDuration"></div>
+                    <div id="download"></div>
+                    <div id="progress"></div>  
+                  </div>
+              </div>              
+            </div>
+                  
             <div id="content">
               <div id="content_bg"></div>
               <a href="" id="download-link"></a>
-              <div class="wrapper">
+              <div class="wrapper" id="wrapper">
               <div class="boxes"></div>
             </div>
           <div class="viewport"></div>    
         </div>
       </div>
-      <div id="subhead2" style="text-align:center"> 
-          Create & Download Custom Edits Of A Preloaded Stereo Track. <br>Collect & Trade Players Like Vinyl
-      </div>
-      <div id="footerText" style="text-align:center"> 
-        Create & Download Custom Edits Of A Preloaded Stereo Track. <br>Collect & Trade Players Like Vinyl
-      </div>
-
     </div>
+
+    <div id="frame2_copy"> 
+      Collect & Sell Players Like Vinyl
+    </div>
+    <div id="details2"> 
+      Fans are djs, podcasters, infuencers, collectors and content creators.
+      <br>Provide tools that streamline their process and grow your community!
+  
+    </div>
+    <div id="player_controls"> 
     
     <footer id="footer" class="flex justify-center px-4 w-screen text-white bg-gray-800">
           <div class="container py-6">
@@ -133,7 +143,7 @@
 
               <h1 id="footerSub" class="text-center text-lg font-bold lg:text-2xl">CONTACT:</h1>
 
-              <h1 id="footerHead3" class="text-center lg:text-2xl">BRYAN BALLI<br> CREATIVE DEVELOPER</h1>
+              <!-- <h1 id="footerHead3" class="text-center lg:text-2xl">BRYAN BALLI<br> CREATIVE DEVELOPER</h1> -->
 
 <!-- Begin Mailchimp Signup Form -->
             <link href="./signup.css" rel="stylesheet" type="text/css">
@@ -144,7 +154,7 @@
             </style>
 
             <!-- MAIL CHIMP SIGN UP -->
-            <div id="mc_embed_signup" style="margin-top: -0px;">
+            <div id="mc_embed_signup" style="margin-top: -0px;"> 
             
               <form action="https://nft.us5.list-manage.com/subscribe/post?u=fc4f6490d102a2f385e8b3c64&amp;id=ed21c6a8cb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div class="clear flex-col" style="display: flex; z-index:99999; align-items:center">
@@ -235,53 +245,114 @@ gsap.set("#artist_name_logo", {rotate:-15,pointerEvents:"none"});
 
 gsap.set("#content", {duration:0.2, height:336, width:"90vw", top:0})
 
+gsap.to("#circle_logo", {duration:1000, rotate:2000})
 
-// document.getElementById("content_bg").addEventListener("click", mouseOverPlayer);
-// document.getElementById("close").addEventListener("click", mouseOffPlayer);
+
+document.getElementById("download").addEventListener("mouseover", mouseOverPlayer);
+document.getElementById("download").addEventListener("mouseout", mouseOffPlayer);
+document.getElementById("play-toggle").addEventListener("mouseover", mouseOnPlay);
+document.getElementById("play-toggle").addEventListener("mouseout", mouseOffPlayer);
+document.getElementById("totalDuration").addEventListener("mouseover", mouseOnDur);
+document.getElementById("totalDuration").addEventListener("mouseout", mouseOffPlayer);
+document.getElementById("wrapper").addEventListener("mouseover", mouseOnWrap);
+document.getElementById("wrapper").addEventListener("mouseout", mouseOffPlayer);
+// document.getElementById("preview").addEventListener("mouseover", mouseOnPreview);
+// document.getElementById("preview").addEventListener("mouseout", mouseOffPlayer);
+
+function mouseOnWrap(){
+  document.getElementById("details").innerHTML = "Set The Loop Number For Each Part Of The Track & Preview";
+}
+
+function mouseOnDur(){
+  document.getElementById("details").innerHTML = "Total Time Duration Of Your Edit";
+}
+
+
+function mouseOnDl(){
+  document.getElementById("details").innerHTML = "Purchase The Player To Download Your Edit";
+}
+
+function mouseOffDl(){
+  document.getElementById("details").innerHTML = "Purchase The Player To Download Your Edit";
+}
+
+function mouseOnPlay(){
+  document.getElementById("details").innerHTML = "Play Your Edit";
+}
+
+function mouseOffPlay(){
+  document.getElementById("details").innerHTML = "Purchase The Player To Download Your Edit";
+}
+
+function mouseOnPreview(){
+  document.getElementById("details").innerHTML = "Purchase The Player To Download Your Edit";
+}
+
+function mouseOffPreview(){
+  document.getElementById("details").innerHTML = "Purchase The Player To Download Your Edit";
+}
+
+function mouseOnPreview(){
+  document.getElementById("details").innerHTML = "Purchase The Player To Download Your Edit";
+}
+
+function mouseOffPreview(){
+  document.getElementById("details").innerHTML = "Purchase The Player To Download Your Edit";
+}
+
+
+
+
+
+
+
+
+
 
 function mouseOverPlayer(){
-    console.log("TEST")
+//     console.log("TEST")
 
-    gsap.set(".wrapper", {autoAlpha:1, pointerEvents:"auto"});
-    gsap.to("#content", {duration:0.2, height:336, width:"90vw", top:0})
-    gsap.to("#contentBlock", {duration: 0.2, autoAlpha:0});
-    // gsap.from(".wrapper", {duration: 2, x:"100vw",autoAlpha:0});
-    gsap.set("#mc_embed_signup", {autoAlpha:0});
-    gsap.set("#copy_img", {autoAlpha:0});
-    // gsap.to("#frame1", {duration:0.2, autoAlpha:0, ease: "Power3.easeOut"}); 
+//     gsap.set(".wrapper", {autoAlpha:1, pointerEvents:"auto"});
+//     gsap.to("#content", {duration:0.2, height:336, width:"90vw", top:0})
+//     gsap.to("#contentBlock", {duration: 0.2, autoAlpha:0});
+//     // gsap.from(".wrapper", {duration: 2, x:"100vw",autoAlpha:0});
+//     gsap.set("#mc_embed_signup", {autoAlpha:0});
+//     gsap.set("#copy_img", {autoAlpha:0});
+//     // gsap.to("#frame1", {duration:0.2, autoAlpha:0, ease: "Power3.easeOut"}); 
 
-    gsap.set("#close", {autoAlpha:1});
-gsap.set("#render-toggle", {autoAlpha:1});
-gsap.set("#pause-toggle", {autoAlpha:1});
-gsap.set("#totalDuration", {autoAlpha:1});
-gsap.set("#play-toggle", {autoAlpha:0.8});
-// gsap.set("#content_bg", {pointerEvents: "none"});
-gsap.set("#nft_name", {duration:0.5, autoAlpha:0});
-gsap.to("#artist_name", {duration:0.2, top:-36, right:-72, scale:0.2}); 
+//     gsap.set("#close", {autoAlpha:1});
+// gsap.set("#render-toggle", {autoAlpha:1});
+// gsap.set("#pause-toggle", {autoAlpha:1});
+// gsap.set("#totalDuration", {autoAlpha:1});
+// gsap.set("#play-toggle", {autoAlpha:0.8});
+// // gsap.set("#content_bg", {pointerEvents: "none"});
+// gsap.set("#nft_name", {duration:0.5, autoAlpha:0});
+// gsap.to("#artist_name", {duration:0.2, top:-36, right:-72, scale:0.2}); 
 
 // document.getElementById("frame2_copy").innerHTML = "Create, Download and Resell Custom Edits";
 
+document.getElementById("details").innerHTML = "Purchase The Player To Download Your Edit";
 
 
     
 }
 
 function mouseOffPlayer(){
-    // gsap.to("#content", {duration:0.2, height:"90vh", width:"90vw", top:0})
-    console.log("TEST")
-    gsap.to("#content", {duration:0.2, width:336, height:280})
-    gsap.to("#contentBlock", {duration: 0.2, autoAlpha:1});
-    gsap.set("#close", {autoAlpha:0});
-gsap.set("#totalDuration", {autoAlpha:0});
-gsap.set("#play-toggle", {autoAlpha:0});
-gsap.set("#content_bg", {pointerEvents: "auto"});
-gsap.to("#nft_name", {duration:0.5, autoAlpha:1});
-gsap.set(".wrapper", {autoAlpha:0, pointerEvents:"none"});
-gsap.to("#artist_name", {duration:0.2, scale:1,top:79, right:44});
-gsap.set("#copy_img", {autoAlpha:1});
-gsap.set("#mc_embed_signup", {autoAlpha:1});
+//     // gsap.to("#content", {duration:0.2, height:"90vh", width:"90vw", top:0})
+//     console.log("TEST")
+//     gsap.to("#content", {duration:0.2, width:336, height:280})
+//     gsap.to("#contentBlock", {duration: 0.2, autoAlpha:1});
+//     gsap.set("#close", {autoAlpha:0});
+// gsap.set("#totalDuration", {autoAlpha:0});
+// gsap.set("#play-toggle", {autoAlpha:0});
+// gsap.set("#content_bg", {pointerEvents: "auto"});
+// gsap.to("#nft_name", {duration:0.5, autoAlpha:1});
+// gsap.set(".wrapper", {autoAlpha:0, pointerEvents:"none"});
+// gsap.to("#artist_name", {duration:0.2, scale:1,top:79, right:44});
+// gsap.set("#copy_img", {autoAlpha:1});
+// gsap.set("#mc_embed_signup", {autoAlpha:1});
 
-document.getElementById("frame2_copy").innerHTML = "Interactive Digital Audio Distribution";
+document.getElementById("details").innerHTML = "Create & Download Edits Of A Preloaded Track From Within Our Customized Players";
 
 }
 
@@ -336,9 +407,11 @@ gsap.from("#logo_logo", {duration:1.8, autoAlpha:1, y:"+=15px", ease:"PowerEase1
 gsap.to("#stageBlock", {duration:1, autoAlpha:0, delay:0, ease: "Power1.easeOut"})
 gsap.from("#content", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.5); 
 gsap.from("#subhead", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.35); 
+gsap.from("#playcont", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.35); 
 gsap.from("#frame2_copy", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.45); 
 gsap.from("#mc_embed_signup", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.75); 
 gsap.to("#comp_img", {duration:0.5, x:"+=20vw", ease: "Power3.easeOut", opacity:0.5},0.75); 
+
 }
 
 //create draggable
@@ -346,7 +419,7 @@ Draggable.create(clientWorkExamples, {
   // type: 'rotation',
   throwProps: true,
   bounds: document.getElementById("main"),
-  dragResistance: 0.4,
+  dragResistance: 0.1,
   edgeResistance: 0.3,
 });
 

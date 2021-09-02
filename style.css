@@ -2,13 +2,28 @@
 @font-face {
   font-family: Poppins;
   src: url(Poppins-Black.otf);
-} */
-
+} 
 
 @font-face {
+  font-family: PoppinsM;
+  src: url(Poppins-Medium.otf);
+} 
+
+@font-face {
+  font-family: PoppinsL;
+  src: url(Poppins-Light.otf);
+} 
+
+@font-face {
+  font-family: PoppinsB;
+  src: url(Poppins-Black.otf);
+} 
+
+
+/* @font-face {
   font-family: Randhu;
   src: url(Randhu.otf);
-}   
+}    */
 
 
 #stageBlock {
@@ -38,11 +53,19 @@
   width: auto;
   text-align: center;
   font-size: 30px;
-  margin-left: 24px;
+  margin-left: 0px;
  
   /* align-self; ; */
   /* background-color: yellow; */
   
+}
+
+#img_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  pointer-events: auto;
 }
 
 #content {
@@ -66,6 +89,7 @@ height:280px;
   /* background: rgba(255, 255, 255, 0.151);
   backdrop-filter: saturate(100%) blur(10px); */
   max-width:861px;
+  margin-top:-40px;
 
 }
 
@@ -99,16 +123,26 @@ height:250px;
   background-color: #9F495E;
 }
 
-#play-toggle, #pause-toggle, #render-toggle{
+#play-toggle, #pause-toggle, #download, #render-toggle{
   background-color: transparent;
   border-width: 0px;
   z-index: 500;
   right:20;
-  
+}
+
+#download {
+  width:90px;
+  height:90px;
+  top:-22px;
+  background-size: cover;
+  background-image: url(download.png);
+  cursor: pointer;
+  opacity:1;
+  background-blend-mode:hard-light;
+  z-index: 600;
 }
 
 #play-toggle {
-  /* position: absolute; */
   width:90px;
   height:90px;
   top:-22px;
@@ -288,7 +322,7 @@ input.repeat {
   position: absolute;
   color: #555; 
   color: #fafafa; 
-  font-size: 23px;
+  font-size: 17px;
   touch-action: pan-y;
   text-align: center;
   align-self: center;
@@ -341,10 +375,10 @@ input.repeat {
 }
 
 #nft_name_logo {
-  font-size:40px;
+  font-size:25px;
   font-family: Poppins;
-  top:96px;
-  left:112px;
+  top: 114px;
+  left: 120px;
 }
 
 
@@ -420,6 +454,19 @@ input.repeat {
   pointer-events:none;
 }
 
+#circle_logo{
+  background-image: url(/assets/img/wordmark_circle.svg);
+  width:800px;
+  height:800px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 500;
+  position: absolute;
+  top: -310px;
+  left: -241px;
+  opacity: 0.05;
+}
+
 
 
 
@@ -476,14 +523,6 @@ html body {
     z-index: 5000;
 }
 
-#img_cont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  pointer-events: none;
-}
-
 #frame1 {
   display: flex;
     justify-content: flex-start;
@@ -491,34 +530,61 @@ html body {
     flex-direction: column;
     align-content: center;
     pointer-events:none;
-    margin-top:17vh;
+    margin-top:16vh;
 }
 
-#frame2_copy, #subhead, #ead {
-    font-family: Poppins;
+#frame2_copy, #subhead, #ead, #details, #details2 {
+    font-family: PoppinsLQ;
     line-height:1.15;
-    /* font-style: italic; */
-    max-width:500px;
+    max-width:650px;
     font-size:3rem;
     color:white;
     text-align: center;
     line-height:1.15;
     margin-left:20px;
     margin-right:20px;
-    /* margin-top:400px; */
     pointer-events: none;
 }
 
 #frame2 {
   pointer-events: none;
+  margin-top:50px;
+  line-height:2;
 }
 
-#subhead {
-    font-size:1.5rem;
+#frame2_copy {
+  pointer-events: none;
+  /* font-family: Poppins; */
+margin-left:auto;
+margin-right:auto;
+/* max-width:80vwpx; */
+font-size:4rem;
+
+}
+
+#playcont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+#player_controls {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+#subhead, #details {
+    font-size:1rem;
     height:auto;
     margin-top:30px;
     margin-bottom:0px;
     text-align:center;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 #subhead2 {
@@ -527,6 +593,37 @@ html body {
   line-height:1.15;
   color:white;
   margin-bottom:30px;
+}
+
+
+#details {
+  /* background: rgba(255, 255, 255, 0.151);
+  backdrop-filter: saturate(100%) blur(10px); */
+  border-radius:20px;
+  margin-bottom:0px;
+  padding:10px;
+  font-family: PoppinsL;
+  max-width:750px;
+  max-width:70vw;
+  padding-left:21px;
+  padding-right:21px;
+  margin-top:30
+}
+
+#details2 {
+  font-size:1rem;
+  line-height:1.5;
+  background: rgba(255, 255, 255, 0.151);
+  backdrop-filter: saturate(100%) blur(10px);
+  border-radius:20px;
+  margin-bottom:0px;
+  padding:10px;
+  font-family: PoppinsL;
+  max-width:750px;
+  max-width:70vw;
+  padding-left:21px;
+  padding-right:21px;
+  margin-top:30px;
 }
 
 
@@ -569,6 +666,7 @@ html body {
   width:500px;
   height:500px;
   top:-22px;
+  left:0px;
   background-size: cover;
   background-image: url(play_img.png);
 
@@ -577,7 +675,8 @@ html body {
 #footer {
   background: rgba(255, 255, 255, 0.151);
   backdrop-filter: saturate(100%) blur(10px);
-  pointer-events:auto
+  pointer-events:auto;
+  margin-top:100px;
 }
 
 #footerHead, #footerSub, #footerHead3 {
