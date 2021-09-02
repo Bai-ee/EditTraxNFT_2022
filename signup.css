@@ -33,7 +33,7 @@
   }
   
   #mc_embed_signup label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}
-  #mc_embed_signup input.email {font-family:"Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif; font-style:bold; font-size: 15px; text-align:center; display:block; padding:0 0.4em; margin:0; min-height:72px; width:50%; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; border-radius:10px;
+  #mc_embed_signup input.email {font-family:"Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif; font-style:bold; font-size: 15px; text-align:center; display:block; padding:0 0.4em; margin:0; height: 60px; width:50%; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; border-radius:10px;
     justify-content: center;
     background: rgba(255, 255, 255, 0.51);
     backdrop-filter: saturate(100%) blur(10px);}

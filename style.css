@@ -417,6 +417,7 @@ input.repeat {
   top:0;
   left:0;
   z-index:1;
+  pointer-events:none;
 }
 
 
@@ -567,6 +568,7 @@ html body {
 #footer {
   background: rgba(255, 255, 255, 0.151);
   backdrop-filter: saturate(100%) blur(10px);
+  pointer-events:auto
 }
 
 #footerText, #footerText_sub, #footerText_contact {
