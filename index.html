@@ -75,7 +75,7 @@
 
   <nav id="nav" class="top-0 px-8 py-6" style="">
     <!-- <button id="play-toggle" class="play" disabled></button> -->
-    <div id="status">Loading...</div> 
+    <div id="status">ALPHA PLAYER</div> 
   </nav>
 
   <main id="main" class="absolute w-full bg-cover bg-center flex justify-center" style="
@@ -102,38 +102,51 @@
                 <div id="frame2_copy"> 
                   Interactive Audio NFTs Tracked On <a href="https://tezos.com/">A Clean Blockchain</a>
                 </div>
+                <div id="details2"> 
+                  Fans are djs, podcasters, infuencers, collectors and content creators. Provide tools that streamline their process and grow your community!
+              
+                </div>
+
                 <div id="playcont" class="flex flex-col sm:flex-row">
                   <div id="details"> 
-                    Create & Download Edits Of A Preloaded Track From Within Our Customized Players
+                    <!-- Create & Download Edits Of A Preloaded Track From Within Our Customized Players -->
                   </div>
                   <div id="player_controls"> 
-                    <button id="play-toggle" class="play" disabled></button>
+                  <button id="play-toggle" class="play" disabled></button>
+
+                  <div style="width:50vw; height:50vh; min-width:336px; min-height:280px max-width:1000px; max-height:1000px">
+                    <iframe id="player" src="https://xcwze-jaaaa-aaaad-qarxq-cai.ic.fleek.co/" height="100%" width="100%" title="Iframe Example"></iframe>
+                  </div>
+
+
+
                     <div id="totalDuration"></div>
                     <div id="download"></div>
                     <div id="progress"></div>  
                   </div>
               </div>              
             </div>
+
+
                   
-            <div id="content">
+            <!-- <div id="content">
               <div id="content_bg"></div>
               <a href="" id="download-link"></a>
               <div class="wrapper" id="wrapper">
               <div class="boxes"></div>
-            </div>
+            </div> -->
+
           <div class="viewport"></div>    
+
+
         </div>
       </div>
     </div>
 
     <div id="frame2_copy"> 
-      Collect & Sell Players Like Vinyl
+      Click On The Player Tab To Create A Custom Edit
     </div>
-    <div id="details2"> 
-      Fans are djs, podcasters, infuencers, collectors and content creators.
-      <br>Provide tools that streamline their process and grow your community!
-  
-    </div>
+
     <div id="player_controls"> 
     
     <footer id="footer" class="flex justify-center px-4 w-screen text-white bg-gray-800">
@@ -209,8 +222,8 @@
 
               
               
-<script src="scroll.js"></script>
-<script src="script.js"></script>
+<!-- <script src="scroll.js"></script>
+<script src="script.js"></script> -->
 </body>
 
 
@@ -235,13 +248,14 @@ function setup() {
 // gsap.set("#render-toggle", {autoAlpha:0});
 // gsap.set("#pause-toggle", {autoAlpha:0});
 // gsap.set("#totalDuration", {autoAlpha:0});
-// gsap.set("#play-toggle", {autoAlpha:0});
+gsap.set("#play-toggle", {autoAlpha:0});
+gsap.set("#download", {autoAlpha:0});
 // gsap.set(".wrapper", {autoAlpha:0});
 gsap.set("#artist_name_logo", {rotate:-15,pointerEvents:"none"});
 // gsap.set("#artist_name", {rotate:-15,pointerEvents:"none"});
 // gsap.set("#contentSplash", {pointerEvents:"none"});
 // gsap.set("#logo", {autoAlpha:1});
-// gsap.set("#play-toggle", {x:60});
+
 
 gsap.set("#content", {duration:0.2, height:336, width:"90vw", top:0})
 
@@ -252,15 +266,17 @@ document.getElementById("download").addEventListener("mouseover", mouseOverPlaye
 document.getElementById("download").addEventListener("mouseout", mouseOffPlayer);
 document.getElementById("play-toggle").addEventListener("mouseover", mouseOnPlay);
 document.getElementById("play-toggle").addEventListener("mouseout", mouseOffPlayer);
-document.getElementById("totalDuration").addEventListener("mouseover", mouseOnDur);
-document.getElementById("totalDuration").addEventListener("mouseout", mouseOffPlayer);
-document.getElementById("wrapper").addEventListener("mouseover", mouseOnWrap);
-document.getElementById("wrapper").addEventListener("mouseout", mouseOffPlayer);
+// document.getElementById("totalDuration").addEventListener("mouseover", mouseOnDur);
+// document.getElementById("totalDuration").addEventListener("mouseout", mouseOffPlayer);
+// document.getElementById("wrapper").addEventListener("mouseover", mouseOnWrap);
+// document.getElementById("wrapper").addEventListener("mouseout", mouseOffPlayer);
 // document.getElementById("preview").addEventListener("mouseover", mouseOnPreview);
 // document.getElementById("preview").addEventListener("mouseout", mouseOffPlayer);
 
+
+
 function mouseOnWrap(){
-  document.getElementById("details").innerHTML = "Set The Loop Number For Each Part Of The Track & Preview";
+  document.getElementById("details").innerHTML = "The Loop Number For Each Part Of The Track & Preview";
 }
 
 function mouseOnDur(){

@@ -463,7 +463,7 @@ input.repeat {
   z-index: 500;
   position: absolute;
   top: -310px;
-  left: -241px;
+  left: -280px;
   opacity: 0.05;
 }
 
@@ -508,7 +508,7 @@ html body {
   /* height:200vh; */
   align-items: center; 
   min-height:100vh;
-  pointer-events:none;
+  /* pointer-events:none;  */
 }
 
 #draggable-cont {
