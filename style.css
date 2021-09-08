@@ -562,7 +562,7 @@ font-size:4rem;
 
 }
 
-#playcont {
+#playcont_web {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -709,6 +709,14 @@ font-size:4rem;
   margin-bottom:30px;
 }
 
+#player_cont_web {
+  /* border-radius:1000px; */
+}
+
+#player_web {
+  /* border-radius:1000px;  */
+}
+
 
 
 @media only screen and (orientation:portrait){
@@ -725,4 +733,15 @@ font-size:4rem;
 
 @media only screen and (orientation:portrait){
   #turn{ display:block; }
+}
+
+@media screen and (max-width: 900px) {
+  #player_web {
+      width:600px;
+      height:600px;
+  }
+
+  #frame2_copy {
+    font-size: 2rem;
+  }
 }
