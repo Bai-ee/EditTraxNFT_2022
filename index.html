@@ -70,8 +70,8 @@
 <body class="text-gray-800 antialiased">
 
   <div id="stageBlock"></div>
-  <div id="bg_circle" style="z-index:500; width: 300px; height: 300px; background-color: rgba(243, 161, 108, 1); border-radius: 9999px;"></div>
-  <div id="bg_circle2" style="z-index:500; width: 500px; height: 500px; background-color: rgb(134, 34, 134); border-radius: 9999px;"></div>    
+  <!-- <div id="bg_circle" style="z-index:500; width: 300px; height: 300px; background-color: rgba(243, 161, 108, 1); border-radius: 9999px;"></div>f -->
+  <!-- <div id="bg_circle2" style="z-index:500; width: 500px; height: 500px; background-color: rgb(134, 34, 134); border-radius: 9999px;"></div>     -->
 
   <nav id="nav" class="top-0 px-8 py-6" style="">
     <!-- <button id="play-toggle" class="play" disabled></button> -->
@@ -96,15 +96,14 @@
           </div>
         </div>
 
-        <div id="2_cont" style="pointer-events:none;">
+        <div id="2_cont" style="pointer-events:none; ">
           <div id="frame2" class="flex-row justify-center p-3" style="">
             <div id="img_cont" class="sm:mt-0">
                 <div id="frame2_copy"> 
-                  Interactive Audio NFTs Tracked On <a href="https://tezos.com/">A Clean Blockchain</a>
+                  Generate New Revenue Streams With Interactive Audio NFTs<a href="https://tezos.com/"></a>
                 </div>
                 <div id="details2"> 
-                  Fans are djs, podcasters, infuencers, collectors and content creators. Provide tools that streamline their process and grow your community!
-              
+                  DIGITAL AUDIO WORKSTATIONS BOUGHT & SOLD ON THE TEZOS BLOCKCHAIN
                 </div>
 
                 <div id="playcont_web" class="flex flex-col sm:flex-row">
@@ -143,9 +142,9 @@
       </div>
     </div>
 
-    <div id="frame2_copy"> 
-      Click On The Player Tab To Create A Custom Edit
-    </div>
+    <!-- <div id="frame2_copy">  -->
+      <!-- Click On The Player Tab To Create A Custom Edit -->
+    <!-- </div> -->
 
     <div id="player_controls"> 
     
@@ -420,11 +419,12 @@ gsap.delayedCall(0.1, drawSplashLogo);
 
 let startTheShow = () => {  
 gsap.from("#logo_logo", {duration:1.8, autoAlpha:1, y:"+=15px", ease:"PowerEase1.InOut", /* rotate:randomNum, */ yoyo:true, repeat:-1});
-gsap.to("#stageBlock", {duration:1, autoAlpha:0, delay:0, ease: "Power1.easeOut"})
+gsap.to("#stageBlock", {duration:1, autoAlpha:0, delay:0.5, ease: "Power1.easeOut"})
 gsap.from("#content", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.5); 
 gsap.from("#subhead", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.35); 
 gsap.from("#playcont", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.35); 
 gsap.from("#frame2_copy", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.45); 
+gsap.from("#details2", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.45); 
 gsap.from("#mc_embed_signup", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.75); 
 gsap.to("#comp_img", {duration:0.5, x:"+=20vw", ease: "Power3.easeOut", opacity:0.5},0.75); 
 
@@ -432,11 +432,11 @@ gsap.to("#comp_img", {duration:0.5, x:"+=20vw", ease: "Power3.easeOut", opacity:
 
 //create draggable
 Draggable.create(clientWorkExamples, {
-  // type: 'rotation',
-  throwProps: true,
-  bounds: document.getElementById("main"),
-  dragResistance: 0.1,
-  edgeResistance: 0.3,
+  // // type: 'rotation',
+  // throwProps: true,
+  // bounds: document.getElementById("main"),
+  // dragResistance: 0.1,
+  // edgeResistance: 0.3,
 });
 
 
