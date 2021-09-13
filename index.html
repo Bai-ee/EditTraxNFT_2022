@@ -75,7 +75,7 @@
 
   <nav id="nav" class="top-0 px-8 py-6" style="">
     <!-- <button id="play-toggle" class="play" disabled></button> -->
-    <div id="status">ALPHA STATE</div> 
+    <div id="status">CURRENTLY IN ALPHA STATE</div> 
   </nav>
 
   <main id="main" class="absolute w-full bg-cover bg-center flex justify-center" style="
@@ -428,18 +428,22 @@ let drawSplashLogo = () => {
     // gsap.from(clientWorkExamples[i], {duration:0.4, autoAlpha:0, ease:"bounce.easeOut", /* rotate:randomNum, */ scale:0, yoyo:true, repeat:1, delay:(0.04 + i)/4});
 }
 
-gsap.delayedCall(0.1, drawSplashLogo);
+// gsap.delayedCall(0.1, drawSplashLogo);
+
+gsap.to("#stageBlock", {duration:1, autoAlpha:0, delay:0.5, ease: "Power1.easeOut"})
+gsap.from("#frame1", {duration:0.8, autoAlpha:0, y:"+=20vw", delay:0.4, ease: "Power3.easeOut"},1.5); 
+gsap.from("#logo_logo", {duration:1.8, y:"+=15px", ease:"PowerEase1.InOut", /* rotate:randomNum, */ yoyo:true, repeat:-1});
+// gsap.from("#content", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},1.5); 
+// gsap.from("#subhead", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},3.35); 
+// gsap.from("#playcont", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.35); 
+// gsap.from("#frame2_copy", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.45); 
+// gsap.from("#details2", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.45); 
+// gsap.from("#mc_embed_signup", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.75); 
+// gsap.to("#comp_img", {duration:0.5, x:"+=20vw", ease: "Power3.easeOut", opacity:0.5},0.75); 
 
 let startTheShow = () => {  
-gsap.from("#logo_logo", {duration:1.8, autoAlpha:1, y:"+=15px", ease:"PowerEase1.InOut", /* rotate:randomNum, */ yoyo:true, repeat:-1});
-gsap.to("#stageBlock", {duration:1, autoAlpha:0, delay:0.5, ease: "Power1.easeOut"})
-gsap.from("#content", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.5); 
-gsap.from("#subhead", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.35); 
-gsap.from("#playcont", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.35); 
-gsap.from("#frame2_copy", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.45); 
-gsap.from("#details2", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.45); 
-gsap.from("#mc_embed_signup", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.75); 
-gsap.to("#comp_img", {duration:0.5, x:"+=20vw", ease: "Power3.easeOut", opacity:0.5},0.75); 
+// gsap.from("#logo_logo", {duration:1.8, autoAlpha:1, y:"+=15px", ease:"PowerEase1.InOut", /* rotate:randomNum, */ yoyo:true, repeat:-1});
+// console.log("YES");
 
 }
 
