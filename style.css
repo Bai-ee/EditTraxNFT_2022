@@ -480,6 +480,8 @@ margin: 0;
 html body {
   background-color:black;
   scroll-behavior: smooth;
+  /* overflow:hidden; */
+  max-width:100vw;
 }
 
 #stageBlock {
@@ -537,10 +539,12 @@ html body {
     align-content: center;
     pointer-events:none;
     margin-top:16vh;
+    max-width:100vw;
+    overflow:hidden;
 }
 
 #frame2_copy, #subhead, #ead, #details, #details2 {
-    font-family: PoppinsLQ;
+    font-family: Poppins;
     line-height:1.15;
     max-width:650px;
     font-size:3rem;
