@@ -412,9 +412,9 @@ input.repeat {
 
 #contentSplash_logo {
   background-color: rgb(0, 0, 0);
-  max-width:50%;
+  /* max-width:50%; */
   min-height:50%;
-  width:200px;
+  width:380px;
   height:200px;
   z-index: 20;
   position:absolute;
