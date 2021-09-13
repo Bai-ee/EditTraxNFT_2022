@@ -70,8 +70,8 @@
 <body class="text-gray-800 antialiased">
 
   <div id="stageBlock"></div>
-  <!-- <div id="bg_circle" style="z-index:500; width: 300px; height: 300px; background-color: rgba(243, 161, 108, 1); border-radius: 9999px;"></div>f -->
-  <!-- <div id="bg_circle2" style="z-index:500; width: 500px; height: 500px; background-color: rgb(134, 34, 134); border-radius: 9999px;"></div>     -->
+  <!-- <div id="bg_circle" style="z-index:500; width: 300px; height: 300px; background-color: rgba(243, 161, 108, 1); border-radius: 9999px;"></div>
+  <div id="bg_circle2" style="z-index:500; width: 500px; height: 500px; background-color: rgb(134, 34, 134); border-radius: 9999px;"></div>     --> -->
 
   <nav id="nav" class="top-0 px-8 py-6" style="">
     <!-- <button id="play-toggle" class="play" disabled></button> -->
@@ -82,6 +82,9 @@
     background: linear-gradient(120deg, #1f005c, #8c00a0, #e30084, #ff2830, #ffb56b);
   background-color: #f8f8f8;">
 
+<div id="bg_circle" style="z-index:1; width: 300px; height: 300px; background-color: rgba(243, 161, 108, 1); border-radius: 9999px;"></div>
+<div id="bg_circle2" style="z-index:1; width: 500px; height: 500px; background-color: rgb(134, 34, 134); border-radius: 9999px;"></div>     -->
+
     <div class="" style="pointer-events:none">
       <div id="frame1" class="" style="max-width:100vw;">
         <div id="logo_logo" class="" style="top:0vh">
@@ -90,7 +93,7 @@
             <div id="content_bg_logo"></div>
             <div id="contentSplash_logo">
 
-              <div class="h-auto w-auto bg-center" style="background-size: contain; background-repeat: no-repeat; height:282px; width:80vw; max-width:500px; top:0px; background-image: url(./assets/img/logo_circ_trans.png);"></div>
+              <div class="h-auto w-auto bg-center" style="background-size: contain; background-repeat: no-repeat; height:282px; width:250px; max-width:250px; top:0px; background-image: url(./assets/img/logo_circ_trans.png);"></div>
 
 
               <!-- <p id="artist_name_logo">EditTrax</p>
@@ -100,7 +103,7 @@
           </div>
         </div>
 
-        <div id="2_cont" style="pointer-events:none; overflow:hidden; max-width:100vw; pointer-events:none;">
+        <div id="2_cont" style="pointer-events:none; overflow:hidden; max-width:100vw; pointer-events:none; z-index: 10;">
           <div id="frame2" class="flex-row justify-center p-3" style="">
             <div id="img_cont" class="sm:mt-0">
                 <div id="frame2_copy"> 
@@ -403,7 +406,7 @@ function tweenProperty(target, prop) {
 
 //array of client work
 let clientWorkExamples = [
-  "#logo_logo",
+  // "#logo_logo",
 ];
 
 // call to draw signature
@@ -451,12 +454,12 @@ Draggable.create(clientWorkExamples, {
 
 
 // gsap.set("#content", {height:"70%", width:"70%"})
-gsap.set("#bg_circle", {x:-300, autoAlpha:0.1})
-gsap.set("#bg_circle2", {x:"100vw", y:"20vh", autoAlpha:0.1})
+gsap.set("#bg_circle", {x:-300, autoAlpha:0.3})
+gsap.set("#bg_circle2", {x:"100vw", y:"20vh", autoAlpha:0.5})
 
 var tl = gsap.timeline();
-tl.to("#bg_circle", {duration: 100,scale:0.5, x:"100vw", y:"100vh", delay:1, yoyo:true, repeat:-1},0);
-tl.to("#bg_circle2", {duration: 100, scale:0.8, x:-300, y:-300, yoyo:true, repeat:-1},0);
+tl.to("#bg_circle", {duration: 200,scale:0.5, x:"100vw", y:"100vh", delay:1, yoyo:true, repeat:-1},0);
+tl.to("#bg_circle2", {duration: 200, scale:0.8, x:-300, y:-300, yoyo:true, repeat:-1},0);
 
   </script>
 
