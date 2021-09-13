@@ -762,8 +762,21 @@ max-width:70vw;
   }
 
   #frame2_copy {
-    font-size: 3rem;
+    font-size: 2rem;
     max-width:90vw
+  }
+
+  #splash_cta {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 282px;
+    width: 100vw;
+    max-width: 570px;
+    max-width: 537px;
+    margin-top: -38px;
+    margin-left: -23px;
+    background-image: url(./assets/img/headphones.png);
+
   }
   #player_cont_web {
     /* margin-left:auto;
