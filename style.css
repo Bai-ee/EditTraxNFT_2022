@@ -456,14 +456,13 @@ input.repeat {
 
 #circle_logo{
   background-image: url(/assets/img/wordmark_circle.svg);
-  width:800px;
+  /* width:80vw; */
   height:800px;
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 500;
   position: absolute;
   top: -310px;
-  left: -280px;
   opacity: 0.05;
 }
 
@@ -559,7 +558,7 @@ html body {
 
 #frame2 {
   pointer-events: none;
-  margin-top:50px;
+  margin-top:25px;
   margin-bottom:50px;
   line-height:2;
 }
