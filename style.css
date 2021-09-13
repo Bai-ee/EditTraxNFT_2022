@@ -462,6 +462,7 @@ input.repeat {
   background-image: url(./assets/img/logo_circ_trans.png);
   /* top: 110px; */
   background-repeat: no-repeat;
+  margin-top:30px;
 }
 
 #circle_logo{
