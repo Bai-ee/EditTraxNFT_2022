@@ -656,6 +656,7 @@ max-width:70vw;
   display:flex;
   /* cursor: grab; */
   z-index:490;
+  cursor:pointer
 }
 
 
@@ -721,7 +722,7 @@ max-width:70vw;
 
 #footerSub {
   margin-top:60px;
-  margin-bottom:30px;
+  margin-bottom:0px;
   font-family: Randhu;
   font-size:5rem;
 }
@@ -738,6 +739,25 @@ max-width:70vw;
 
 #player_web {
   /* border-radius:1000px;  */
+}
+
+#splash_cta, #footer_cta {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 82px; 
+  width: 50vw; 
+  max-width:100vw;
+  margin-top: 30px;
+  margin-left: -23px;
+  cursor: pointer;
+  background-image: url(./assets/img/headphones.png);
+  background-size: contain; background-repeat: no-repeat; height:282px; width:80vw; max-width:500px; top:0px; 
+  /* background-image: url(./assets/img/headphones.png); */
+}
+
+#footer_cta {
+  background-image: url(./assets/img/contact2.png);
+  margin-top: -100px;
 }
 
 
@@ -772,27 +792,25 @@ max-width:70vw;
   }
 
   #frame2_copy {
-    font-size: 2rem;
+    font-size: 2.5rem;
     max-width:90vw
   }
 
   #splash_cta {
-    background-size: contain;
-    background-repeat: no-repeat;
     height: 282px;
     width: 100vw;
-    max-width: 570px;
-    max-width: 537px;
-    margin-top: -38px;
-    margin-left: -23px;
-    cursor: pointer;
-    background-image: url(./assets/img/headphones.png);
+   max-width:500px; 
 
   }
   #player_cont_web {
     /* margin-left:auto;
     margin-right:auto; */
     /* height:1000px; */
+}
+
+#player_controls {
+
+  /* margin-top: 103px; */
 }
 
 
