@@ -454,6 +454,16 @@ input.repeat {
   pointer-events:none;
 }
 
+#et_footer_logo {
+  overflow: visible;
+  margin-left: 0px;
+  height: 148px;
+  width: 327px;
+  background-image: url(./assets/img/logo_circ_trans.png);
+  /* top: 110px; */
+  background-repeat: no-repeat;
+}
+
 #circle_logo{
   background-image: url(/assets/img/wordmark_circle.svg);
   /* width:80vw; */
@@ -644,7 +654,7 @@ max-width:70vw;
 
 #logo_logo {
   display:flex;
-  cursor: grab;
+  /* cursor: grab; */
   z-index:490;
 }
 
@@ -775,6 +785,7 @@ max-width:70vw;
     max-width: 537px;
     margin-top: -38px;
     margin-left: -23px;
+    cursor: pointer;
     background-image: url(./assets/img/headphones.png);
 
   }
