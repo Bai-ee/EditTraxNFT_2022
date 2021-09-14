@@ -547,7 +547,7 @@ html body {
     flex-direction: column;
     align-content: center;
     pointer-events:none;
-    margin-top:16vh;
+    margin-top:23vh;
     max-width:100vw;
     overflow:hidden;
 }
