@@ -671,7 +671,7 @@ max-width:70vw;
   position:fixed;
   z-index: 2000;
   /* background-color:yellow; */
-    background: rgba(255, 255, 255, 0.41);
+    background: rgba(255, 255, 255, 0.31);
   backdrop-filter: saturate(100%) blur(10px);
   display:flex;
   align-items:center;
@@ -837,6 +837,11 @@ margin-bottom:80px;
 #player_controls {
   /* height:60px; */
   margin-top: -30px;
+}
+
+#player_cont_web {
+  margin-bottom:120px;
+  max-height: 300px;
 }
 
 }
