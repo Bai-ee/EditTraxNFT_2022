@@ -671,7 +671,7 @@ max-width:70vw;
   position:fixed;
   z-index: 2000;
   /* background-color:yellow; */
-    background: rgba(255, 255, 255, 0.151);
+    background: rgba(255, 255, 255, 0.41);
   backdrop-filter: saturate(100%) blur(10px);
   display:flex;
   align-items:center;
@@ -818,9 +818,6 @@ margin-bottom:80px;
   /* margin-top: 103px; */
 }
 
-
-
-  
 }
 
 @media screen and (max-width: 500px) {
