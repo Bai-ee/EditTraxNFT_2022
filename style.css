@@ -462,7 +462,6 @@ input.repeat {
   background-image: url(./assets/img/logo_circ_trans.png);
   /* top: 110px; */
   background-repeat: no-repeat;
-  margin-top:30px;
 }
 
 #circle_logo{
@@ -735,7 +734,9 @@ max-width:70vw;
 }
 
 #player_cont_web {
-  /* border-radius:1000px; */
+/* height:60px; */
+max-height:700px;
+margin-bottom:80px;
 }
 
 #player_web {
@@ -805,13 +806,15 @@ max-width:70vw;
 
   }
   #player_cont_web {
+    max-height:400px;
+    margin-bottom:80px;
     /* margin-left:auto;
     margin-right:auto; */
     /* height:1000px; */
 }
 
 #player_controls {
-
+  /* height:60px; */
   /* margin-top: 103px; */
 }
 
