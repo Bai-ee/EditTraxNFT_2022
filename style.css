@@ -822,3 +822,24 @@ margin-bottom:80px;
 
   
 }
+
+@media screen and (max-width: 500px) {
+#frame2_copy {
+  font-size: 2rem;
+  max-width: 90vw;
+}
+
+#splash_cta {
+  height: 282px;
+  width: 100vw;
+ max-width:500px; 
+ margin-top:0px;
+
+}
+
+#player_controls {
+  /* height:60px; */
+  margin-top: -30px;
+}
+
+}
