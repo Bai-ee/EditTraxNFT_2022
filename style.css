@@ -871,13 +871,13 @@ margin-bottom:80px;
 }
 
 #et_footer_logo {
-  margin-bottom:0;
+  margin-bottom:-30;
 }
 
-#cal_invite {
-  margin-top:-250;
-}
 
+#cal_invite{
+  margin-top:-150px;
+}
 
 #footerSub {
   font-size:4rem;
