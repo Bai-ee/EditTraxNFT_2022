@@ -871,12 +871,12 @@ margin-bottom:80px;
 }
 
 #et_footer_logo {
-  margin-bottom:-30;
+  margin-bottom:0;
 }
 
 
 #cal_invite{
-  margin-top:-150px;
+  margin-top:-160px;
 }
 
 #footerSub {
@@ -885,6 +885,10 @@ margin-bottom:80px;
 
 #frame2_copy {
   font-size:2rem;
+}
+
+#footer_cta {
+  margin-top:-110px;
 }
 
 
