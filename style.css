@@ -776,6 +776,8 @@ margin-bottom:80px;
 
 #cal_invite {
   margin-top: -90px;
+  background-image: url(./assets/img/book_a_meeting.png);
+  
 }
 
 
@@ -858,6 +860,14 @@ margin-bottom:80px;
 #player_cont_web {
   margin-bottom:120px;
   max-height: 300px;
+}
+
+#et_footer_logo {
+  margin-bottom:0;
+}
+
+#cal_invite {
+  margin-top:-200;
 }
 
 }
