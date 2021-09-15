@@ -458,7 +458,7 @@ input.repeat {
   overflow: visible;
   margin-left: 0px;
   height: 148px;
-  width: 327px;
+  width: 500px;
   background-image: url(./assets/img/logo_circ_trans.png);
   /* top: 110px; */
   background-repeat: no-repeat;
@@ -478,7 +478,15 @@ input.repeat {
   opacity: 0.05;
 }
 
+#calendar {
+  /* min-width:320px;height:630px; */
+  min-width:80vw;height:150px;
+  /* margin-top:50px; */
+}
 
+._1M_9Lld7A7 {
+  margin-top: 0px;
+}
 
 
 
@@ -745,7 +753,7 @@ margin-bottom:80px;
   /* border-radius:1000px;  */
 }
 
-#splash_cta, #footer_cta {
+#splash_cta, #footer_cta, #cal_invite {
   background-size: contain;
   background-repeat: no-repeat;
   height: 82px; 
@@ -759,11 +767,17 @@ margin-bottom:80px;
   /* background-image: url(./assets/img/headphones.png); */
 }
 
-#footer_cta {
+#footer_cta, #cal_invite {
   background-image: url(./assets/img/contact2.png);
-  margin-top: -100px;
+  /* margin-top: -100px; */
   margin-left: 0px;
+  margin-top: -60px;
 }
+
+#cal_invite {
+  margin-top: -90px;
+}
+
 
 
 
@@ -797,7 +811,7 @@ margin-bottom:80px;
   }
 
   #frame2_copy {
-    font-size: 2.5rem;
+    font-size: 3rem;
     max-width:90vw
   }
 
@@ -824,7 +838,7 @@ margin-bottom:80px;
 
 @media screen and (max-width: 500px) {
 #frame2_copy {
-  font-size: 2rem;
+  font-size: 3rem;
   max-width: 90vw;
 }
 
