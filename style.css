@@ -697,6 +697,12 @@ max-width:70vw;
   top:0
 }
 
+#avatar_cont{
+
+  display: flex;
+  flex-direction: column; 
+}
+
 #nav_tel{
   top: 0px;
   width: 100vw;
