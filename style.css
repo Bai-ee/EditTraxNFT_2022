@@ -456,16 +456,20 @@ input.repeat {
 
 #et_footer_logo {
   overflow: visible;
-  margin-top:100px;
-  margin-left: 0px;
-  height: 148px;
-  width: 500px;
-  background-image: url(./assets/img/logo_circ_trans.png);
-  /* top: 110px; */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 150px;
+  background-image: url(./assets/img/genesis_piece2.png);
+  margin-top: 20px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-size: contain;
+  align-content: center;
+  overflow: visible;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-repeat: no-repeat;
+
 }
 
 #circle_logo{
@@ -683,11 +687,33 @@ max-width:70vw;
   position:fixed;
   z-index: 2000;
   /* background-color:yellow; */
-    background: rgba(255, 255, 255, 0.31);
-  backdrop-filter: saturate(100%) blur(10px);
+    /* background: rgba(255, 255, 255, 0.31);
+  backdrop-filter: saturate(100%) blur(10px); */
   display:flex;
   align-items:center;
-  justify-content:center;
+  justify-content:start;
+  display:flex;
+  flex-direction:column;
+  top:0
+}
+
+#nav_tel{
+  top: 0px;
+  width: 100vw;
+  display: flex;
+  height: 30px;
+  font-family: Poppins;
+  font-size: 12px;
+  line-height: 1.15;
+  height: 300px;
+  padding-top: 0px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #logo_circle {
@@ -726,7 +752,7 @@ max-width:70vw;
 #footerHead {
   font-size:3rem;
   height:auto;
-  margin-top:100px;
+  margin-top:20px;
   margin-bottom:30px;
   text-align:center;
   font-family: Poppins;
@@ -736,7 +762,7 @@ max-width:70vw;
   margin-top:60px;
   margin-bottom:0px;
   font-family: Randhu;
-  font-size:5rem;
+  font-size:4rem;
 }
 
 #footerHead3 {
