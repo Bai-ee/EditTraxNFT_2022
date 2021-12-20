@@ -1,592 +1,1087 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  
+    Document Title
+    =============================================
+    -->
+    <title>Titan | Multipurpose HTML5 Template</title>
+    <!--  
+    Favicons
+    =============================================
+    -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--  
+    Stylesheets
+    =============================================
+    
+    -->
+    <!-- Default stylesheets-->
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+    <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <!-- Main stylesheet and color file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
 
-    <!-- //pushing? -->
-
-<!-- Reference: https://developers.facebook.com/docs/sharing/best-practices#tags -->
-<!-- CORE og -->
-<!-- Title, without branding. -->
-<meta property="og:title" content="Edit Trax" />
-<!-- Name, not URL (e.g. Apple, not apple.com) -->
-<meta property="og:site_name" content="Edit Trax" />
-<!-- URL. Should match canonical URL for SEO. Unique identifier for your article. -->
-<meta property="og:url" content="" />
-<!-- OPTIONAL description. 2-4 sentences. -->
-<meta property="og:description" content="Interactive Audio Distribution" />
-<!-- Image for article. Facebook suggests at least 1200 x 630. -->
-<meta property="og:image" content="https://gateway.pinata.cloud/ipfs/QmZVmuwHDYJsEqd3aQEy6KFjdGMTD9VSe5SivGSzCUctPQ" />
-<meta property="og:image:width" content="620" />
-<meta property="og:image:height" content="343" />
-
-<!-- ADDITIONAL og -->
-<!-- UID for Facebook insights -->
-<meta property="fb:app_id" content="www.edittrax.nft" />
-<!-- Object type. Defaults to 'website'. See http://ogp.me/#types -->
-<meta property="og:type" content="Edit Trax" />
-<!-- Locale. Defaults to en_US. For all locales see https://github.com/akarve/facebook-locales-to-json -->
-<meta property="og:locale" content="Edit Trax" />
-<!-- Locale for additional translations. See https://developers.facebook.com/docs/internationalization/ and https://developers.facebook.com/docs/opengraph/guides/internationalization-->
-<meta property="og:locale:alternate" content="Edit Trax" />
-<!-- Author's Facebook Profile or Page -->
-<meta property="article:author" content="Edit Trax" />
-<!-- Publisher's Facebook Page  -->
-<meta property="og:title" content="Sell Audio As An Interactive NFT, Numbered And Tracked On A Clean Blockchain" />
-<meta property="og:description" content="Join The Creator Economy & Build A Supportive Fan Base Adopting Digital Ownership And Nu-Distribution Channels." />
-<meta property="article:publisher" content="Edit Trax" />
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@EditTrax">
-<meta name="twitter:creator" content="@EditTrax">
-<meta name="twitter:title" content="EditTrax.nft">
-<meta name="twitter:url" content="edittrax.com">
-<meta name="twitter:description" content="Sell Audio As An Interactive NFT! Numbered And Tracked On A Clean Blockchain. Join The Creator Economy & Build A Supportive Fan Base Adopting Digital Ownership And Nu-Distribution Channels.">
-<meta name="twitter:image" content="https://gateway.pinata.cloud/ipfs/QmZVmuwHDYJsEqd3aQEy6KFjdGMTD9VSe5SivGSzCUctPQ">
-
-<!-- <script src="Tone.js"></script>
-<script src="bufferToWav.js"></script>
-<script src="axios.min.js"></script>
-<script src="gsap.min.js"></script>
-<script src="Draggable.min.js"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5ee853d04398bdc9145d39487/cf967bfd75b619bee5ff89c17.js");</script>
- <script src="https://assets.codepen.io/910391/gsap.min.js"></script>
-<script src="https://assets.codepen.io/910391/Draggable.min.js"></script>
-<script src="https://assets.codepen.io/910391/InertiaPlugin.min.js"></script>
-<script src="https://assets.codepen.io/910391/DrawSVGPlugin.min.js"></script>
-<script src="https://assets.codepen.io/910391/CustomEase.min.js"></script> 
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8CGZL2T0KB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8CGZL2T0KB');
-</script>
-
-
-<link rel="icon" rel="icon" href="https://gateway.pinata.cloud/ipfs/QmbNBX8oQmmGy31jK8iDLcvATr3JM516V6Ln2ryJ3ofgaN"/>
-
-
-
-<link type="text/css" rel="stylesheet" href="style.css" />
-<link rel="shortcut icon" href="./assets/img/favicon_et.png" />
-<link
-  rel="apple-touch-icon"
-  sizes="76x76"
-  href="./assets/img/ico_JiB_icon.ico"
-/>
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-/>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
-/>
-
-<title>Edit Trax</title>
-
-</head>
-
-<body class="text-gray-800 antialiased">
-
-  <div id="stageBlock"></div>
-  <!-- <div id="bg_circle" style="z-index:500; width: 300px; height: 300px; background-color: rgba(243, 161, 108, 1); border-radius: 9999px;"></div>
-  <div id="bg_circle2" style="z-index:500; width: 500px; height: 500px; background-color: rgb(134, 34, 134); border-radius: 9999px;"></div>     --> 
-
-  <nav id="nav" class="top-0 px-0 py-0" style="">
-
-    <a href="https://t.me/HousepitCHI/"  target="_blank">
-      <div id="nav_tel" class="bg-contain bg-center mt-0 ml-0" style="overflow:visible; margin-left:0px; height: 30px; margin-top: 0px;">
-        JOIN OUR TELEGRAM
-      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+  </head>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <div class="page-loader">
+        <div class="loader">Loading...</div>
       </div>
-    </a>
-
-
-    <!-- <button id="play-toggle" class="play" disabled></button> -->
-    <!-- <div id="status">ALPHA STATE
-
-
-
-    </div>  -->
-  </nav>
-
-  <main id="main" class="absolute w-full bg-cover bg-center flex justify-center" style="
-    background: linear-gradient(120deg, #1f005c, #8c00a0, #e30084, #ff2830, #ffb56b);
-  background-color: #f8f8f8;">
-
-<div id="bg_circle" style="z-index:0; width: 300px; height: 300px; background-color: rgba(243, 161, 108, 1); border-radius: 9999px;"></div>
-<div id="bg_circle2" style="z-index:0; width: 500px; height: 500px; background-color: rgb(134, 34, 134); border-radius: 9999px;"></div>    
-
-    <div class="" style="pointer-events:none">
-      <div id="frame1" class="" style="max-width:100vw;">
-        <div id="logo_logo" class="" style="top:0vh">
-          <div id="circle_logo"></div>
-          <div id="content_logo">
-            <div id="content_bg_logo"></div>
-            <div id="contentSplash_logo">
-
-              <div class="h-auto w-auto bg-center" style="background-size: contain; background-repeat: no-repeat; height:282px; width:250px; max-width:250px; top:0px; background-image: url(./assets/img/logo_circ_trans.png);"></div>
-
-
-              <!-- <p id="artist_name_logo">EditTrax</p>
-              <p id="nft_name_logo">.NFT</p>                  -->
-              <div class="viewport_logo"></div>          
-            </div>
+      <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <img src="assets/images/editTrax_small.svg" style="margin-left:20px;"alt="Edit Trax Logo"/>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div>
+          <div class="collapse navbar-collapse" id="custom-collapse">
+            <ul class="nav navbar-nav navbar-right"> 
+              <li><a href="#alt-features">ABOUT</a></li>
+              <li><a href="#section_howto">DEMO</a></li>
+              <li><a href="#section_partners">PARTNERS</a> </li>
+              <!-- <li class="dropdown"><a class="" href="#" data-toggle="dropdown">ROADMAP</a> </li> -->
+              <li><a href="#section_onboard">ONBOARD</a> </li>
+              <!-- <li class="dropdown"><a class="" href="#" data-toggle="dropdown">TELEGRAM</a> </li> -->
+              <li><a href="#section_contact">CONTACT</a> </li>
+            </ul>
           </div>
         </div>
+      </nav>
 
 
-        <div id="2_cont" style="pointer-events:none; overflow:hidden; max-width:100vw; pointer-events:none; z-index: 10;">
-          <div id="frame2" class="flex-row justify-center p-3" style="">
-            <div id="img_cont" class="sm:mt-0">
-                <div id="frame2_copy">Generate New Revenue Streams With Interactive Audio NFT's<br> <a href="https://tezos.com/"></a>
+      <section class="home-section home-parallax home-fade" id="home" data-background="assets/images/background.svg">
+        <div class="titan-caption">
+          <div class="caption-content">
+            <div class="row"
+            style="display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;"><div class="container_nav">
+               <div class="col-md-6 col-lg-6" style="display:flex; justify-content: center;">
+                <img src="assets/images/key_art.png" style="margin-bottom:-40px; width:70vw; max-width:700px" alt="Edit Trax Logo"/>
                 </div>
-                <a href="https://us5.list-manage.com/contact-form?u=fc4f6490d102a2f385e8b3c64&form_id=4a5850a1254738ecd1cfbbd10d72a8f5"  target="_blank">
-                
-                <div id="splash_cta" class="h-auto w-auto bg-center" style=""></div>
-                </a>
+              </div>
+            <!-- <div class="font-alt mb-30 titan-title-size-2" style="letter-spacing: 0px;"><font color="#F29565">THE FIRST</font></div> -->
+            <div id="hero_head" class="font-alt mb-40 titan-title-size-4" style="width:80vw; max-width:80vw">DIGITAL AUDIO<br> WORKSTATION<br> <font color="#F29565">COLLECTIBLES</font><br><br>
+          </div>
+        </div>
+          </div>
+        </div>
+      </section>
 
 
-                <!-- <div id="details2" style="width:80vw; max-width:300px;"> 
-                  PROVIDE SENSIBLE TOOLS THAT ENABLE FANS TO USE YOUR MUSIC IN THEIR OWN CREATIVE OUTPUT.
-                </div> -->
+      <section class="main">
+        <section class="module" id="alt-features">
+          <div class="container">
+            <div class="row animate-childs" style="
+                display: flex;
+    flex-direction: column;
+    align-items: center;">
+    
+              <div class="container_nav">
+                <img src="assets/images/editTrax.svg" alt="Edit Trax Logo"/>
+              </div>
+              <div class="animate-childs">
+                <h2 class="module font-alt" style="font-size:20px; line-height:23px; background-color:rgb(14, 14, 14); padding: 50px; margin-top:20px; text-align:JUSTIFY; width:550px; max-width:90vw;"><font color="#F29565">
+                <div>
+                  Allow <font color="white">collectors</font> to rapidly edit the arrangement of your track, <font color="white">then download that version for use within any creative processes.</font> This unique experience all happens from within <font color="white">an interactive digital collectible, </font>which can be white-labeled and tailored to fit any need.</h2>
+                </div>
+              </div>
+            </div>
+            
+            <img class="animate-childs" title="" src="assets/images/direction.svg" style="
+            width:100vw; 
+            max-width: 1000px; 
+            height: 550px;
+            min-width:350px;
+            margin-top:20px;
+            margin-left:auto;
+            margin-right:auto;
+            border-radius:0px;
+            /* border:1px solid white; */
+            margin-top: 50px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            /* max-height:400px; */">
+            </img> 
 
-                <div id="playcont_web" class="flex flex-col sm:flex-row">
-                  <div id="details"> 
-                    <!-- Create & Download Edits Of A Preloaded Track From Within Our Customized Players -->
-                  </div>
-                  <div id="player_controls"> 
-                  <button id="play-toggle" class="play" disabled></button>
 
-                  <div id="player_cont_web" style="width:80vw; height:80vh; margin-left:auto; margin-right:auto">
-                    <!-- <iframe id="player_web" src="https://xcwze-jaaaa-aaaad-qarxq-cai.ic.fleek.co/" height="100%" width="100%" title="Iframe Example"></iframe> -->
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FcgZTvfaBLl6oEo9W0Quh8h%2FWhite-Paper-EditTrax.nft%3Fpage-id%3D0%253A1%26node-id%3D360%253A1160%26viewport%3D243%252C48%252C0.36%26scaling%3Dscale-down-width" allowfullscreen></iframe>
-                    <!-- <iframe style="margin-left:auto; margin-right:auto;  border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FcgZTvfaBLl6oEo9W0Quh8h%2FWhite-Paper-Edit-Trax%3Fpage-id%3D0%253A1%26node-id%3D0%253A1%26viewport%3D243%252C48%252C0.09%26scaling%3Dmin-zoom" allowfullscreen></iframe> -->
-                    <!-- <iframe style="margin-left:auto; margin-right:auto; border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FcgZTvfaBLl6oEo9W0Quh8h%2FEditTrax-Final-Prod%3Fpage-id%3D0%253A1%26node-id%3D0%253A1%26viewport%3D243%252C48%252C0.09%26scaling%3Dscale-down" allowfullscreen></iframe> -->
-                  </div>
-
-
-
-                    <div id="totalDuration"></div>
-                    <div id="download"></div>
-                    <div id="progress"></div>  
-                  </div>
-              </div>              
+            <div class="animate-childs" style="font-size:15px; margin-left:auto; margin-right:auto; display:flex; justify-content: center; width:550px; margin-bottom:50px;  max-width: 90vw; line-height:150%; text-align:justify">
+              <font color="white">
+                EditTrax is a collectable digital audio workstation NFT that allows for the non-destructive editing, rendering, and direct downloading of audio files via an intuitive graphical interface. This dynamic web-based audio utility is the ideal tool for delivering a uniquely interactive audio experience that is collectible.        
+              </font>
             </div>
 
+            <div id="alpha-hic" class="animate-childs width:550px; max-width:90vw; clickable-button font-alt mb-30 module-title"
+            style="padding:30px; border: 1px solid white;letter-spacing:0px; width:100%; text-align:center; margin-top:15px; font-color:white !important; line-height:105%; margin-left:20px; margin-right:20px;
+              width:100%; 
+              /* padding-bottom:0px; */
 
-                  
-            <!-- <div id="content">
-              <div id="content_bg"></div>
-              <a href="" id="download-link"></a>
-              <div class="wrapper" id="wrapper">
-              <div class="boxes"></div>
-            </div> -->
+            min-width:350px;
+            max-width:550px;
+            margin-left:auto;
+            margin-right:auto;">
+            <font color="#ffffff">
+              COLLECT NOW
+            </font>          
+          </div>
+            </div>
+          </div>
+        </section>
+      </section>
 
-          <div class="viewport"></div>    
 
 
-        </div>
+          <!-- <div class="animate-childs">
+            <h2 class="module-title font-alt" style="margin-top:50px;">Unlock<font color="#F29565"> Downloads</font> </h2>
+            <div class="" style="font-size:15px; margin-left:auto; margin-right:auto; display:flex; justify-content: center; width:550px;  max-width: 90vw; margin-top:40px; line-height:150%">
+              <font color="grey">
+              Users unlock unlimited downloads when holding players in their wallet, providing SENSIBLE utility that drives adoption for communities not yet understanding the benefits of decentralized music distribution.
+              </font>
+            </div>
+          </div>
+          <div class="animate-childs">
+            <h2 class="module-title font-alt" style="margin-top:50px;">COLLECT<font color="#F29565"> & SELL</font> </h2>
+            <div class="" style="font-size:15px; margin-left:auto; margin-right:auto; display:flex; justify-content: center; width:550px;  max-width: 90vw; margin-top:40px; line-height:150%">
+              <font color="grey">
+              Users unlock unlimited downloads when holding players in their wallet, providing SENSIBLE utility that drives adoption for communities not yet understanding the benefits of decentralized music distribution.
+              </font>
+            </div>
+          </div> -->
+ 
+<!-- BE THE PLATFORM
+=============================================
+--> 
+<!-- 
+<section style="padding-bottom:0px; margin-top:0px;padding-top:0px; max-width:100vw;"id="section_howto">
+  <section class="animate-childs" style="
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;">
+    <div class="row" style="margin-top:50px;"><div class="container_nav">                                      
+      <img src="assets/images/Be the Platform.svg" style="width:450px; max-width:80vw;"alt="Edit Trax Logo"/>
+    </div>
+    <iframe src="https://edittrax.on.fleek.co/" title="" style="
+    background-color:transparent; border:1px solid white; 
+    width:100vw; 
+    max-width: 90vw; 
+    height: 550px;
+    min-width:350px;
+    max-width:90vw;
+    margin-top:20px;
+
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:0px;
+    /* border:1px solid white; */
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    /* max-height:400px; */">
+    </iframe> 
+    <div id="alpha-hic" class="clickable-button font-alt mb-30 module-title"
+    style="padding:30px; border: 1px solid white;letter-spacing:0px; width:100%; text-align:center; margin-top:15px; font-color:white !important; line-height:105%; margin-left:20px; margin-right:20px;
+      width:100%; 
+      /* padding-bottom:0px; */
+    max-width: 90vw;
+    min-width:350px;
+    max-width:90vw;
+    margin-left:auto;
+    margin-right:auto;">
+    <font color="#ffffff">
+      COLLECT ALPHA ON HIC
+    </font>
+    </div>
+  </div>
+</section>
+</section> -->
+
+
+<!-- FEATURES 1
+=============================================
+--> 
+
+<section style="padding-bottom:50px; margin-top:0px;padding-top:50px; max-width:100vw;"id="section_partners">
+  <section class="" style="
+  padding-bottom:0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;">
+    <div class="row animate-childs">
+      <div class="row" style="margin-top:0px;"><div class="container_nav">                                      
+        <img src="assets/images/For Djs By Djs.svg" style="width:350px; max-width:80vw;"alt="Edit Trax Logo"/>
       </div>
     </div>
+    <!-- <div class="font-alt mb-30 titan-title-size-1 animate-childs"
+      style="letter-spacing: 0px; text-align:center; margin-top:40px; font-color:white !important; line-height:105%">
+      A NEW ERA IN <br>UNDERGROUND <br>MUSIC DISTRIBUTION <br>
+      <img src="assets/images/hpit.jpg" alt="Blog-post Thumbnail" style="max-width:300px; margin-top:50px">
+    </div> -->
+      <div class="animate-childs">
+        <h2 class="module-title font-alt" style="margin-top:50px;">BE <font color="#F29565">ORIGINAL</font> </h2>
+        <div class="" style="font-size:15px; margin-left:auto; margin-right:auto; display:flex; justify-content: center; width:550px;  max-width: 90vw; margin-top:40px; line-height:150%; text-align:justify;"><font color="grey"><font color="#ffffff"></font>
+          Create unique edits and experiences for crowds on your dance-floor. Create unique edits of that same top 10 track everyone else has and easily edit out sections of a track you dont like, when owning it as an EditTrax.NFT. </font>
+        </div>
+      </div>
 
-    <!-- <div id="frame2_copy">  -->
-      <!-- Click On The Player Tab To Create A Custom Edit -->
-    <!-- </div> -->
+      <div class="animate-childs">
+        <h2 class="module-title font-alt" style="margin-top:50px;"><font color="#F29565"></font></font><font color="#F29565">EXPLORE</font></h2>
+        <div class="" style="font-size:15px; margin-left:auto; margin-right:auto; display:flex; justify-content: center; width:550px;  max-width: 90vw; margin-top:50px; line-height:150% text-align:center;"><font color="grey"><font color="#ffffff"></font>
+          Producers & labels can experiment with how tracks are presented, teased and consumed. Let your audience build out arrangements that meet specific use cases,
+          or release portions of a track ahead of its official release and save that drop for the official release.
+        </div>
+      </div>
+      <!-- <div class="row animate-childs">
+        <div class="row" style="margin-top:25px;"><div class="container_nav">                                      
+          <img src="assets/images/slash.svg" style="width:150px; max-width:80vw;"alt="Edit Trax Logo"/>
+        </div>
+      </div> -->
 
-    <div id="player_controls"> 
-    
-    <footer id="footer" class="flex justify-center px-4 w-screen text-white bg-gray-800">
-          <div id="avatar_cont" class="container py-6" style="">
-
-            <a href="https://www.instagram.com/bryan_balli/"  target="_blank">
-              <div id="et_footer_logo" class="bg-contain bg-center mt-0 ml-0" style="overflow:visible; background-image: url(./assets/img/genesis_piece2.png);"></div>
-            </a>
-
-              <h1 id="footerHead" class="text-center text-lg font-bold lg:text-2xl">Be Part Of Our Beta Launch<br> & Feature Exploration!</h1>
-
-              <h1 id="footerSub" class="text-center text-lg font-bold lg:text-2xl">Contact:</h1>
-
-              <!-- <h1 id="footerHead3" class="text-center lg:text-2xl">BRYAN BALLI<br> CREATIVE DEVELOPER</h1> -->
-
-
-
-
-<!-- Begin Mailchimp Signup Form -->
-            <link href="./signup.css" rel="stylesheet" type="text/css">
-            <style type="text/css">
-              #mc_embed_signup{background:rgba(0, 0, 0, 0); clear:left; font:14px Helvetica,Arial,sans-serif; border-radius:5px}
-              /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-            </style>
-
-            <!-- MAIL CHIMP SIGN UP -->
-            <div id="mc_embed_signup" style="margin-top: -0px;"> 
-            
-              <form action="https://nft.us5.list-manage.com/subscribe/post?u=fc4f6490d102a2f385e8b3c64&amp;id=ed21c6a8cb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div class="clear flex-col" style="display: flex; z-index:99999; align-items:center">
-                  
-
-                  <!-- <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="ENTER EMAIL" required style="" style="height:60 max-width:40%"> -->
-                  <!-- <input type="submit" value="CONTACT" name="subscribe" id="mc-embedded-subscribe" class="button" style="height:60 max-width:40%"> -->
-              
-
-                  <!-- Calendly inline widget begin -->
-
-<a href="https://twitter.com/edittrax"  target="_blank">
-  <div id="et_footer_logo" class="bg-contain bg-center mt-0 ml-0" style="margin-bottom:150px; margin-top:50px; overflow:visible; margin-left:0px; height: 150px; width:300px; background-image: url(./assets/img/contact.svg);"></div>
-</a>
+      <div class="animate-childs">
+        <h2 class="module-title font-alt" style="margin-top:50px;">CUT THROUGH<br><font color="#F29565"> NFT HYPE</font> </h2>
+        <div class="" style="font-size:15px; margin-top:50px; margin-left:auto; margin-right:auto; display:flex; justify-content: center; width:550px; margin-bottom:20px;  max-width: 90vw; line-height:150%; text-align:justify; text-align:center;"></font>
 
 
-
-<!-- Calendly link widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bryanballi/catch-up'});return false;">
+Provide sensible utility and added value, driving adoption by analog communities to this real-time direct to artist payment model.
 
 
+        </div>
+      
+      </div>
 
-                
-    <div id="cal_invite" class="bg-contain bg-center mt-0 ml-0"></div>
-  
-
-  
-
-</a>
-<!-- Calendly link widget end -->
-
-
+      <div class="row animate-childs">
+        <div class="row" style="margin-top:0px;"><div class="container_nav">                                      
+          <img src="assets/images/slash.svg" style="width:150px; max-width:80vw;"alt="Edit Trax Logo"/>
+        </div>
+      </div>
 
 
+      <div class="row animate-childs">
+        <div class="row" style="margin-top:40px;"><div class="container_nav">                                      
+          <img src="assets/images/Distribute.svg" style="width:250px; max-width:80vw;"alt="Edit Trax Logo"/>
+        </div>
+      </div>
 
-                  <a href="https://us5.list-manage.com/contact-form?u=fc4f6490d102a2f385e8b3c64&form_id=4a5850a1254738ecd1cfbbd10d72a8f5"  target="_blank">
-                
-                    <div id="footer_cta" class="bg-contain bg-center mt-0 ml-0"></div>
-
-                    </a>
+      <div class="" style="font-size:15px; margin-top:50px; margin-left:auto; margin-right:auto; display:flex; justify-content: center; width:550px; margin-bottom:20px;  max-width: 90vw; line-height:150%; text-align:justify; text-align:center;"></font>
 
 
-              </form>
+        A sensible utility for driving adoption into a decentralized distribution channel, EditTrax.nft allows creators to allow for unlimited downloads when their fans hold players in their wallet.
+                </div>
 
-              <a href="https://twitter.com/edittrax"  target="_blank">
-                <div id="et_footer_logo" class="bg-fit bg-center ml-0" style="margin-top:0px; overflow:visible; margin-left:0px; height: 50px; width:50px; background-image: url(./assets/img/twitch_blk.png);"></div>
-              </a>
-    
 
+      <div class="row animate-childs">
+        <div class="row" style="margin-top:25px;"><div class="container_nav">                                      
+          <img src="assets/images/chart.svg" style="width:550px; max-width:80vw;"alt="Edit Trax Logo"/>
+        </div>
+      </div>
+
+      
+
+
+      <div class="animate-childs">
+        <!-- <h2 class="module-title font-alt" style="margin-top:50px;"><font color="#F29565"></font></font><br><font color="white">DISTRIBUTE</font></h2> -->
+      </div>
+
+      <div class="animate-childs">
+        <div class="" style="font-size:15px; margin-left:auto; margin-right:auto; display:flex; justify-content: center; width:550px;  max-width: 90vw; margin-top:40px; line-height:150% text-align:center;"><font color="grey"><font color="#ffffff"></font>
+          A useful marketing tool for engagement, leverage the time between the licensing of IP for release, physical production time, and it’s final release with this collectable audio utility
+        </div>
+      </div>
+
+      <div id="alpha-hic" class="animate-childs width:550px; max-width:90vw; clickable-button font-alt mb-30 module-title"
+      style="padding:30px; border: 1px solid white;letter-spacing:0px; width:100%; text-align:center; margin-top:40px; font-color:white !important; line-height:105%; margin-left:20px; margin-right:20px;
+        width:100%; 
+        /* padding-bottom:0px; */
+
+      min-width:350px;
+      max-width:550px;
+      margin-left:auto;
+      margin-right:auto;">
+      <font color="#ffffff">
+        LEARN MORE
+      </font>          
+    </div>
+
+  </div>
+</section>
+</section>
+
+
+
+<!-- FEATURES 1
+=============================================
+--> 
+
+<section style="padding-bottom:50px; margin-top:0px;padding-top:50px; max-width:100vw;"id="section_partners">
+  <section class="" style="
+  padding-bottom:0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;">
+    <div class="row animate-childs">
+      <div class="row" style="margin-top:0px;"><div class="container_nav">                                      
+        <img src="assets/images/slash.svg" style="width:150px; max-width:80vw;"alt="Edit Trax Logo"/>
+      </div>
+    </div>
+    <!-- <div class="font-alt mb-30 titan-title-size-1 animate-childs"
+      style="letter-spacing: 0px; text-align:center; margin-top:40px; font-color:white !important; line-height:105%">
+      A NEW ERA IN <br>UNDERGROUND <br>MUSIC DISTRIBUTION <br>
+      <img src="assets/images/hpit.jpg" alt="Blog-post Thumbnail" style="max-width:300px; margin-top:50px">
+    </div> -->
+      <div class="animate-childs">
+        <h2 class="module-title font-alt" style="margin-top:50px;">Build <font color="#F29565">Sustainable <br>Revenue</font> Streams </h2>
+        <div class="" style="font-size:15px; margin-left:auto; margin-right:auto; display:flex; justify-content: center; width:550px;  max-width: 90vw; margin-top:40px; line-height:150%"><font color="grey"><font color="#ffffff"></font>
+          Retain more investment liquidity with intellectual music properties via a real-time community to creator payout systems.</font>
+        </div>
+      </div>
+
+      <div class="animate-childs">
+        <h2 class="module-title font-alt" style="margin-top:50px;">Add To Your <font color="#F29565"><br>Distribution Mix</font></h2>
+        <div class="" style="font-size:15px; margin-left:auto; margin-right:auto; display:flex; justify-content: center; width:550px;  max-width: 90vw; margin-top:40px; line-height:150% text-align:center;"><font color="grey"><font color="#ffffff"></font>
+          Eliminate any requirment for centralized platforms and aggregates, mazimize your margins, and claim commission on resales.</font>
+        </div>
+      </div>
+
+
+
+      <!-- <div class="animate-childs">
+        <h2 class="module-title font-alt" style="margin-top:50px;">Create Distinct User Experiences For Fans<font color="#F29565"><br></font></h2>
+        <div class="" style="font-size:15px; margin-left:auto; margin-right:auto; display:flex; justify-content: center; width:550px;  max-width: 90vw; margin-top:40px; line-height:150% text-align:center;"><font color="grey"><font color="#ffffff"></font>
+          Just a couple clicks allows fans to load multiple arrangements of a track and create Customize Trax that support their own creative efforts as DJs, Editors, Podcasters, Social-Influencers, and Collectors.
+        </div>
+      </div>
+
+      <div class="animate-childs">
+        <h2 class="module-title font-alt" style="margin-top:50px;">Multiple Asset Monetisation<font color="#F29565"><br></font></h2>
+        <div class="" style="font-size:15px; margin-left:auto; margin-right:auto; display:flex; justify-content: center; width:550px;  max-width: 90vw; margin-top:40px; line-height:150% text-align:center;"><font color="grey"><font color="#ffffff"></font>
+          Eliminate 3rd-party platforms and aggregates from the user journey, maximizing margins, claiming all commissions of any resales.
+        </div>
+      </div> -->
+
+      <div class="animate-childs">
+        <h2 class="module-title font-alt" style="margin-top:50px;">A  <font color="#F29565">Funnel</font>To <br>Sustainability<font color="#F29565"><br></font></h2>
+        <div class="" style="font-size:15px; margin-left:auto; margin-right:auto; display:flex; justify-content: center; width:550px;  max-width: 90vw; margin-top:40px; line-height:150% text-align:center;"><font color="grey"><font color="#ffffff"></font>
+          A sensible utility for driving adoption into a decentralized distribution channel, EditTrax.nft allows creators to allow for unlimited downloads when their fans hold players in their wallet.
+        </div>
+      </div>
+      
+      <div class="row animate-childs">
+        <div class="row" style="margin-top:40px;"><div class="container_nav">                                      
+          <img src="assets/images/funnel.svg" style="width:450px; max-width:80vw;"alt="Edit Trax Logo"/>
+        </div>
+      </div>
+
+      
+  </div>
+</section>
+</section>
+
+
+<!-- HOW TO ONBOARD
+=============================================
+--> 
+
+<section style="padding-bottom:0px;  max-width:100vw;margin-top:0px;padding-top:0px;"id="section_onboard">
+  <section class="" style="
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;">
+<div class="row">
+  <div class="row animate-childs" style="margin-top:0px; margin-bottom:50px;"><div class="container_nav">
+    <img src="assets/images/Get Onboarded.svg" style="width:375px; max-width:80vw;"alt="Edit Trax Logo"/>
+  </div>
+
+  <div class="font-alt mb-30 titan-title-size-1 animate-childs"
+      style="letter-spacing: 0px; text-align:center; margin-top:40px; font-color:white !important; line-height:105%">
+      A NEW ERA IN <br>UNDERGROUND <br>MUSIC DISTRIBUTION <br>
+      <img src="assets/images/tezos.png" alt="Blog-post Thumbnail" style="max-width:200px; margin-top:50px">
+    </div>
+</div>
+
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-2 col-sm-offset-5">
+                    <!-- <div class="alt-module-subtitle"><span class="holder-w"></span>
+                      <h5 class="font-serif">For your comfort</h5><span class="holder-w"></span>
+                    </div> -->
+                  </div>
+                </div>
+                <!-- <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2">
+                    <h2 class="module-title font-alt">Our Services</h2>
+                  </div>
+                </div> -->
+                <div class="row multi-columns-row">
+                  <div class="col-sm-6 col-md-3 col-lg-3 animate-childs">
+                    <div class="features-item">
+                      <div class="features-icon"><span class="icon-clock"></span></div>
+                      <h3 class="features-title font-alt">Opened 24/7</h3>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 col-lg-3 animate-childs">
+                    <div class="features-item">
+                      <div class="features-icon"><span class="icon-streetsign"></span></div>
+                      <h3 class="features-title font-alt">Free parking</h3>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 col-lg-3 animate-childs">
+                    <div class="features-item">
+                      <div class="features-icon"><span class="icon-map"></span></div>
+                      <h3 class="features-title font-alt">Central Location</h3>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 col-lg-3 animate-childs">
+                    <div class="features-item">
+                      <div class="features-icon"><span class="icon-heart"></span></div>
+                      <h3 class="features-title font-alt">High quality</h3>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div id="player-hic" class="clickable-button font-alt mb-30 titan-title-size-1 animate-childs"
+              style="padding:40px; border: 1px solid white;letter-spacing:0px; width:100%; text-align:center; margin-top:50px; font-color:white !important; line-height:105%; margin-left:20px; margin-right:20px;
+                width:100%; 
+              max-width: 90vw;
+              min-width:350px;
+              max-width:90vw;
+              margin-left:auto;
+              margin-right:auto;">
+                <font color="#ffffff">
+                  COLLECT THIS PLAYER ON ####
+                </font>
+
+              </div>
             </div>
 
 
+        </section>
+</section>
 
-              <!-- <div class="flex justify-center mt-6">
-                  <div class="bg-white rounded-lg">
-                      <div class="flex flex-wrap justify-between md:flex-row">
-                          <input type="email" class="m-1 p-2 appearance-none text-gray-700 text-sm focus:outline-none" placeholder="Enter your email">
-                          <button class="w-full m-1 p-2 text-sm bg-gray-800 rounded-lg font-semibold uppercase lg:w-auto">subscribe</button>
-                      </div>
-                  </div>
-              </div> -->
-  
-              <hr class="h-px mt-6 border-none">
-  
-              <div class="flex flex-col items-center justify-between mt-6 md:flex-row"style="justify-content:center">
+<!-- LAUNCH PARTNERS
+=============================================
+--> 
 
-                  <div id="footer_logo">
-                      <!-- <a href="#" class="text-xl font-bold" style="height: 148px; width:100vw; overflow:visible;">
+<section style="padding-bottom:50px; margin-top:0px;padding-top:50px; max-width:100vw;"id="section_partners">
+  <section class="" style="
+  padding-bottom:0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;">
+    <div class="row animate-childs">
+      <div class="row" style="margin-top:0px;"><div class="container_nav">                                      
+        <img src="assets/images/Launch Partners.svg" style="width:450px; max-width:80vw;"alt="Edit Trax Logo"/>
+      </div>
+    </div>
+    <div class="font-alt mb-30 titan-title-size-1 animate-childs"
+      style="letter-spacing: 0px; text-align:center; margin-top:40px; font-color:white !important; line-height:105%">
+      A NEW ERA IN <br>UNDERGROUND <br>MUSIC DISTRIBUTION <br>
+      <img src="assets/images/hpit.jpg" alt="Blog-post Thumbnail" style="max-width:300px; margin-top:50px">
+    </div>
+      <div class="animate-childs">
+        <h2 class="module-title font-alt" style="margin-top:50px;">FORGED IN<font color="#F29565"> CHICAGO</font> </h2>
+        <div class="" style="font-size:15px; margin-left:auto; margin-right:auto; display:flex; justify-content: center; width:550px;  max-width: 90vw; margin-top:40px; line-height:150%"><font color="grey"><font color="#ffffff"></font>
+          Users unlock unlimited downloads when holding players in their wallet, providing SENSIBLE utility that drives adoption for communities not yet understanding the benefits of decentralized music distribution.</font>
+        </div>
+      </div>
 
-                        <div id="et_footer_logo" class="h-auto w-auto bg-fit bg-center mt-0 ml-0" style="overflow:visible; margin-left:0px; height: 148px; width:327px; background-image: url(./assets/img/logo_circ_trans.png);"></div>
-                      </a> -->
-                  </div>
+      
 
-                  <div class="flex mt-4 md:m-0">
-                      <div class="-mx-4">
-                        <!-- <a href="#" class="px-4 text-sm">About</a>
-                        <a href="#" class="px-4 text-sm">Blog</a>
-                        <a href="#" class="px-4 text-sm">News</a>
-                        <a href="#" class="px-4 text-sm">Contact</a> -->
-                      </div>
-                  </div>
+      
+
+  </div>
+</section>
+</section>
+
+<!-- HOW TO ONBOARD
+=============================================
+--> 
+ <section class="module" id="section_contact" style=" max-width:100vw;">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <div class="row"><div class="container_nav animate-childs">
+                                      
+                  <img src="assets/images/Get Involved.svg" style="width:300px; max-width:80vw;" alt="Edit Trax Logo"/>
+
+                </div>
+                
+                <!-- <h2 class="module-title font-alt">ARE YOU A <font color="#F29565">PRODUCER, VISUAL ARTIST OR RECORD LABEL</font>? Get INVOLVED</h2> -->
+                <div class="module-subtitle font-serif"></div>
               </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3 animate-childs">
+                <!--<form id="contactForm" role="form" method="POST" action="php/contact.php">-->
+                <form id="contactForm" role="form" action="" autocomplete="off">
+                  <div class="form-group">
+                    <label class="sr-only" for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Your Name*" required="required" data-validation-required-message="Please enter your name."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Your Email*" required="required" data-validation-required-message="Please enter your email address."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="7" id="message" name="message" placeholder="Your Message*" required="required" data-validation-required-message="Please enter your message."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit</button>
+                  </div>
+                </form>
+                <div class="ajax-response font-alt" id="contactFormResponse"></div>
+              </div>
+            </div>
           </div>
-      </footer>
+          </div>
+        </section>
 
 
-        
-        
+            <!-- <div class="row" style="margin-top:260px;"><div class="container_nav">                                      
+              <img src="assets/images/Artist Collabs.svg" style="max-width:450px;"alt="Edit Trax Logo"/>
+            </div>
+            </div>
+            <div class="font-alt mb-30 titan-title-size-1"
+            style="letter-spacing: 0px; text-align:center; margin-top:40px; font-color:white !important; line-height:105%">
+            <font color="#ffffff"> <font color="">
+              A NEW ERA IN <br>UNDERGROUND <br>MUSIC DISTRIBUTION <br>           
+            </div>
+
+            <section class="module" style="padding-top:40px; padding-bottom:30px;" id="collabs">
+                <div class="container" style="padding-top:30px;" >
+                    <div class="row multi-columns-row post-columns">
+                      <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="post mb-20">
+                          <div class="post-thumbnail"><a href="#"><img src="assets/images/post-1.jpg" alt="Blog-post Thumbnail"/></a></div>
+                          <div class="post-header font-alt">
+                            <h2 class="post-title"><a href="#">Our trip to the Alps</a></h2>
+                            <div class="post-meta">By&nbsp;<a href="#">Mark Stone</a>&nbsp;| 23 November | 3 Comments
+                            </div>
+                          </div>
+                          <div class="post-entry">
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                          </div>
+                          <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="post mb-20">
+                          <div class="post-thumbnail"><a href="#"><img src="assets/images/post-2.jpg" alt="Blog-post Thumbnail"/></a></div>
+                          <div class="post-header font-alt">
+                            <h2 class="post-title"><a href="#">Shore after the tide</a></h2>
+                            <div class="post-meta">By&nbsp;<a href="#">Andy River</a>&nbsp;| 11 November | 4 Comments
+                            </div>
+                          </div>
+                          <div class="post-entry">
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                          </div>
+                          <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="post mb-20">
+                          <div class="post-thumbnail"><a href="#"><img src="assets/images/post-3.jpg" alt="Blog-post Thumbnail"/></a></div>
+                          <div class="post-header font-alt">
+                            <h2 class="post-title"><a href="#">We in New Zealand</a></h2>
+                            <div class="post-meta">By&nbsp;<a href="#">Dylan Woods</a>&nbsp;| 5 November | 15 Comments
+                            </div>
+                          </div>
+                          <div class="post-entry">
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                          </div>
+                          <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="post mb-20">
+                          <div class="post-thumbnail"><a href="#"><img src="assets/images/post-3.jpg" alt="Blog-post Thumbnail"/></a></div>
+                          <div class="post-header font-alt">
+                            <h2 class="post-title"><a href="#">We in New Zealand</a></h2>
+                            <div class="post-meta">By&nbsp;<a href="#">Dylan Woods</a>&nbsp;| 5 November | 15 Comments
+                            </div>
+                          </div>
+                          <div class="post-entry">
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                          </div>
+                          <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="post mb-20">
+                          <div class="post-thumbnail"><a href="#"><img src="assets/images/post-3.jpg" alt="Blog-post Thumbnail"/></a></div>
+                          <div class="post-header font-alt">
+                            <h2 class="post-title"><a href="#">We in New Zealand</a></h2>
+                            <div class="post-meta">By&nbsp;<a href="#">Dylan Woods</a>&nbsp;| 5 November | 15 Comments
+                            </div>
+                          </div>
+                          <div class="post-entry">
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                          </div>
+                          <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="post mb-20">
+                          <div class="post-thumbnail"><a href="#"><img src="assets/images/post-3.jpg" alt="Blog-post Thumbnail"/></a></div>
+                          <div class="post-header font-alt">
+                            <h2 class="post-title"><a href="#">We in New Zealand</a></h2>
+                            <div class="post-meta">By&nbsp;<a href="#">Dylan Woods</a>&nbsp;| 5 November | 15 Comments
+                            </div>
+                          </div>
+                          <div class="post-entry">
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                          </div>
+                          <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+
+
+
+
+<!-- 
+                  <section class="module" style="height:100vh; padding-bottom:0px; padding-top:0px;"id="how_to">
+                    <section class="container" style="
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;">
+                      <div class="row">                 
+
+
+                <div class="row" style="margin-top:110px;"><div class="container_nav">                                      
+                  <img src="assets/images/RoadMap.svg" style="width:450px; max-width:80vw;"alt="Edit Trax Logo"/>
+                </div>
+                </div>
+                <div class="font-alt mb-30 titan-title-size-1"
+                style="letter-spacing: 0px; text-align:center; margin-top:40px; font-color:white !important; line-height:105%">
+                CURATED DROPS NOW,<br>MARKETPLACE  LATER.
+              </div> -->
+
+
+              <!-- <div class="container"style="margin-top: 60px;">
+                <div class="row multi-columns-row">
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="features-item">
+                      <img src="assets/images/rm_1.svg" style="max-width:225px;"alt="Edit Trax Logo"/>
+
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="features-item">
+                      <img src="assets/images/rm_1.svg" style="max-width:225px;"alt="Edit Trax Logo"/>
+
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="features-item">
+                      <img src="assets/images/rm_1.svg" style="max-width:225px;"alt="Edit Trax Logo"/>
+
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="features-item">
+                      <img src="assets/images/rm_1.svg" style="max-width:225px;"alt="Edit Trax Logo"/>
+
+                    </div>
+                  </div>
+              
+                
+                </div>
+              </div>
+            </div>
+          </section> -->
+
 
 
 
 
               
-              
-<!-- <script src="scroll.js"></script>
-<script src="script.js"></script> -->
-</body>
-
-
-
-<script>
-function setup() {
-
-  console.log("RUNNING")
-    return {
-
-      activeTab: 0,
-      tabs: [
-          "Tab No.1",
-          "Tab No.2",
-          "Tab No.3",
-          "Tab No.4",
-      ]
-    };
-  };
-
-// gsap.set("#close", {autoAlpha:0});
-// gsap.set("#render-toggle", {autoAlpha:0});
-// gsap.set("#pause-toggle", {autoAlpha:0});
-// gsap.set("#totalDuration", {autoAlpha:0});
-gsap.set("#play-toggle", {autoAlpha:0});
-gsap.set("#download", {autoAlpha:0});
-// gsap.set(".wrapper", {autoAlpha:0});
-// gsap.set("#artist_name_logo", {rotate:-15,pointerEvents:"none"});
-// gsap.set("#artist_name", {rotate:-15,pointerEvents:"none"});
-// gsap.set("#contentSplash", {pointerEvents:"none"});
-// gsap.set("#logo", {autoAlpha:1});
-
-
-// gsap.set("#content", {duration:0.2, height:336, width:"90vw", top:0})
-
-gsap.to("#circle_logo", {duration:1000, rotate:2000})
-
-
-// document.getElementById("download").addEventListener("mouseover", mouseOverPlayer);
-// document.getElementById("download").addEventListener("mouseout", mouseOffPlayer);
-// document.getElementById("play-toggle").addEventListener("mouseover", mouseOnPlay);
-// document.getElementById("play-toggle").addEventListener("mouseout", mouseOffPlayer);
-// document.getElementById("totalDuration").addEventListener("mouseover", mouseOnDur);
-// document.getElementById("totalDuration").addEventListener("mouseout", mouseOffPlayer);
-// document.getElementById("wrapper").addEventListener("mouseover", mouseOnWrap);
-// document.getElementById("wrapper").addEventListener("mouseout", mouseOffPlayer);
-// document.getElementById("preview").addEventListener("mouseover", mouseOnPreview);
-// document.getElementById("preview").addEventListener("mouseout", mouseOffPlayer);
-
-
-
-function mouseOnWrap(){
-  document.getElementById("details").innerHTML = "The Loop Number For Each Part Of The Track & Preview";
-}
-
-function mouseOnDur(){
-  document.getElementById("details").innerHTML = "Total Time Duration Of Your Edit";
-}
-
-
-function mouseOnDl(){
-  document.getElementById("details").innerHTML = "Purchase The Player To Download Your Edit";
-}
-
-function mouseOffDl(){
-  document.getElementById("details").innerHTML = "Purchase The Player To Download Your Edit";
-}
-
-function mouseOnPlay(){
-  document.getElementById("details").innerHTML = "Play Your Edit";
-}
-
-function mouseOffPlay(){
-  document.getElementById("details").innerHTML = "Purchase The Player To Download Your Edit";
-}
-
-function mouseOnPreview(){
-  document.getElementById("details").innerHTML = "Purchase The Player To Download Your Edit";
-}
-
-function mouseOffPreview(){
-  document.getElementById("details").innerHTML = "Purchase The Player To Download Your Edit";
-}
-
-function mouseOnPreview(){
-  document.getElementById("details").innerHTML = "Purchase The Player To Download Your Edit";
-}
-
-function mouseOffPreview(){
-  document.getElementById("details").innerHTML = "Purchase The Player To Download Your Edit";
-}
-
-
-
-document.getElementById("logo_logo").addEventListener("click", clickOut);
-document.getElementById("splash_cta").addEventListener("click", scroll);
-
-function clickOut() {
-  console.log("UES:")
-
-  window.open('https://twitter.com/edittrax');
-}
-
-
-
-
-function scroll() {
-
-
-
-//   //Finds y value of given object
-// function findPos(obj) {
-//     var curtop = 0;
-//     if (obj.offsetParent) {
-//         do {
-//             curtop += obj.offsetTop;
-//         } while (obj = obj.offsetParent);
-//     return [curtop];
-//     }
-// }
-
-//   window.scroll(0,findPos(document.getElementById("player_cont_web")));
-  // console.log("YES")
-
-}
-
-
-
-
-
-
-// function mouseOverPlayer(){
-//     console.log("TEST")
-
-//     gsap.set(".wrapper", {autoAlpha:1, pointerEvents:"auto"});
-//     gsap.to("#content", {duration:0.2, height:336, width:"90vw", top:0})
-//     gsap.to("#contentBlock", {duration: 0.2, autoAlpha:0});
-//     // gsap.from(".wrapper", {duration: 2, x:"100vw",autoAlpha:0});
-//     gsap.set("#mc_embed_signup", {autoAlpha:0});
-//     gsap.set("#copy_img", {autoAlpha:0});
-//     // gsap.to("#frame1", {duration:0.2, autoAlpha:0, ease: "Power3.easeOut"}); 
-
-//     gsap.set("#close", {autoAlpha:1});
-// gsap.set("#render-toggle", {autoAlpha:1});
-// gsap.set("#pause-toggle", {autoAlpha:1});
-// gsap.set("#totalDuration", {autoAlpha:1});
-// gsap.set("#play-toggle", {autoAlpha:0.8});
-// // gsap.set("#content_bg", {pointerEvents: "none"});
-// gsap.set("#nft_name", {duration:0.5, autoAlpha:0});
-// gsap.to("#artist_name", {duration:0.2, top:-36, right:-72, scale:0.2}); 
-
-// document.getElementById("frame2_copy").innerHTML = "Create, Download and Resell Custom Edits";
-
-// document.getElementById("details").innerHTML = "Purchase The Player To Download Your Edit";
-
-
-    
-// }
-
-// function mouseOffPlayer(){
-//     // gsap.to("#content", {duration:0.2, height:"90vh", width:"90vw", top:0})
-//     console.log("TEST")
-//     gsap.to("#content", {duration:0.2, width:336, height:280})
-//     gsap.to("#contentBlock", {duration: 0.2, autoAlpha:1});
-//     gsap.set("#close", {autoAlpha:0});
-// gsap.set("#totalDuration", {autoAlpha:0});
-// gsap.set("#play-toggle", {autoAlpha:0});
-// gsap.set("#content_bg", {pointerEvents: "auto"});
-// gsap.to("#nft_name", {duration:0.5, autoAlpha:1});
-// gsap.set(".wrapper", {autoAlpha:0, pointerEvents:"none"});
-// gsap.to("#artist_name", {duration:0.2, scale:1,top:79, right:44});
-// gsap.set("#copy_img", {autoAlpha:1});
-// gsap.set("#mc_embed_signup", {autoAlpha:1});
-
-// document.getElementById("details").innerHTML = "Create & Download Edits Of A Preloaded Track From Within Our Customized Players";
-
-// }
-
-//helpers math random 
-function random(min, max) {
-  if (max == null) { max = min; min = 0; }
-  if (min > max) { var tmp = min; min = max; max = tmp; }
-  return min + (max - min) * Math.random();
-}
-
-function tweenProperty(target, prop) {
-  gsap.to(target, {
-    [prop]: random(500, 1000),
-    // duration:random(100, 1000), 
-    duration:30, 
-    // ease: Sine.easeInOut,
-    onComplete: tweenProperty,
-    onCompleteParams: [target, prop] ,
-    // ease: CustomEase.create("custom", "M0,0,C-0.007,0.237,0.451,0.633,0.68,0.824,0.909,1.015,0.908,1,1,1")
-    
-  });
-}
-
-//array of client work
-let clientWorkExamples = [
-  // "#logo_logo",
-];
-
-// call to draw signature
-let drawSplashLogo = () => {
-  startTheShow();
-  // const splashLogoTl = gsap.timeline();
-  // splashLogoTl.timeScale(1.3);
-  // splashLogoTl.to("#path2", { duration: 0.8, drawSVG: "0% 100%", ease: "Power4.easeOut" }, 2);
-  // splashLogoTl.to("#path1", { duration: 0.6, drawSVG: "0% 100%", ease: "Power0.easeOut",onComplete:startTheShow }, 2.6);
-  }
-           
-  clientWorkExamples.forEach(el => {
-    gsap.set(el, {autoAlpha:1});
-  });
   
 
-  for(i=0; i < clientWorkExamples.length; i++){
-    let randomNum = (random(-180, 180)) + i *4;
-    // gsap.from(clientWorkExamples[i], {duration:0.4, autoAlpha:0, ease:"bounce.easeOut", /* rotate:randomNum, */ scale:0, yoyo:true, repeat:1, delay:(0.04 + i)/4});
-}
 
-// gsap.delayedCall(0.1, drawSplashLogo);
+<!-- 
+            <section class="module bg-dark-60 mt-80 pt-0 pb-0 parallax-bg testimonial" style="padding-bottom:0px;" data-background="assets/images/testimonial_bg.jpg">
+              <div class="testimonials-slider pt-140 pb-140">
+                <ul class="slides">
+                  <li>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="module-icon"><span class="icon-quote"></span></div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
+                          <blockquote class="testimonial-text font-alt">I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</blockquote>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4 col-sm-offset-4">
+                          <div class="testimonial-author">
+                            <div class="testimonial-caption font-alt">
+                              <div class="testimonial-title">Jack Woods</div>
+                              <div class="testimonial-descr">SomeCompany INC, CEO</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="module-icon"><span class="icon-quote"></span></div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
+                          <blockquote class="testimonial-text font-alt">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</blockquote>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4 col-sm-offset-4">
+                          <div class="testimonial-author">
+                            <div class="testimonial-caption font-alt">
+                              <div class="testimonial-title">Jim Stone</div>
+                              <div class="testimonial-descr">SomeCompany INC, CEO</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="module-icon"><span class="icon-quote"></span></div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
+                          <blockquote class="testimonial-text font-alt">I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</blockquote>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4 col-sm-offset-4">
+                          <div class="testimonial-author">
+                            <div class="testimonial-caption font-alt">
+                              <div class="testimonial-title">Adele Snow</div>
+                              <div class="testimonial-descr">SomeCompany INC, CEO</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section> -->
 
-gsap.to("#stageBlock", {duration:1, autoAlpha:0, delay:0.5, ease: "Power1.easeOut"})
-gsap.from("#frame1", {duration:0.8, autoAlpha:0, y:"+=20vw", delay:0.4, ease: "Power3.easeOut"},1.5); 
-gsap.from("#logo_logo", {duration:1.8, y:"+=15px", ease:"PowerEase1.InOut", /* rotate:randomNum, */ yoyo:true, repeat:-1});
-// gsap.from("#content", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},1.5); 
-// gsap.from("#subhead", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},3.35); 
-// gsap.from("#playcont", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.35); 
-// gsap.from("#frame2_copy", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.45); 
-// gsap.from("#details2", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.45); 
-// gsap.from("#mc_embed_signup", {duration:0.5, autoAlpha:0, y:"+=20vw", ease: "Power3.easeOut"},0.75); 
-// gsap.to("#comp_img", {duration:0.5, x:"+=20vw", ease: "Power3.easeOut", opacity:0.5},0.75); 
-
-let startTheShow = () => {  
-// gsap.from("#logo_logo", {duration:1.8, autoAlpha:1, y:"+=15px", ease:"PowerEase1.InOut", /* rotate:randomNum, */ yoyo:true, repeat:-1});
-// console.log("YES");
-
-}
-
-//create draggable
-Draggable.create(clientWorkExamples, {
-  // // type: 'rotation',
-  // throwProps: true,
-  // bounds: document.getElementById("main"),
-  // dragResistance: 0.1,
-  // edgeResistance: 0.3,
-});
 
 
-// gsap.set("#content", {height:"70%", width:"70%"})
-gsap.set("#bg_circle", {x:-300, autoAlpha:0.05})
-gsap.set("#bg_circle2", {x:"100vw", y:"20vh", autoAlpha:0.1})
 
-var tl = gsap.timeline();
-tl.to("#bg_circle", {duration: 200,scale:0.5, x:"100vw", y:"100vh", delay:1, yoyo:true, repeat:-1},0);
-tl.to("#bg_circle2", {duration: 200, scale:0.8, x:-300, y:-300, yoyo:true, repeat:-1},0);
+                         
+                
 
-  </script>
 
+
+                              <!-- </section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                             
+                              
+
+
+    
+    
+    
+    
+                
+
+
+
+
+
+
+
+
+
+
+
+            
+
+            
+            
+
+
+            
+    
+
+
+
+
+
+
+
+
+        <!-- <section class="module" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <div class="row"><div class="container_nav">
+                                      
+                  <img src="assets/images/GetInvolved.svg" style="width:450px; max-width:80vw;" alt="Edit Trax Logo"/>
+
+                </div>
+                <h2 class="module-title font-alt">ARE YOU A <font color="#F29565">PRODUCER, VISUAL ARTIST OR RECORD LABEL</font>? Get INVOLVED</h2>
+                <div class="module-subtitle font-serif"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <form id="contactForm" role="form" method="post" action="php/contact.php">
+                  <div class="form-group">
+                    <label class="sr-only" for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Your Name*" required="required" data-validation-required-message="Please enter your name."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Your Email*" required="required" data-validation-required-message="Please enter your email address."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="7" id="message" name="message" placeholder="Your Message*" required="required" data-validation-required-message="Please enter your message."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit</button>
+                  </div>
+                </form>
+                <div class="ajax-response font-alt" id="contactFormResponse"></div>
+              </div>
+            </div>
+          </div>
+
+        </section> -->
+
+
+
+
+
+        <!-- <section class="module" id="support">
+
+          <div class="row"><div class="container_nav">
+                
+            <img src="assets/images/support.svg" style="width:450px; max-width:80vw;"alt="Edit Trax Logo"/>
+
+          </div>
+          <h2 class="module-title font-alt" style="margin-top:0px;"><font color="#F29565">COLLECT AN</font><br>ALPHA PLAYER!</h2>
+
+          <div class="" style="font-size:15px; margin-left:auto; margin-right:auto; display:flex; justify-content: center; width:550px; max-width: 90vw; margin-top:40px; line-height:150%;"><font color="grey"><font color="#ffffff"></font>
+            
+            A direct to community sales channel that pays creators out 99% of the sales transaction in real-time. Eliminate 3rd party platforms from the user journey and makes commission of resales in secondary markets.
+            
+          </font>
+
+
+
+          </div>
+
+          <h2 class="module-title font-alt" style="margin-top:0px;"><font color="#F29565">JOIN US ON </font><br>TELEGRAM</h2>
+
+          <div class="" style="font-size:15px; margin-left:auto; margin-right:auto; display:flex; justify-content: center; width:550px; max-width: 90vw; margin-top:40px; line-height:150%;"><font color="grey"><font color="#ffffff"></font>
+            
+            A direct to community sales channel that pays creators out 99% of the sales transaction in real-time. Eliminate 3rd party platforms from the user journey and makes commission of resales in secondary markets.
+            
+          </font>
+
+
+
+          </div>
+
+          <h2 class="module-title font-alt" style="margin-top:0px;"><font color="#F29565">MERCH</font><br></h2>
+
+          <div class="" style="font-size:15px; margin-left:auto; margin-right:auto; display:flex; justify-content: center; width:550px; max-width: 90vw; margin-top:40px; line-height:150%;"><font color="grey"><font color="#ffffff"></font>
+            
+            A direct to community sales channel that pays creators out 99% of the sales transaction in real-time. Eliminate 3rd party platforms from the user journey and makes commission of resales in secondary markets.
+            
+          </font>
+
+
+
+          </div>
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section> -->
+
+
+
+
+
+
+
+<!-- <div class="row"><div class="container_nav">
+                                                          
+  <img src="assets/images/contact.svg" style="width:450px; max-width:80vw;" alt="Edit Trax Logo"/>
+
+</div>
+<h2 class="module-title font-alt" style="margin-top:0px;"><font color="#F29565">BUY AN ALPHA PLAYER</font> <br>SUPPORT OUR ROADMAP</h2>
+
+
+<div class="" style="font-size:15px; margin-left:auto; margin-right:auto; display:flex; justify-content: center; width:550px; max-width: 90vw; margin-top:40px; margin-bottom:50px; line-height:150%"><font color="grey"><font color="#ffffff"></font>
+  
+  A direct to community sales channel that pays creators out 99% of the sales transaction in real-time. Eliminate 3rd party platforms from the user journey and makes commission of resales in secondary markets.
+  
+</font>
+
+
+
+</div> -->
+
+
+
+
+
+
+          </div>
+        </section>
+      </section>
+
+      <hr class="divider-d">
+      <footer class="footer bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <p class="copyright font-alt">&copy; 2021&nbsp;<a href="index.html"><font color="#F29565"> EditTrax.NFT</font></a>, All Rights Reserved</p>
+            </div>
+            <div class="col-sm-6">
+              <div class="footer-social-links">
+                <!-- <a href="#"><i class="fa fa-facebook"> -->
+
+                <!-- </i></a><a href="#"> -->
+                <!-- <i class="fa fa-twitter"></i></a><a href="#"> -->
+                <!-- <i class="fa fa-dribbble"></i></a><a href="#">
+                <i class="fa fa-skype"></i></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      </div>
+      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+    </main>
+    <!--  
+    JavaScripts
+    =============================================
+    -->
+    <script src="assets/lib/jquery/dist/jquery.js"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/lib/wow/dist/wow.js"></script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/lib/smoothscroll.js"></script>
+    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
