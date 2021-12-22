@@ -523,6 +523,7 @@ function getNameValue(arr,name){
                 {
                     url: formURL,
                     type: "POST",
+                    crossDomain: true,
                     data: postData,
                     success: function (data) {
                         alert("Success");
