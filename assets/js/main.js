@@ -505,7 +505,7 @@ function getNameValue(arr,name){
                 $cfsubmit = $("#cfsubmit"),
                 cfsubmitText = $cfsubmit.text();
 
-            /*
+
             //Mailto PC
 
             window.open(formURL +'?cc='+emailCC+'&subject='+emailSub+'&body='+getNameValue(postData,'message'))
@@ -514,8 +514,8 @@ function getNameValue(arr,name){
             $('#contactForm input[name=email]').val('');
             $('#contactForm textarea[name=message]').val('');
 
-            */
 
+/*
             //Mailto Javascript
             $cfsubmit.text("Sending...");
 
@@ -539,6 +539,8 @@ function getNameValue(arr,name){
                         $cfsubmit.text(cfsubmitText);
                     }
                 });
+
+ */
 
             return false;
 
