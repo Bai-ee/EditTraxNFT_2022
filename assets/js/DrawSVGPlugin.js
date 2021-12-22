@@ -14,7 +14,7 @@
 // var _gsScope = (typeof(window) !== "undefined") ? window : (typeof(module) !== "undefined" && module.exports && typeof(global) !== "undefined") ? global : this || {};
 
 
-import { _gsScope } from "TweenLite.js";
+import { _gsScope } from "./TweenLite.js";
 
 var _doc = _gsScope.document,
 		_computedStyleScope = (typeof(window) !== "undefined" ? window : _doc.defaultView || {getComputedStyle:function() {}}),

@@ -63,9 +63,9 @@ function getNameValue(arr,name){
          * Clickable Button
          /* ---------------------------------------------- */
         let alphaHic = document.querySelector('#alpha-hic');
-        alphaHic.addEventListener('click', onClickAlphaHic);
+        alphaHic?.addEventListener('click', onClickAlphaHic);
         let playerHic = document.querySelector('#player-hic');
-        playerHic.addEventListener('click', onClickPlayerHic);
+        playerHic?.addEventListener('click', onClickPlayerHic);
         /* ---------------------------------------------- /*
          * WOW Animation When You Scroll
          /* ---------------------------------------------- */

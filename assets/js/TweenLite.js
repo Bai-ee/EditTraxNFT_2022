@@ -1960,6 +1960,7 @@ export var TweenLite = (function(window) {
 })(_gsScope, "TweenLite");
 
 export var globals = _gsScope.GreenSockGlobals;
+console.log(_gsScope);
 var nonGlobals = globals.com.greensock;
 export { TweenLite as default };
 export var SimpleTimeline = nonGlobals.core.SimpleTimeline;
