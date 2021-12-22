@@ -2751,6 +2751,12 @@ iframe{
   /* max-height:400px; */
 }
 
+#circle {
+  /* width:100px !important;  */
+
+  
+}
+
 /*--------------------------------------------------------------
 	Responsive Styles - Media Queries
 --------------------------------------------------------------*/
@@ -3022,6 +3028,7 @@ iframe{
   .works-grid-5 .work-item {
     width: 100%;
   }
+
 
   #hero_head {
     font-size:50px; 
