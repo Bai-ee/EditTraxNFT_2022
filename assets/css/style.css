@@ -3004,6 +3004,8 @@ iframe{
 
   #hero_head{
     font-size:30px;
+    line-height: 30px;
+    margin-top: 30px;
   }
 }
 
