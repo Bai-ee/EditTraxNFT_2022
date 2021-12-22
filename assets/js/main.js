@@ -28,7 +28,7 @@ function getNameValue(arr,name){
 
     $(document).ready(function() {
         // $('.loader').fadeOut();
-        $('.page-loader').delay(500).fadeOut('fast');
+        $('.page-loader').delay(1000).fadeOut('slow');
         /* ---------------------------------------------- /*
          * Set Auto Scroll Trigger
          /* ---------------------------------------------- */
