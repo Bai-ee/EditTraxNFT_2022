@@ -3034,6 +3034,10 @@ iframe{
     font-size:50px; 
     line-height:45px;
   }
+  #circle {
+    width:400px;
+
+  }
 
   .navbar-transparent {
     /* background: red; */
