@@ -2744,7 +2744,7 @@ iframe{
   margin-left:auto;
   margin-right:auto;
   border-radius:20px;
-  border:3px solid white;
+  /* border:3px solid white; */
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
