@@ -11,6 +11,7 @@ body {
   background: #000;
   font: 400 12px/1.8 "Open Sans", sans-serif;
   color: #666;
+  overflow:hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -3034,9 +3035,15 @@ iframe{
     font-size:50px; 
     line-height:45px;
   }
-  #circle {
-    width:400px;
 
+
+  #circle {
+    /* width:1000px; */
+
+  }
+
+  #hero_head{
+    font-size:45px;
   }
 
   .navbar-transparent {
