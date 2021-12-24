@@ -3043,7 +3043,18 @@ iframe{
   }
 
   #hero_head{
-    font-size:45px;
+    font-size:48px;
+
+    line-height:40px;
+    
+  }
+
+  #hero_image {
+    margin-top: 60px;
+    width: 500px;
+    z-index: 99;
+    margin-left: 4px;
+    max-width: 90vw;
   }
 
   .navbar-transparent {
