@@ -3038,7 +3038,7 @@ iframe{
 
 
   #circle {
-    /* width:1000px; */
+    width:100px;
 
   }
 
@@ -3051,10 +3051,10 @@ iframe{
 
   #hero_image {
     margin-top: 60px;
-    width: 500px;
+    width: 400px;
     z-index: 99;
     margin-left: 4px;
-    max-width: 90vw;
+    max-width: 80vw;
   }
 
   .navbar-transparent {
