@@ -11,6 +11,7 @@ body {
   background: #000;
   font: 400 12px/1.8 "Open Sans", sans-serif;
   color: #666;
+  overflow:hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -2743,12 +2744,18 @@ iframe{
   margin-left:auto;
   margin-right:auto;
   border-radius:20px;
-  border:3px solid white;
+  /* border:3px solid white; */
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   /* max-height:400px; */
+}
+
+#circle {
+  /* width:100px !important;  */
+
+  
 }
 
 /*--------------------------------------------------------------
@@ -2769,6 +2776,11 @@ iframe{
     margin-right: auto;
     display: flex;
     max-height:300px; */
+  }
+
+  #hero_head {
+
+    font-size:100px; width:80vw; max-width:80vw
   }
 
   .navbar-transparent {
@@ -2814,6 +2826,15 @@ iframe{
   .alt-features-item {
     margin: 20px 0 0;
   }
+
+  #hero_head {
+    font-size:50px; 
+  }
+
+  #hero_head {
+
+    font-size:80px; width:80vw; max-width:80vw
+  }
 }
 
 @media (max-width: 1050px) {
@@ -2821,6 +2842,7 @@ iframe{
   .navbar-custom {
     letter-spacing: 1px;
   }
+
 }
 
 @media (max-width: 991px) {
@@ -2828,6 +2850,7 @@ iframe{
   .navbar-custom {
     letter-spacing: 0;
   }
+
   /* Headers */
   .titan-title-size-3 {
     letter-spacing: 8px;
@@ -2860,6 +2883,11 @@ iframe{
     margin-top: 1px;
     margin-bottom: 0;
   }
+
+  #hero_head {
+    font-size:70px; 
+  }
+
   .navbar-custom li > a:hover {
     background: rgba(255, 255, 255, 0.1) !important;
   }
@@ -3002,9 +3030,44 @@ iframe{
     width: 100%;
   }
 
-  #hero_head{
-    font-size:30px;
+
+  #hero_head {
+    font-size:50px; 
+    line-height:45px;
   }
+
+
+  #circle {
+    width:100px;
+
+  }
+
+  #hero_head{
+    font-size:48px;
+
+    line-height:40px;
+    
+  }
+
+  #hero_image {
+    margin-top: 60px;
+    width: 400px;
+    z-index: 99;
+    margin-left: 4px;
+    max-width: 80vw;
+  }
+
+  .navbar-transparent {
+    /* background: red; */
+  }
+
+  /* #hero_head {
+    font-size:25px;
+    line-height: 25px;
+    margin-top: 0px;
+    margin-bottom:0px;
+      font-size:50px; 
+  } */
 }
 
 .container_nav {
