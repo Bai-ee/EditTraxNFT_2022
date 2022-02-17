@@ -159,7 +159,7 @@ a,
 
 .main {
   position: relative;
-  background-color: #000;
+  background-color: none;
   z-index: 1;
 }
 
@@ -1799,6 +1799,10 @@ Google map
   margin-left: -7px;
 }
 
+#hero_head {
+  font-size:200px;
+}
+
 .borderline:after {
   position: absolute;
   background: #fff;
@@ -2827,13 +2831,10 @@ iframe{
     margin: 20px 0 0;
   }
 
-  #hero_head {
-    font-size:50px; 
-  }
 
   #hero_head {
 
-    font-size:80px; width:80vw; max-width:80vw
+    font-size:100px; width:80vw; max-width:80vw
   }
 }
 
@@ -2885,7 +2886,7 @@ iframe{
   }
 
   #hero_head {
-    font-size:70px; 
+    font-size:90px; 
   }
 
   .navbar-custom li > a:hover {
@@ -3031,11 +3032,6 @@ iframe{
   }
 
 
-  #hero_head {
-    font-size:50px; 
-    line-height:45px;
-  }
-
 
   #circle {
     width:100px;
@@ -3043,9 +3039,9 @@ iframe{
   }
 
   #hero_head{
-    font-size:48px;
+    font-size:70px;
 
-    line-height:40px;
+    /* line-height:70px; */
     
   }
 
