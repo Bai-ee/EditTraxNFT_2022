@@ -1,6 +1,6 @@
 console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55');
 
-// console.log(drawSVG)
+
 
 function scrollTo(selector) {
     document.querySelector(selector).scrollIntoView({behavior: 'smooth'});
@@ -27,8 +27,8 @@ function getNameValue(arr,name){
 (function(){
 
     $(document).ready(function() {
-        // $('.loader').fadeOut();
-        $('.page-loader').delay(1000).fadeOut('slow');
+        $('.loader').fadeOut();
+        $('.page-loader').delay(350).fadeOut('slow');
         /* ---------------------------------------------- /*
          * Set Auto Scroll Trigger
          /* ---------------------------------------------- */
@@ -63,9 +63,9 @@ function getNameValue(arr,name){
          * Clickable Button
          /* ---------------------------------------------- */
         let alphaHic = document.querySelector('#alpha-hic');
-        alphaHic?.addEventListener('click', onClickAlphaHic);
+        alphaHic.addEventListener('click', onClickAlphaHic);
         let playerHic = document.querySelector('#player-hic');
-        playerHic?.addEventListener('click', onClickPlayerHic);
+        playerHic.addEventListener('click', onClickPlayerHic);
         /* ---------------------------------------------- /*
          * WOW Animation When You Scroll
          /* ---------------------------------------------- */
@@ -505,7 +505,7 @@ function getNameValue(arr,name){
                 $cfsubmit = $("#cfsubmit"),
                 cfsubmitText = $cfsubmit.text();
 
-
+            /*
             //Mailto PC
 
             window.open(formURL +'?cc='+emailCC+'&subject='+emailSub+'&body='+getNameValue(postData,'message'))
@@ -514,8 +514,8 @@ function getNameValue(arr,name){
             $('#contactForm input[name=email]').val('');
             $('#contactForm textarea[name=message]').val('');
 
+            */
 
-/*
             //Mailto Javascript
             $cfsubmit.text("Sending...");
 
@@ -523,7 +523,6 @@ function getNameValue(arr,name){
                 {
                     url: formURL,
                     type: "POST",
-                    crossDomain: true,
                     data: postData,
                     success: function (data) {
                         alert("Success");
@@ -539,8 +538,6 @@ function getNameValue(arr,name){
                         $cfsubmit.text(cfsubmitText);
                     }
                 });
-
- */
 
             return false;
 
