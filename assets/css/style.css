@@ -2756,11 +2756,6 @@ iframe{
   /* max-height:400px; */
 }
 
-#circle {
-  /* width:100px !important;  */
-
-  
-}
 
 /*--------------------------------------------------------------
 	Responsive Styles - Media Queries
@@ -3034,7 +3029,7 @@ iframe{
 
 
   #circle {
-    width:100px;
+    width:600px;
 
   }
 
