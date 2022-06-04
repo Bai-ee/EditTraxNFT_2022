@@ -1,1 +1,4 @@
-# editTrax_product_site
+Hosted on IPFS
+Resolves at
+Edittrax.NFT
+EditTrax.com
